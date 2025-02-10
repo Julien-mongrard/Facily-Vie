@@ -1,0 +1,655 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto; /* S'adapte au contenu */
+    font-family: 'Jaldi-Blod', sans-serif;
+
+}
+
+.services{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centre les cartes sur chaque ligne */
+    align-items: stretch; /* Étire les cartes pour qu'elles aient la même hauteur */
+    gap: 20px;
+    padding: 30px 0;
+    
+}
+
+.section{
+    position: relative;
+    border-radius: 50px;
+    width: calc(50% - 5%); /* 4 cartes par ligne avec un espace entre elles */
+    text-align: center;
+
+}
+.image{
+    width: 100%;
+    height: 100%;
+}
+.carre{
+    position: absolute;
+    width: 85%;
+    height: 85%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffffc2;
+    border-radius: 60px;
+    text-align: center; 
+}
+
+.carre h2{
+    position: absolute;
+    width: 100%;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 40px;
+    font-family: 'Jaldi-Bold', sans-serif;
+}
+
+.carre p{
+    position: absolute;
+    width:80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 21px;
+    font-family: 'Jaldi-Bold', sans-serif;
+}
+
+.quisommesnous{
+    position: relative;
+    width: 90%;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    box-sizing: border-box;
+    padding: 20px 10px; /* Marges pour un contenu espacé */
+
+}
+
+.quisommesnous h2{
+    width: 100%;
+    top: 0%;
+    font-size: clamp(35px, 5vw, 60px); 
+    font-family: 'Jaldi-Bold', sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.quisommesnous p{
+    top: 20%;
+    width: 100%;
+    font-size: clamp(15px, 3vw, 30px); 
+    font-family: 'Jaldi-Bold', sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+
+
+
+
+
+@media(min-width: 1300px){
+
+    /* PARTIE HAUT DE PAGE */
+
+    #fixed {
+        position: fixed; /* Fixe l'élément */
+        top: 0; /* Positionné en haut de la page */
+        left: 0; /* Aligné à gauche */
+        width: 100%; /* S'étend sur toute la largeur */
+        background-color: #ffffff; /* Couleur de fond */
+        z-index: 1000; /* Assure que la barre est au-dessus des autres éléments */
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optionnel : ombre pour un effet visuel */
+        padding: 10px 0; /* Optionnel : Espacement interne */
+    }
+
+    .barduhaut {
+        display: flex; 
+        justify-content: space-around; 
+        background-color: rgba(179, 179, 179, 0.5); 
+        height: 40px; 
+        max-width: 100%;
+
+    }
+
+    .barduhaut a {
+        text-decoration: none; 
+        color: black; 
+        font-family: 'Jaldi-Bold', sans-serif;
+        font-size: 18px; 
+        padding: 10px 10px; 
+        transition: color 0.3s; 
+    }
+
+    .barduhaut a:hover {
+        color: rgb(0, 183, 255); 
+    }
+
+    .btn-contact {
+        background-color: #05e2ff; 
+        color: rgb(0, 0, 0); 
+        border: none;
+        padding: 10px 20px;
+        border-radius: 30px; 
+        cursor: pointer;
+        font-size: 16px;
+        text-transform: uppercase; 
+    }
+
+    .btn-contact:hover {
+        background-color: #0056b3; 
+    }
+
+    /* FIN HAUT DE PAGE */
+
+    /* Image et titre*/
+
+    .hautpage{
+        position: relative;
+        height: 600px;
+        width: 100%;
+    }
+
+    .hautpage img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    .bloquehautpage{
+        position: absolute;
+        width: 30%;
+        height: 40%;
+        top: 50%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        background-color: #0057b3ef;
+        border-radius: 90px;
+        text-align: center;
+        
+    }
+
+    .bloquehautpage h1{
+        position: absolute;
+        width: 100%;
+        color: rgb(255, 255, 255);
+        font-size: 60px;
+        font-family: 'Jaldi-Bold', sans-serif;
+        top: 10%;
+    }
+    .bloquehautpage p{
+        position: absolute;
+        width: 100%;
+        color: rgb(255, 255, 255);
+        font-size: 40px;
+        font-family: 'Jaldi-Bold', sans-serif;
+        top: 40%;
+    }
+
+
+
+    /* FIN PARTIE NOS SERVICES */
+
+    /* PARTIE Qui sommes-nous ? */
+
+
+
+
+}
+
+
+
+
+
+
+@media(max-width : 1300px){
+    #fixed {
+        padding: 5px 10px; /* Moins de padding */
+        box-shadow: none; /* Supprime l'ombre */
+        background-color: #f8f8f8; /* Couleur de fond pour bien différencier */
+        display: flex; /* Utilisation de Flexbox */
+        flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
+        justify-content: space-around; /* Centre les liens horizontalement */
+        align-items: center; /* Centre les liens verticalement */
+        gap: 10px; /* Espacement entre les éléments */
+    }
+
+    .barduhaut a {
+        font-size: 14px; 
+        padding: 5px 10px;
+        text-decoration: none; 
+        color: black; 
+        transition: color 0.3s ease; 
+    }
+
+    .barduhaut a:hover {
+        color: #007BFF; 
+    }
+
+    .btn-contact {
+        background-color: #05e2ff; 
+        color: rgb(0, 0, 0); 
+        border: none;
+        padding: 10px 20px;
+        border-radius: 30px; 
+        cursor: pointer;
+        font-size: 16px;
+        text-transform: uppercase; 
+    }
+
+    .btn-contact:hover {
+        background-color: #0056b3; 
+    }
+
+
+    .hautpage{
+        position: relative;
+        top: 0;
+        height: 500px;
+        width: 100%;
+    }
+
+    .hautpage img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    .bloquehautpage{
+        position: absolute;
+        width: 80%;
+        height: 40%;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #0057b3ef;
+        border-radius: 90px;
+        text-align: center;
+    }
+
+    .bloquehautpage h1{
+        position: absolute;
+        color: rgb(255, 255, 255);
+        font-size: 60px;
+        font-family: 'Jaldi-Bold', sans-serif;
+        width: 100%;
+        top: 00%;
+    }
+    .bloquehautpage p{
+        position: absolute;
+        color: rgb(255, 255, 255);
+        font-size: 40px;
+        font-family: 'Jaldi-Bold', sans-serif;
+        width: 100%;
+        top: 40%;
+    }
+
+    /* 
+    
+    
+    PARTIE SERVICES 
+    
+    
+    */
+
+
+
+    @media (max-width: 1150px) {
+        .carre h2{
+            font-size: 30px;
+        }
+        .carre p{
+            font-size: 15px;
+        }
+    }
+
+    @media (max-width: 850px) {
+        .carre h2{
+            font-size: 24px;
+        }
+        .carre p{
+            font-size: 12px;
+        }
+    }
+
+    @media (max-width: 700px) {
+        .section{
+            width: 90%; /* 1 carte par ligne */
+        }
+        .carre h2{
+            font-size: 30px;
+        }
+        .carre p{
+            font-size: 15px;
+        }
+        .bloquehautpage h1{
+            font-size: 40px;
+            top: 15%;
+        }
+        .bloquehautpage p{
+            font-size: 30px;
+        }
+    }
+    @media (max-width: 420px) {
+        .bloquehautpage{
+            width: 90%;
+        }
+        .carre h2{
+            font-size:25px;
+        }
+        .carre p{
+            font-size: 13px;
+        }
+    } 
+}
+
+
+
+/* 
+
+
+BAS DE PAGE 
+
+
+*/
+
+
+
+@media(min-width: 1480px){
+
+    /* BAS DE PAGE */
+
+
+    .baspage{
+        position: relative;
+        width: 100%;
+        height: 800px;
+        background: #074682;
+        opacity: 1;
+        z-index: 6;
+    }
+
+    .bloquelogobas{
+        position: absolute;
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%); /* Ajuste pour placer le centre de l'image au centre du conteneur */
+        width: 600px;
+        height: 600px;
+        background: radial-gradient(50% 50% at 50% 50%,rgb(255, 255, 255)48.5%,rgb(255,255,255)75%,rgb(7,70,130)91%);
+    }
+
+    .logobaspage{
+        position: absolute;
+        top: 47%;
+        left: 50%;
+        height: 80%;
+        width: 80%;
+        transform: translate(-50%,-50%); /* Ajuste pour placer le centre de l'image au centre du conteneur */
+    }
+
+    .bloquelien{
+        position: absolute;
+        width: 30%;
+        height: 400px;
+        top: 20%;
+        left: 0%;
+        z-index: 7;
+        text-align: center;
+        line-height: 1.7;
+
+    }
+
+    .textelien{
+        position: relative;
+        width: 80%;
+        left: 10%;
+        top: 25%;
+        color: rgb(241, 241, 241);
+        font-family: 'Jaldi-Blod', sans-serif;
+        font-size: 22px;
+        text-decoration: none;
+    }
+
+    .textebas{
+        position: absolute;
+        width: 100%;
+        top: 80%;
+        color: rgb(241, 241, 241);
+        font-family: 'Jaldi-Blod', sans-serif;
+        text-align: center;
+        font-weight : bold;
+    }
+
+    .textebas numero{
+        font-size: 45px;
+
+    }
+    .textebas nomadresse{
+        font-size: 25px;
+    }
+
+    .Sipersonne {
+        position: absolute;
+        width: 25%;
+        height: 310px;
+        top: 12%;
+        left: 70%;
+        text-align: center;
+        background: #fafafa17;
+        border-radius: 90px;
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+    }
+
+    .imagesipersonne {
+        max-width: 100%; 
+        max-height: 100%; 
+    }
+
+
+    .suivrelien{
+        position: absolute;
+        display: flex;
+        width: 400px;
+        height:100px;
+        top: 60%;
+        left: 73%;
+    }
+
+    .suivernous{
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%,-50%); /* Ajuste pour placer le centre de l'image au centre du conteneur */
+        color: #ffffff;
+        font-family: 'Jaldi-Blod', sans-serif;
+        font-size: 25px;
+        font-weight : bold;
+
+    }
+
+    .lienresaux{
+        position: absolute;
+        display: flex;
+        width: 300px;
+        height:75px;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%,-50%); /* Ajuste pour placer le centre de l'image au centre du conteneur */
+        background: #FFFFFF;
+        justify-content: space-between; /* Crée des espaces égaux entre les pictogrammes */
+        align-items: center; /* Centre les éléments verticalement */
+        padding: 0 30px; /* Espace intérieur gauche et droit */
+        border-radius: 47px;
+    }
+
+    .lien{
+        width: auto;
+    }
+}
+
+
+@media(max-width:1480px){
+
+    .baspage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        background-color: #074682;
+        color: white;
+        text-align: center;
+    }
+
+    .bloquelogobas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        aspect-ratio: 1/1;
+        background: radial-gradient(50% 50% at 50% 50%, rgb(255, 255, 255) 48.5%, rgb(255, 255, 255) 75%, rgb(7, 70, 130) 91%);
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+
+    .logobaspage {
+        width: 80%;
+        height: auto;
+    }
+
+    .bloquelien {
+        margin-bottom: 20px;
+    }
+
+    .textelien {
+        display: block;
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        margin: 5px 0;
+    }
+
+    .suivrelien {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .suivernous {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        color: #ffffff;
+        font-family: 'Jaldi-Blod', sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .lienresaux {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin: 15px 0;
+        background: #FFFFFF;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 30px;
+        border-radius: 47px;
+        height: 50px;
+
+
+    }
+
+    .lienresaux img {
+        width: 40px;
+        height: 40px;
+    }
+
+
+
+
+    .textebas {
+        position: relative;
+        width: 80%;
+        top: 70%;
+        color: rgb(241, 241, 241);
+        font-family: 'Jaldi-Bold', sans-serif;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .textebas .numero {
+        font-size: 45px;
+    }
+    
+    .textebas .nomadresse {
+        font-size: 25px;
+    }
+    
+    .textebas .condition {
+        margin-top: 50px; 
+        color: #000;
+        font-size: 15px;
+    }
+
+    .Sipersonne {
+        width: 200px;
+        height: 150px;
+        text-align: center;
+        background: rgba(250, 250, 250, 0.09);
+        border-radius: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .imagesipersonne {
+        max-width: 80%;
+        max-height: 80%;
+    }
+    .lien {
+        width: auto;
+    }
+
+    @media (max-width: 1400px) {
+        .bloquelogobas {
+            width: 40%;
+        }
+        .lienresaux img {
+            width: 35px;
+            height: 35px;
+        }
+        .Sipersonne {
+            width: 180px;
+            height: 130px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .bloquelogobas {
+            width: 60%;
+        }
+        .lienresaux img {
+            width: 30px;
+            height: 30px;
+        }
+        .Sipersonne {
+            width: 160px;
+            height: 120px;
+        }
+    }
+}

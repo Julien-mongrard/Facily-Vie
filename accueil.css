@@ -1,0 +1,1522 @@
+    
+@media(min-width: 1450px){
+
+
+    body, html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        font-family: 'Jaldi-Blod', sans-serif;
+    }
+
+    .imageaccueil {
+        position: absolute;
+        top: -200px;
+        width: 100%;
+        height: 1464px;
+        flex-shrink: 0;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    /* 
+
+
+    PARTIE HAUT DE PAGE 
+
+
+    */
+
+    #fixed {
+        position: fixed; /* Fixe l'élément */
+        top: 0; /* Positionné en haut de la page */
+        left: 0; /* Aligné à gauche */
+        width: 100%; /* S'étend sur toute la largeur */
+        background-color: #ffffff; /* Couleur de fond */
+        z-index: 1000; /* Assure que la barre est au-dessus des autres éléments */
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optionnel : ombre pour un effet visuel */
+        padding: 10px 0; /* Optionnel : Espacement interne */
+    }
+
+    .barduhaut {
+        display: flex; 
+        justify-content: space-around; 
+        background-color: rgba(179, 179, 179, 0.5); 
+        height: 40px; 
+        max-width: 100%;
+
+    }
+
+    .barduhaut a {
+        text-decoration: none; 
+        color: black; 
+        font-family: 'Jaldi-Bold', sans-serif;
+        font-size: 18px; 
+        padding: 10px 10px; 
+        transition: color 0.3s; 
+    }
+
+    .barduhaut a:hover {
+        color: rgb(0, 183, 255); 
+    }
+
+    .btn-contact {
+        background-color: #05e2ff; 
+        color: rgb(0, 0, 0); 
+        border: none;
+        padding: 10px 20px;
+        border-radius: 30px; 
+        cursor: pointer;
+        font-size: 16px;
+        text-transform: uppercase; 
+    }
+
+    .btn-contact:hover {
+        background-color: #0056b3; 
+    }
+
+    /* FIN AU DE PAGE */
+
+    .carrelogo{
+        position:absolute;
+        top: 100px;
+        left: 150px;
+        width: 500px;
+        height: 500px;
+        background-color: rgba(255, 255, 255, 0.712);
+        z-index: 2;
+        border-radius: 87px;
+
+    }
+
+    .logohautpage{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%); /* Ajuste pour placer le centre de l'image au centre du conteneur */
+        z-index: 3;
+    }
+
+
+
+
+    /*PARTIE SERVIVES */
+
+    .rectangleservives {
+        display: flex;
+        justify-content: space-evenly; /* Égalise l'espace entre les éléments */
+        align-items: flex-start; /* Aligne les éléments en haut */
+        flex-wrap: wrap; /* Permet le retour à la ligne sur petits écrans */
+        width: 100%;
+        height: 600px;
+        border-radius: 75px;
+        background: #ffffff7e;
+        position: relative;
+        top: 660px;
+        padding: 20px 0;
+    }
+
+    .overlap {
+        display: flex;
+        flex-direction: column; /* Empile les enfants verticalement */
+        align-items: center; /* Centre horizontalement */
+        justify-content: flex-start; /* Les éléments commencent en haut */
+        width: 290px;
+        height: 434px;
+        border-radius: 47px;
+        padding: 20px;
+        box-shadow: 20px 20px 0px 0px rgba(0, 0, 0, 0.2);
+        position: relative;
+        z-index: 4;
+    }
+
+    .overlap-1 {
+        background: linear-gradient(180deg, #AE193F 0%, #4A0B1A 56.5%, #73293C 99.99%);
+        box-shadow: 20px 20px 0px 0px #4B0B1A;
+    }
+
+    .overlap-2 {
+        background: linear-gradient(180deg, #7DE9FF 0%, #416FE4 55%, #4B8C99 100%);
+        box-shadow: 20px 20px 0px 0px #4170E2;
+    }
+
+    .overlap-3 {
+        background: linear-gradient(180deg, #F5C2FF 0%, #C558DB 50.5%, #B99BBF 99.99%);
+        box-shadow: 20px 20px 0px 0px #C360D7;
+    }
+
+    .overlap-4 {
+        background: linear-gradient(180deg, #FCF2B8 0%, #FF8E0E 49.5%, #F3BB7B 100%);
+        box-shadow: 20px 20px 0px 0px #FD951D;
+    }
+
+    .imagemenage {
+        width: 100%; 
+        margin-bottom: 15px; /* Espace entre l'image et le texte */
+        height: 44%;
+    }
+
+    .titremenage {
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font-family: 'Jaldi-Blod', sans-serif;
+        font-size: 30px;
+        line-height: 1.5;
+        margin-bottom: 10px; /* Espace sous le titre */
+    }
+
+    .textemenage {
+        text-align: center;
+        color: rgb(255, 255, 255);
+        font-family: 'Jaldi-Blod', sans-serif;
+        font-size: 20px;
+        width: 100%;
+    }
+
+    /*FIN DE LA PARTIE SERVICES */
+
+    /*PARTIE PICTOGRAMME ET FRISE */
+    .rectanglepictogramefrise{
+        position: relative;
+        width: 100%;
+        height: 1500px;
+        top: 600px;
+        background: linear-gradient(180deg, #074C86 0%, #03A2C1 27.5%, #02A9CA 50%, #02ABCD 70%, #02ADCF 77%, #074682 100%);
+        z-index: 6;
+    }
+
+
+    /*FIN DE LA PARTIE SERVICES */
+
+    /*
+
+
+    PARTIE PICTOGRAMME ET FRISE 
+
+
+    */
+    .rectanglepictogramefrise{
+        position: relative;
+        width: 100%;
+        height: 1600px;
+        top: 600px;
+        background: linear-gradient(180deg, #074C86 0%, #03A2C1 27.5%, #02A9CA 50%, #02ABCD 70%, #02ADCF 77%, #074682 100%);
+        z-index: 6;
+    }
+
+    /*
+
+
+    PARTIE PICTOGRAMME 
+
+
+    */
+
+    .rectanglepictograme {
+        position: relative;
+        display: flex;
+        justify-content: space-between; /* Crée des espaces égaux entre les pictogrammes */
+        width: 100%;
+        height: 500px;
+        top: 5%;
+        z-index: 5;
+    }
+
+    .pictograme {
+        width: 100%; /* Largeur de chaque pictogramme */
+        text-align: center;
+        z-index: 4;
+    }
+
+    .pictograme img {
+        width: 60%; /* Ajuste la taille de l'image */
+        height: 60%; /* Fixe la hauteur des images */
+        object-fit: contain; /* Pour s'assurer que l'image couvre correctement l'espace */
+        margin-top: -20%; /* Ajuste la position verticale de l'image */
+    }
+
+    .pictograme .titrepict,
+    .pictograme .textepict {
+        color: rgb(255, 255, 255);
+        font-family: 'Jaldi-Blod', sans-serif;
+        font-size: 28px;
+    }
+
+    .pictograme .titrepict {
+        margin-top: 15px; /* Espace entre l'image et le titre */
+    }
+
+    .pictograme .textepict {
+        margin-top: 10px; /* Espace entre le titre et le texte */
+        font-size: 20px; /* Taille du texte */
+        width: 90%;
+        margin-left: 5%;
+    }
+
+
+    /*FIN DE LA PARTIE PICTOGRAMME */
+
+    /*
+
+
+    DEBUT DE LA FRISE !! BORDEL DE MERDE !!
+
+
+    */
+
+    .frise{
+        position: absolute;
+        top: 36%;
+        left: 50%;
+        transform: translate(-50%);
+        width: 95%;
+        height: 55%;
+        z-index: 5;
+        background: #FFFFFF;
+        border-radius: 47px;
+    }
+
+    .frise  h2{
+        display: none;
+    }
+
+
+    .frise-haut{
+        position: relative;
+        display: flex;
+        justify-content: space-between; /* Espacement égal entre les carrés */
+        align-items: center; /* Aligne verticalement les éléments */
+        left: 50%;
+        width: 62.7%;
+        height: 50%;
+        transform: translate(-50%);
+    }
+
+
+    .frise-bas{
+        position: relative;
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+        left: 50%;
+        width: 95%;
+        height: 50%;
+        transform: translate(-50%);
+    }
+
+
+    .section{
+        position: relative;
+        justify-content: space-between; /* Espacement égal entre les carrés */
+        height: 100%;
+        width: 100%;
+        top: 0%;
+        z-index: 6;
+    }
+
+
+    .titre{
+        position: relative;
+        background-color: #1D4C8D; /* Couleur de fond */
+        color: white; /* Couleur du texte */
+        padding: 20px; /* Espacement autour du texte */
+        text-align: center; /* Centrer le texte */
+        font-size: 24px; /* Taille du texte */
+        width: 70%;
+        left: 50%;
+        transform: translate(-50%);
+        border-radius: 50px;
+        top: 5%;
+        font-family: 'Jaldi-Blod', sans-serif;
+        top: 33%;
+    }
+
+    .titrehaut{
+        position: relative;
+        background-color: #1D4C8D; /* Couleur de fond */
+        color: white; /* Couleur du texte */
+        padding: 20px; /* Espacement autour du texte */
+        text-align: center; /* Centrer le texte */
+        font-size: 24px; /* Taille du texte */
+        width: 70%;
+        left: 50%;
+        transform: translate(-50%);
+        border-radius: 50px;
+        top: 7%;
+        font-family: 'Jaldi-Blod', sans-serif;
+    }
+
+
+    .text{
+        position: relative;
+        color: rgb(0, 0, 0); /* Couleur du texte */
+        padding: 20px; /* Espacement autour du texte */
+        font-size: 24px; /* Taille du texte */
+        width: 95%;
+        left: 50%;
+        transform: translate(-50%);
+        border-radius: 50px;
+        top:33%;
+        font-family: 'Jaldi-Blod', sans-serif;
+    }
+
+    .texthaut{
+        position: relative;
+        color: rgb(0, 0, 0); /* Couleur du texte */
+        padding: 20px; /* Espacement autour du texte */
+        font-size: 24px; /* Taille du texte */
+        width: 100%;
+        left: 50%;
+        transform: translate(-50%);
+        border-radius: 50px;
+        top:7%;
+        font-family: 'Jaldi-Blod', sans-serif;
+    }
+
+    .texthaut1{
+        position: relative;
+        color: rgb(0, 0, 0); /* Couleur du texte */
+        padding: 20px; /* Espacement autour du texte */
+        font-size: 24px; /* Taille du texte */
+        width: 100%;
+        left: 55%;
+        transform: translate(-50%);
+        border-radius: 50px;
+        top:7%;
+        font-family: 'Jaldi-Blod', sans-serif;
+    }
+
+    .flechehaut{
+        position: absolute;
+        height: 20%;
+        width: 2px;
+        background-color: #000000;
+        top: 70%;
+        left: 49.8%;
+    }
+
+    .fleche-haut {
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent; /* Créer la partie gauche de la flèche */
+        border-right: 10px solid transparent; /* Créer la partie droite de la flèche */
+        border-top: 10px solid transparent; /* Créer la partie supérieure de la flèche */
+        border-bottom: 20px solid #000000; /* Créer la pointe de la flèche (vers le bas) */
+        top: 65%;
+        left: 48.2%;
+    }
+
+    .imghaut{
+        position: absolute;
+        top: 60%;
+        left: 25%;
+    }
+
+    .imghaut1{
+        position: absolute;
+        top: 65%;
+        left: 25%;
+    }
+
+    .fleche1{
+        position: absolute;
+        height: 15%;
+        width: 2px;
+        background-color: #000000;
+        top: 10%;
+        left: 51%;
+    }
+
+    .fleche2{
+        position: absolute;
+        height: 15%;
+        width: 2px;
+        background-color: #000000;
+        top: 10%;
+        left: 50%;
+    }
+    .fleche3{
+        position:  absolute;
+        height: 15%;
+        width: 2px;
+        background-color: #000000;
+        top: 10%;
+        left: 48.7%;
+    }
+
+
+    .finfleche1 {
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;  /* Partie gauche de la flèche */
+        border-right: 10px solid transparent; /* Partie droite de la flèche */
+        border-top: 20px solid #000000;      /* Partie du haut de la flèche (invisible) */
+        border-bottom: 0;                    /* Aucune bordure en bas */    
+        top: 25%;
+        left: 51.1%;
+        transform: translate(-50%,0%);
+    }
+    .finfleche2 {
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;  /* Partie gauche de la flèche */
+        border-right: 10px solid transparent; /* Partie droite de la flèche */
+        border-top: 20px solid #000000;      /* Partie du haut de la flèche (invisible) */
+        border-bottom: 0;                    /* Aucune bordure en bas */    
+        top: 25%;
+        left: 50.1%;
+        transform: translate(-50%,0%);
+    }
+    .finfleche3 {
+        position: absolute;
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;  /* Partie gauche de la flèche */
+        border-right: 10px solid transparent; /* Partie droite de la flèche */
+        border-top: 20px solid #000000;      /* Partie du haut de la flèche (invisible) */
+        border-bottom: 0;                    /* Aucune bordure en bas */    
+        top: 25%;
+        left: 48.9%;
+        transform: translate(-50%,0%);
+    }
+
+
+    .img1{
+        position: absolute;
+        top: 0%;
+        left: 10%;
+    }
+    .img2{
+        position: absolute;
+        top: 10%;
+        left: 25%;
+    }
+    .img3{
+        position: absolute;
+        top: 5%;
+        left: 25%;
+    }
+
+    .flechemilieu {
+        position: relative;
+        display: flex;
+        justify-content: space-between; /* Espacement égal entre les carrés */
+        align-items: center; /* Aligne verticalement les éléments */
+
+        top: 0%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 90%;
+        height: 2px; /* Épaisseur du trait */
+        background-color: #000000; /* Couleur du trait */
+        z-index: 6;
+    }
+
+    .debutfrise{
+        position: relative;
+        width: 15px; 
+        height: 15px;
+        background: #000000;
+        transform: rotate(45deg);
+    }
+
+    .carre{
+        position: relative;
+        width: 100px; /* Taille des images (carrés) */
+        height: 100px;
+        z-index: 7; /* Pour s'assurer qu'elles sont au-dessus de la ligne */
+    }
+
+    .finfrise {
+        position: relative;
+        width: 0; /* Nécessaire pour le triangle */
+        height: 0; /* Nécessaire pour le triangle */
+        border-top: 10px solid transparent; /* Triangle supérieur */
+        border-bottom: 10px solid transparent; /* Triangle inférieur */
+        border-left: 15px solid #000000; /* Couleur de la flèche */
+        left: 3px; /* Décalage de la flèche vers la droite de 10px */
+
+    }
+
+    /* FIN DE LA FRISE !! DIEU MERCI !! */
+
+    .btn-contactfirse{
+        position: absolute;
+        top: 92.5%;
+        left: 50%;
+        transform: translate(-50%);
+        background-color: #03B6D6; 
+        color: rgb(255, 255, 255); 
+        font-weight: bold;
+        border: none;
+        padding: 20px 20px;
+        border-radius: 30px; 
+        cursor: pointer;
+        font-size: 45px;
+        text-transform: uppercase; 
+    }
+
+    .btn-contactfirse:hover {
+        color: #000;
+        background-color: #ffffff; 
+    }
+
+    /*FIN DE LA PARTIE PICTOGRAMME ET FRISE */
+
+    /* 
+
+
+    PARTIE LOCALISATION 
+
+
+    */
+
+    .localisation{
+        position: relative;
+        width: 100%;
+        height: 900px;
+        top: 600px;
+        z-index: 5;
+        }
+
+
+    .titreloc{
+        position: relative;
+        width: 100%;
+        left: 10%;
+        transform: translate(0,-50%);
+        top:5%;
+        color: #074682;
+        font-family: 'Jaldi-Blod', sans-serif;
+        font-size: 64px;
+        font-style: bold;
+    }
+
+
+    .map{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        background-color: #000;
+        border-radius: 80px;
+
+    }
+
+    .loc{
+        position: absolute;
+        width: 60%;
+        height: 80%;
+        top: 42%;
+        left: 35%;
+        transform: translate(-50%,-50%);
+    }
+
+
+    .rectloc{
+        position: absolute;
+        width: 20%;
+        height: 50%;
+        top: 50%;
+        transform: translate(0,-50%); 
+        left: 72%;
+        border-radius: 47px;
+        background: #074682;
+        opacity: 0.9;
+        z-index: 6;
+    }
+
+    .titre1{
+        position: relative;
+        width: 80%;
+        left: 10%;
+        text-align: center;
+        top: 10%;
+        color: rgb(255, 255, 255);
+        font-family: 'Jaldi-Blod', sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .texte2{
+        position: relative;
+        width: 80%;
+        left: 10%;
+        display: block; 
+        text-align: center;
+        top: 15%;
+        color: rgb(255, 255, 255);
+        font-family: 'Jaldi-Blod', sans-serif;
+        font-size: 20px;
+    }
+
+    .texte3{
+        position: relative;
+        width: 80%;
+        left: 10%;
+        text-align: center;
+        top: 25%;
+        color: rgb(255, 255, 255);
+        font-family: 'Jaldi-Blod', sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+
+    }
+    .texte4{
+        position: relative;
+        width: 80%;
+        left: 10%;
+        text-align: center;
+        top: 30%;
+        color: rgb(255, 255, 255);
+        font-family: 'Jaldi-Blod', sans-serif;
+        font-size: 20px;
+    }
+
+    /*FIN DE LA LOCALISATION */
+
+    /* 
+
+
+    BAS DE PAGE
+
+
+    */
+    .baspage {
+        position: relative;
+        width: 100%;
+        height: 900px;
+        top: 550px;
+        background: #074682;
+        z-index: 6;
+    }
+
+    .bloquelogobas {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 600px;
+        height: 600px;
+        background: radial-gradient(50% 50% at 50% 50%, rgb(255, 255, 255) 48.5%, rgb(255, 255, 255) 75%, rgb(7, 70, 130) 91%);
+    }
+
+    .logobaspage {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 80%;
+        width: 80%;
+        transform: translate(-50%, -50%);
+    }
+
+    .bloquelien {
+        position: absolute;
+        width: 30%;
+        height: 400px;
+        top: 20%;
+        left: 0;
+        z-index: 7;
+        text-align: center;
+        line-height: 1.7;
+    }
+
+    .textelien {
+        position: relative;
+        width: 80%;
+        margin: 25% auto 0;
+        color: rgb(241, 241, 241);
+        font-family: 'Jaldi-Blod', sans-serif;
+        font-size: 22px;
+        text-decoration: none;
+    }
+
+    .textebas {
+        position: relative;
+        width: 80%;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%);
+        color: rgb(241, 241, 241);
+        font-family: 'Jaldi-Bold', sans-serif;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .textebas .numero {
+        font-size: 45px;
+    }
+    
+    .textebas .nomadresse {
+        font-size: 25px;
+    }
+    
+    /* Ajoute un espace entre la condition et les autres textes */
+    .textebas .condition {
+        margin-top: 50px; /* Ajuste l'écart entre le texte principal et la condition */
+        color: #000;
+        font-size: 15px;
+    }
+
+
+    .Sipersonne {
+        position: absolute;
+        width: 25%;
+        height: 310px;
+        top: 12%;
+        left: 70%;
+        text-align: center;
+        background: rgba(250, 250, 250, 0.09);
+        border-radius: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagesipersonne {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .suivrelien {
+        position: absolute;
+        display: flex;
+        width: 400px;
+        height: 100px;
+        top: 60%;
+        left: 73%;
+    }
+
+    .suivernous {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #ffffff;
+        font-family: 'Jaldi-Blod', sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .lienresaux {
+        position: absolute;
+        display: flex;
+        width: 300px;
+        height: 75px;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #FFFFFF;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 30px;
+        border-radius: 47px;
+    }
+
+    .lien {
+        width: auto;
+    }
+
+
+
+    /* FIN DU BAS DE PAGE */
+
+}
+
+
+/*
+
+
+
+
+PARTIE MOBILE
+
+
+
+*/
+
+
+
+body{
+    font-family: 'Jaldi-Blod', sans-serif;
+}
+
+
+/* Réglages pour les écrans en dessous de 1000px */
+@media (max-width: 1450px) {
+
+    #fixed {
+        padding: 5px 10px; /* Moins de padding */
+        box-shadow: none; /* Supprime l'ombre */
+        background-color: #f8f8f8; /* Couleur de fond pour bien différencier */
+        display: flex; /* Utilisation de Flexbox */
+        flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
+        justify-content: space-around; /* Centre les liens horizontalement */
+        align-items: center; /* Centre les liens verticalement */
+        gap: 10px; /* Espacement entre les éléments */
+    }
+
+    .barduhaut a {
+        font-size: 14px; 
+        padding: 5px 10px;
+        text-decoration: none; 
+        color: black; 
+        transition: color 0.3s ease; 
+    }
+
+    .barduhaut a:hover {
+        color: #007BFF; 
+    }
+
+    .btn-contact {
+        background-color: #05e2ff; 
+        color: rgb(0, 0, 0); 
+        border: none;
+        padding: 10px 20px;
+        border-radius: 30px; 
+        cursor: pointer;
+        font-size: 16px;
+        text-transform: uppercase; 
+    }
+
+    .btn-contact:hover {
+        background-color: #0056b3; 
+    }
+
+
+
+
+    /* 
+    Image de la page d'accueil
+    */
+    .accueil {
+        position: relative;
+        top: 0; /* Ajustement vertical */
+        height: auto; /* Adapte automatiquement la hauteur */
+        width: 100%; /* Remplit la largeur */
+    }
+
+    .imageaccueil{
+        height: 100%;
+        width: 100%;
+    }
+
+    /* Carré logo */
+    .carrelogo {
+        position: absolute;
+        width: 40%; /* Taille réduite */
+        aspect-ratio: 1/1; /* Carré */
+        top: 20%;
+        left: 10%; 
+        background-color: #ffffffc5;
+        border-radius: 50px;
+    }
+
+    .logohautpage {
+        width: 50%;
+        height: auto; /* Garde le ratio d'aspect */
+    }
+
+
+    /* 
+
+
+    Section services
+
+
+    */
+    .rectangleservives {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Centre les cartes sur chaque ligne */
+        align-items: stretch; /* Étire les cartes pour qu'elles aient la même hauteur */
+        gap: 20px;
+        padding: 30px 0;
+    }
+    
+    .overlap {
+        position: relative;
+        width: calc(25% - 20px); /* 4 cartes par ligne avec un espace entre elles */
+        height: auto;
+        border-radius: 20px;
+        padding: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; /* Aligner le contenu en haut */
+        align-items: center;
+        box-sizing: border-box;
+    }
+    
+    .overlap-1 {
+        background: linear-gradient(180deg, #AE193F 0%, #4A0B1A 56.5%, #73293C 99.99%);
+        box-shadow: 10px 10px 0px 0px #4B0B1A;
+    }
+
+    .overlap-2 {
+        background: linear-gradient(180deg, #7DE9FF 0%, #416FE4 55%, #4B8C99 100%);
+        box-shadow: 10px 10px 0px 0px #4170E2;
+    }
+
+    .overlap-3 {
+        background: linear-gradient(180deg, #F5C2FF 0%, #C558DB 50.5%, #B99BBF 99.99%);
+        box-shadow: 10px 10px 0px 0px #C360D7;
+    }
+
+    .overlap-4 {
+        background: linear-gradient(180deg, #FCF2B8 0%, #FF8E0E 49.5%, #F3BB7B 100%);
+        box-shadow: 10px 10px 0px 0px #FD951D;
+    }
+
+    .imagemenage {
+        width: 150px; /* Taille uniforme pour toutes les images */
+        height: 100px; /* Hauteur fixe pour uniformiser */
+        object-fit: cover; /* Assure un bon affichage même si l'image n'est pas carrée */
+        margin-bottom: 10px;
+    }
+    
+    /* Styles pour le texte */
+    .titremenage {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #fff;
+    }
+    
+    .textemenage {
+        font-size: 16px;
+        margin-top: 5px;
+        color: #fff;
+    }
+    
+
+    /* Responsive : Écrans moyens (tablettes) */
+    @media (max-width: 768px) {
+        .overlap {
+            width: calc(50% - 10%); /* 2 cartes par ligne */
+        }
+    }
+
+    /* Responsive : Petits écrans (mobiles) */
+    @media (max-width: 480px) {
+        .overlap {
+            width: 80%; /* 1 carte par ligne */
+        }
+        .imagemenage {
+            width: 90%; /* Réduit la taille des images */
+            height: auto; /* Conserve les proportions */
+            margin-bottom: 10px; /* Espace entre l'image et le texte */
+        }    
+        .titremenage {
+            font-size: 16px; /* Texte plus petit pour mobiles */
+        }
+        .textemenage {
+            font-size: 14px;
+        }
+    }
+
+    /*
+
+
+    Section pictogrammes 
+
+
+    */
+
+    .rectanglepictogramefrise {
+        height: auto; /* Adapte la hauteur */
+        padding: 20px 0; /* Ajoute un espace intérieur */
+    }
+
+    .rectanglepictograme {
+        display: flex;
+        flex-wrap: wrap; /* Permet aux éléments de passer à la ligne */
+        justify-content: center; /* Centre tous les éléments sur la ligne */
+        align-items: stretch; /* Étire les boîtes pour uniformiser les tailles */
+        gap: 20px; /* Ajoute un espacement uniforme entre les boîtes */
+        text-align: center; /* Centre le texte à l'intérieur des boîtes */
+        position: relative;
+    }
+
+    .pictograme {
+        width: calc(33.33% - 20px); /* Largeur fixe pour 3 éléments par ligne */
+        box-sizing: border-box; /* Inclut padding et bordures dans la largeur */
+        margin-bottom: 20px; /* Espacement en bas entre les boîtes */
+        background-color: #f9f9f9; /* (Optionnel) Ajoute un fond pour visualiser les dimensions */
+        border-radius: 50px;
+        display: flex;
+        flex-direction: column; /* Aligne le contenu verticalement */
+        justify-content: flex-start; /* Le contenu commence en haut */
+        align-items: center; /* Centre horizontalement */
+        height: auto; /* Ajuste la hauteur automatiquement */
+        min-height: 250px; /* Fixe une hauteur minimale pour éviter les chevauchements */
+        padding: 10px; /* Ajoute un espace autour du contenu */
+        color: #000;
+
+    }
+
+    .pictograme img {
+        width: auto; /* Images occupent 80% de la largeur de la boîte */
+        aspect-ratio: 1/1; /* Carré */
+        max-height: 120px; /* Limite la hauteur maximale pour éviter qu'elle dépasse */
+        margin-bottom: 10px; /* Ajoute un espace sous l'image */
+    }
+
+    .pictograme .titrepict {
+        font-size: 20px;
+        margin: 10px 0; /* Espace autour du titre */
+        word-wrap: break-word; /* Permet au texte long de passer à la ligne */
+
+    }
+
+
+    .pictograme .textepict {
+        font-size: 14px;
+        width: 100%; /* Le texte prend toute la largeur disponible */
+        word-wrap: break-word; /* Permet au texte long de ne pas déborder */
+        margin-top: 5px;
+        text-decoration: none;
+
+    }
+
+    /* Responsive : Ajustement pour les écrans moyens */
+    @media (max-width: 768px) {
+        .pictograme {
+            width: calc(50% - 20px); /* Largeur fixe pour 2 éléments par ligne */
+            min-height: 200px; /* Réduit la hauteur minimale */
+        }
+    }
+
+    /* Responsive : Ajustement pour les petits écrans */
+    @media (max-width: 380px) {
+        .pictograme {
+            width: 100%; /* Chaque élément occupe toute la largeur */
+            min-height: 180px; /* Réduit encore plus la hauteur minimale */
+        }
+    }
+
+
+
+    /*
+
+
+    Section Frise 
+
+
+    */
+
+    .frise {
+        position: relative;
+        width: 100%;
+        padding: 20px;
+        background: #ffffff;
+        border-radius: 20px;
+        box-sizing: border-box; /* Inclure padding dans la largeur totale */
+        background: linear-gradient(180deg, #074C86 0%, #03A2C1 27.5%, #02A9CA 50%, #02ABCD 70%, #02ADCF 77%, #074682 100%)
+    }
+
+    .frise  h2{
+        color: rgb(255, 255, 255);
+        font-family: 'Jaldi-Bold', sans-serif;
+        text-align: center;
+        font-weight: bold;
+    }
+
+
+
+    .frise-haut, .frise-bas {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        gap: 20px; /* Réduire l'espace entre les étapes */
+        box-sizing: border-box;
+    }
+
+    .section {
+        width: 100%;
+        background: #ffffff;
+        border-radius: 15px;
+        padding: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        box-sizing: border-box; /* Inclure padding dans la largeur */
+        margin-bottom: 30px;
+    }
+
+    /* Centrage des titres */
+    .titre, .titrehaut {
+        font-size: 18px;
+        background-color: #1D4C8D;
+        color: #fff;
+        padding: 15px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+        width: 90%; /* Largeur limitée pour le titre */
+        max-width: 350px; /* Ne dépasse pas 350px */
+        margin: 0 auto; /* Centrer le titre */
+    }
+
+
+    .text, .texthaut, .texthaut1 {
+        font-size: 16px;
+        color: #333;
+        line-height: 1.5;
+        width: 90%; /* Réduire la largeur pour le texte */
+        margin: 0 auto; /* Centrer le texte */
+    }
+
+    .imghaut, .imghaut1, .img1, .img2, .img3 {
+        position: relative;
+        margin: 15px auto;
+        width: 50px; /* Réduire la taille des images */
+        height: auto;
+    }
+
+    .flechehaut, .fleche1, .fleche2, .fleche3, .flechemilieu {
+        display: none; /* Masquer les flèches */
+    }
+
+    .btn-contactfirse {
+        position: relative;
+        width: 80%; /* Réduire la largeur du bouton */
+        font-size: 18px;
+        padding: 12px 20px;
+        border-radius: 10px;
+        margin-top: 20px;
+        text-align: center;
+        left: 50%;
+        transform: translate(-50%);
+        background-color: #03B6D6; 
+        color: #ffffff;
+        text-transform: uppercase;
+        border: none;
+    }
+
+    .btn-contactfirse:hover {
+        color: #000;
+        background-color: #ffffff; 
+    }
+
+    /*
+
+
+    Section localisation 
+
+
+    */
+
+    /* Section localisation */
+    .localisation {
+        position: relative;
+        width: 100%;
+        padding: 20px 10px; /* Marges pour un contenu espacé */
+        box-sizing: border-box;
+    }
+
+    /* Titre principal */
+    .titreloc {
+        width: 100%;
+        font-size: 28px; /* Taille adaptée pour le mobile */
+        color: #000000;
+        font-family: 'Jaldi-Bold', sans-serif;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 20px; /* Espacement sous le titre */
+    }
+
+    /* Image de la carte */
+    .map {
+        width: 90%; /* La carte prend 90% de la largeur */
+        height: auto; /* Hauteur automatique pour préserver les proportions */
+        display: block; /* Bloque l'image pour centrer */
+        margin: 0 auto 20px auto; /* Centrer horizontalement avec un espace en dessous */
+        border-radius: 80px; /* Coins arrondis */
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Légère ombre pour un effet esthétique */
+    }
+
+
+    /* Bloc rectangulaire pour les coordonnées et horaires */
+    .rectloc {
+        background-color: #074682;
+        border-radius: 20px;
+        padding: 20px;
+        color: #ffffff;
+        text-align: center;
+        margin: 0 auto;
+        width: 50%; 
+    }
+
+    /* Coordonnées */
+    .texte2 {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #ffffff;
+        text-decoration: none; /* Supprime le soulignement des liens */
+    }
+
+    .texte2:hover {
+        text-decoration: underline; /* Souligne au survol pour accessibilité */
+    }
+
+    /* Titre des horaires */
+    .texte3 {
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 20px; /* Espacement au-dessus */
+    }
+
+    /* Horaires */
+    .texte4 {
+        font-size: 16px;
+        line-height: 1.5; /* Espacement entre les lignes */
+        margin-top: 10px; /* Petit espace au-dessus */
+    }
+
+
+
+    /* Responsive pour les téléphones */
+    @media (max-width: 768px) {
+        .localisation {
+            padding: 10px; /* Réduction des marges */
+        }
+
+        .titreloc {
+            font-size: 24px; /* Titre légèrement plus petit */
+        }
+
+        .map {
+            width: 100%; /* La carte prend toute la largeur */
+        }
+
+        .rectloc {
+            padding: 15px; /* Réduction des marges internes */
+            width: 70%; /* Légèrement plus large sur mobile */
+        }
+
+        .texte2,
+        .texte3,
+        .texte4 {
+            font-size: 14px; /* Réduction des tailles de police */
+        }
+    }
+
+    @media (max-width: 480px) {
+        .titreloc {
+            font-size: 20px; /* Plus petit pour les très petits écrans */
+        }
+
+        .map {
+            height: auto; /* Ajustement automatique */
+        }
+
+        .rectloc {
+            width: 80%; /* Prend toute la largeur */
+        }
+
+        .texte2,
+        .texte3,
+        .texte4 {
+            font-size: 12px; /* Police encore réduite */
+        }
+    }
+
+
+    .baspage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        background-color: #074682;
+        color: white;
+        text-align: center;
+    }
+
+    .bloquelogobas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        aspect-ratio: 1/1;
+        background: radial-gradient(50% 50% at 50% 50%, rgb(255, 255, 255) 48.5%, rgb(255, 255, 255) 75%, rgb(7, 70, 130) 91%);
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+
+    .logobaspage {
+        width: 80%;
+        height: auto;
+    }
+
+    .bloquelien {
+        margin-bottom: 20px;
+    }
+
+    .textelien {
+        display: block;
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        margin: 5px 0;
+    }
+
+    .suivrelien {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .suivernous {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        color: #ffffff;
+        font-family: 'Jaldi-Blod', sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .lienresaux {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin: 15px 0;
+        background: #FFFFFF;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 30px;
+        border-radius: 47px;
+        height: 50px;
+
+
+    }
+
+    .lienresaux img {
+        width: 40px;
+        height: 40px;
+    }
+
+
+
+
+    .textebas {
+        position: relative;
+        width: 80%;
+        top: 70%;
+        color: rgb(241, 241, 241);
+        font-family: 'Jaldi-Bold', sans-serif;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .textebas .numero {
+        font-size: 45px;
+    }
+    
+    .textebas .nomadresse {
+        font-size: 25px;
+    }
+    
+    .textebas .condition {
+        margin-top: 50px; 
+        color: #000;
+        font-size: 15px;
+    }
+
+    .Sipersonne {
+        width: 200px;
+        height: 150px;
+        text-align: center;
+        background: rgba(250, 250, 250, 0.09);
+        border-radius: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .imagesipersonne {
+        max-width: 80%;
+        max-height: 80%;
+    }
+    .lien {
+        width: auto;
+    }
+
+    @media (max-width: 1400px) {
+        .bloquelogobas {
+            width: 40%;
+        }
+        .lienresaux img {
+            width: 35px;
+            height: 35px;
+        }
+        .Sipersonne {
+            width: 180px;
+            height: 130px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .bloquelogobas {
+            width: 60%;
+        }
+        .lienresaux img {
+            width: 30px;
+            height: 30px;
+        }
+        .Sipersonne {
+            width: 160px;
+            height: 120px;
+        }
+    }
+}
+
+
+/* Bannière de cookies au centre */
+#cookie-banner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #f4f4f4;
+    padding: 20px 10px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 87px;
+    z-index: 1000;
+    font-family: 'Jaldi-Blod', sans-serif;
+
+}
+
+/* Boutons dans la bannière */
+#cookie-banner button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 50px;
+
+}
+#cookie-banner button.reject {
+    background-color: #dc3545;
+    
+}
+
+/* Classe pour désactiver le défilement de l'arrière-plan */
+.no-scroll {
+    overflow: hidden; /* Désactive le défilement vertical */
+    position: fixed; /* Fixe la position */
+    top: 0; /* Verrouille en haut */
+    left: 0; /* Verrouille à gauche */
+    right: 0; /* Verrouille à droite */
+    bottom: 0; /* Verrouille en bas */
+    width: 100%; /* Empêche le contenu de bouger */
+}

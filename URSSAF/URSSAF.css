@@ -1,0 +1,25 @@
+.img{
+    width: 100%;
+}
+
+.lien{
+    position: relative;
+    color: #000;
+    text-decoration: none;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #05e2ff; 
+    color: rgb(0, 0, 0); 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px; 
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase; 
+
+}
+
+.lien:hover{
+    background-color: #0056b3; 
+}
+

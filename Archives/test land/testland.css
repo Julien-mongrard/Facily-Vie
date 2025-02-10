@@ -1,0 +1,73 @@
+.contact {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    background-color: #1D4C8D;
+    color: white;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+}
+
+.contact h1 {
+    text-align: center;
+    font-size: 24px;
+}
+
+.contact p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact button {
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    color: #1D4C8D;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact button:hover {
+    background-color: #03b2cc;
+    color: white;
+}
+
+#fileList {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+#fileList li {
+    margin: 5px 0;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#fileList li button {
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+#fileList li button:hover {
+    background-color: darkred;
+}

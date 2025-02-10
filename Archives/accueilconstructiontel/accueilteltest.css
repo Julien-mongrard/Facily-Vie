@@ -1,0 +1,600 @@
+body{
+    font-family: 'Jaldi-Blod', sans-serif;
+}
+
+
+/* Réglages pour les écrans en dessous de 1000px */
+@media (max-width: 1400px) {
+    /* Corps global */
+    body, html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: auto; /* S'adapte au contenu */
+    }
+
+    /* Barre fixe en haut */
+    #fixed {
+        padding: 5px 10px; /* Moins de padding */
+        box-shadow: none; /* Supprime l'ombre */
+        background-color: #f8f8f8; /* Couleur de fond pour bien différencier */
+        display: flex; /* Utilisation de Flexbox */
+        flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
+        justify-content: center; /* Centre les liens horizontalement */
+        align-items: center; /* Centre les liens verticalement */
+        gap: 10px; /* Espacement entre les éléments */
+    }
+
+    .barduhaut a {
+        font-size: 14px; 
+        padding: 5px 10px;
+        text-decoration: none; 
+        color: black; 
+        transition: color 0.3s ease; 
+    }
+
+    .barduhaut a:hover {
+        color: #007BFF; 
+    }
+
+    .btn-contact {
+        font-size: 14px;
+        padding: 8px 15px; /* Taille réduite du bouton */
+        border-radius: 20px; /* Coins plus arrondis */
+        border: 1px solid #007BFF; /* Bordure bleue */
+        background-color: #fff;
+        color: #007BFF;
+        cursor: pointer;
+        transition: all 0.3s ease; /* Effet de transition sur hover */
+    }
+
+    .btn-contact:hover {
+        background-color: #007BFF;
+        color: #fff; /* Inverse les couleurs au survol */
+    }
+
+
+
+    /* 
+    Image de la page d'accueil
+    */
+    .accueil {
+        position: relative;
+        top: 0; /* Ajustement vertical */
+        height: auto; /* Adapte automatiquement la hauteur */
+        width: 100%; /* Remplit la largeur */
+    }
+
+    .imageaccueil{
+        height: 100%;
+        width: 100%;
+    }
+
+    /* Carré logo */
+    .carrelogo {
+        position: absolute;
+        width: 40%; /* Taille réduite */
+        aspect-ratio: 1/1; /* Carré */
+        top: 20%;
+        left: 10%; 
+        background-color: #ffffffc5;
+        border-radius: 50px;
+    }
+
+    .logohautpage {
+        width: 50%;
+        height: auto; /* Garde le ratio d'aspect */
+    }
+
+
+    /* 
+
+
+    Section services
+
+
+    */
+    .rectangleservives {
+        display: flex; /* Utiliser flexbox pour organiser les éléments */
+        flex-wrap: wrap; /* Permet de passer à la ligne si nécessaire */
+        justify-content: center; /* Centre les cartes sur chaque ligne */
+        gap: 20px; /* Espace uniforme entre les cartes */
+        position: relative;
+        padding: 30px 0; /* Marges verticales autour du conteneur */
+    }
+
+    .overlap {
+        position: relative;
+        width: calc(50% - 30%); /* Largeur fixe pour 3 cartes par ligne, avec espace */
+        height: auto; /* Adapte la hauteur au contenu */
+        left: 0; /* Supprime la position centrée spécifique */
+        transform: none; /* Supprime la transformation */
+        border-radius: 20px; /* Angles arrondis plus subtils */
+        padding: 20px; /* Espace interne */
+        margin-bottom: 20px; /* Espacement vertical */
+        text-align: center; /* Centre le texte */
+        display: flex; /* Utiliser flex pour centrer le contenu */
+        flex-direction: column; /* Contenu vertical */
+        justify-content: center; /* Centre verticalement */
+        align-items: center; /* Centre horizontalement */
+        box-sizing: border-box; /* Inclut padding et bordures dans la largeur */
+    }
+
+    .overlap-1 {
+        background: linear-gradient(180deg, #AE193F 0%, #4A0B1A 56.5%, #73293C 99.99%);
+        box-shadow: 10px 10px 0px 0px #4B0B1A;
+    }
+
+    .overlap-2 {
+        background: linear-gradient(180deg, #7DE9FF 0%, #416FE4 55%, #4B8C99 100%);
+        box-shadow: 10px 10px 0px 0px #4170E2;
+    }
+
+    .overlap-3 {
+        background: linear-gradient(180deg, #F5C2FF 0%, #C558DB 50.5%, #B99BBF 99.99%);
+        box-shadow: 10px 10px 0px 0px #C360D7;
+    }
+
+    .overlap-4 {
+        background: linear-gradient(180deg, #FCF2B8 0%, #FF8E0E 49.5%, #F3BB7B 100%);
+        box-shadow: 10px 10px 0px 0px #FD951D;
+    }
+
+    .imagemenage {
+        width: 80%; /* Réduit la taille des images */
+        height: auto; /* Conserve les proportions */
+        margin-bottom: 10px; /* Espace entre l'image et le texte */
+    }
+
+    .titremenage {
+        font-size: 18px; /* Texte légèrement plus petit */
+        font-weight: bold; /* Accentuation du titre */
+        margin-bottom: 10px; /* Espace sous le titre */
+        color: #fff; /* Contraste avec le fond */
+    }
+
+    .textemenage {
+        font-size: 16px; /* Texte descriptif */
+        margin-top: 5px; /* Espace au-dessus du texte */
+        color: #fff; /* Contraste avec le fond */
+    }
+
+    /* Responsive : Écrans moyens (tablettes) */
+    @media (max-width: 768px) {
+        .overlap {
+            width: calc(50% - 10%); /* 2 cartes par ligne */
+        }
+    }
+
+    /* Responsive : Petits écrans (mobiles) */
+    @media (max-width: 480px) {
+        .overlap {
+            width: 80%; /* 1 carte par ligne */
+        }
+        .imagemenage {
+            width: 90%; /* Réduit la taille des images */
+            height: auto; /* Conserve les proportions */
+            margin-bottom: 10px; /* Espace entre l'image et le texte */
+        }    
+        .titremenage {
+            font-size: 16px; /* Texte plus petit pour mobiles */
+        }
+        .textemenage {
+            font-size: 14px;
+        }
+    }
+
+    /*
+
+
+    Section pictogrammes 
+
+
+    */
+
+    .rectanglepictogramefrise {
+        height: auto; /* Adapte la hauteur */
+        padding: 20px 0; /* Ajoute un espace intérieur */
+    }
+
+    .rectanglepictograme {
+        display: flex;
+        flex-wrap: wrap; /* Permet aux éléments de passer à la ligne */
+        justify-content: center; /* Centre tous les éléments sur la ligne */
+        align-items: stretch; /* Étire les boîtes pour uniformiser les tailles */
+        gap: 20px; /* Ajoute un espacement uniforme entre les boîtes */
+        text-align: center; /* Centre le texte à l'intérieur des boîtes */
+        position: relative;
+    }
+
+    .pictograme {
+        width: calc(33.33% - 20px); /* Largeur fixe pour 3 éléments par ligne */
+        box-sizing: border-box; /* Inclut padding et bordures dans la largeur */
+        margin-bottom: 20px; /* Espacement en bas entre les boîtes */
+        background-color: #f9f9f9; /* (Optionnel) Ajoute un fond pour visualiser les dimensions */
+        display: flex;
+        flex-direction: column; /* Aligne le contenu verticalement */
+        justify-content: flex-start; /* Le contenu commence en haut */
+        align-items: center; /* Centre horizontalement */
+        height: auto; /* Ajuste la hauteur automatiquement */
+        min-height: 250px; /* Fixe une hauteur minimale pour éviter les chevauchements */
+        padding: 10px; /* Ajoute un espace autour du contenu */
+    }
+
+    .pictograme img {
+        width: auto; /* Images occupent 80% de la largeur de la boîte */
+        aspect-ratio: 1/1; /* Carré */
+        max-height: 120px; /* Limite la hauteur maximale pour éviter qu'elle dépasse */
+        margin-bottom: 10px; /* Ajoute un espace sous l'image */
+    }
+
+    .pictograme .titrepict {
+        font-size: 20px;
+        margin: 10px 0; /* Espace autour du titre */
+        word-wrap: break-word; /* Permet au texte long de passer à la ligne */
+    }
+
+    .pictograme .textepict {
+        font-size: 14px;
+        width: 100%; /* Le texte prend toute la largeur disponible */
+        word-wrap: break-word; /* Permet au texte long de ne pas déborder */
+        margin-top: 5px;
+    }
+
+    /* Responsive : Ajustement pour les écrans moyens */
+    @media (max-width: 768px) {
+        .pictograme {
+            width: calc(50% - 20px); /* Largeur fixe pour 2 éléments par ligne */
+            min-height: 200px; /* Réduit la hauteur minimale */
+        }
+    }
+
+    /* Responsive : Ajustement pour les petits écrans */
+    @media (max-width: 380px) {
+        .pictograme {
+            width: 100%; /* Chaque élément occupe toute la largeur */
+            min-height: 180px; /* Réduit encore plus la hauteur minimale */
+        }
+    }
+
+
+
+    /*
+
+
+    Section Frise 
+
+
+    */
+
+    @media (max-width: 900px) {
+        .frise {
+            position: relative;
+            width: 100%;
+            padding: 20px;
+            background: #FFFFFF;
+            border-radius: 20px;
+            box-sizing: border-box; /* Inclure padding dans la largeur totale */
+            background: linear-gradient(180deg, #074C86 0%, #03A2C1 27.5%, #02A9CA 50%, #02ABCD 70%, #02ADCF 77%, #074682 100%)
+        }
+
+        .frise-haut, .frise-bas {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: auto;
+            gap: 20px; /* Réduire l'espace entre les étapes */
+            box-sizing: border-box;
+        }
+
+        .section {
+            width: 100%;
+            background: #f9f9f9;
+            border-radius: 15px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            box-sizing: border-box; /* Inclure padding dans la largeur */
+            margin-bottom: 30px;
+        }
+
+        /* Centrage des titres */
+        .titre, .titrehaut {
+            font-size: 18px;
+            background-color: #1D4C8D;
+            color: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            text-align: center;
+            width: 90%; /* Largeur limitée pour le titre */
+            max-width: 350px; /* Ne dépasse pas 350px */
+            margin: 0 auto; /* Centrer le titre */
+        }
+
+
+        .text, .texthaut, .texthaut1 {
+            font-size: 16px;
+            color: #333;
+            line-height: 1.5;
+            width: 90%; /* Réduire la largeur pour le texte */
+            margin: 0 auto; /* Centrer le texte */
+        }
+
+        .imghaut, .imghaut1, .img1, .img2, .img3 {
+            position: relative;
+            margin: 15px auto;
+            width: 50px; /* Réduire la taille des images */
+            height: auto;
+        }
+
+        .flechehaut, .fleche1, .fleche2, .fleche3, .flechemilieu {
+            display: none; /* Masquer les flèches */
+        }
+
+        .btn-contactfirse {
+            position: relative;
+            width: 80%; /* Réduire la largeur du bouton */
+            font-size: 18px;
+            padding: 12px 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+            text-align: center;
+            left: 50%;
+            transform: translate(-50%);
+        }
+    }
+
+
+
+
+    /*
+
+
+    Section localisation 
+
+
+    */
+
+    /* Section localisation */
+    .localisation {
+        position: relative;
+        width: 100%;
+        padding: 20px 10px; /* Marges pour un contenu espacé */
+        box-sizing: border-box;
+    }
+
+    /* Titre principal */
+    .titreloc {
+        width: 100%;
+        font-size: 28px; /* Taille adaptée pour le mobile */
+        color: #000000;
+        font-family: 'Jaldi-Bold', sans-serif;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 20px; /* Espacement sous le titre */
+    }
+
+    /* Image de la carte */
+    .map {
+        width: 90%; /* La carte prend 90% de la largeur */
+        height: auto; /* Hauteur automatique pour préserver les proportions */
+        display: block; /* Bloque l'image pour centrer */
+        margin: 0 auto 20px auto; /* Centrer horizontalement avec un espace en dessous */
+        border-radius: 80px; /* Coins arrondis */
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Légère ombre pour un effet esthétique */
+    }
+
+
+    /* Bloc rectangulaire pour les coordonnées et horaires */
+    .rectloc {
+        background-color: #074682;
+        border-radius: 20px;
+        padding: 20px;
+        color: #ffffff;
+        text-align: center;
+        margin: 0 auto;
+        width: 50%; 
+    }
+
+    /* Coordonnées */
+    .texte2 {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #ffffff;
+        text-decoration: none; /* Supprime le soulignement des liens */
+    }
+
+    .texte2:hover {
+        text-decoration: underline; /* Souligne au survol pour accessibilité */
+    }
+
+    /* Titre des horaires */
+    .texte3 {
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 20px; /* Espacement au-dessus */
+    }
+
+    /* Horaires */
+    .texte4 {
+        font-size: 16px;
+        line-height: 1.5; /* Espacement entre les lignes */
+        margin-top: 10px; /* Petit espace au-dessus */
+    }
+
+
+
+    /* Responsive pour les téléphones */
+    @media (max-width: 768px) {
+        .localisation {
+            padding: 10px; /* Réduction des marges */
+        }
+
+        .titreloc {
+            font-size: 24px; /* Titre légèrement plus petit */
+        }
+
+        .map {
+            width: 100%; /* La carte prend toute la largeur */
+        }
+
+        .rectloc {
+            padding: 15px; /* Réduction des marges internes */
+            width: 70%; /* Légèrement plus large sur mobile */
+        }
+
+        .texte2,
+        .texte3,
+        .texte4 {
+            font-size: 14px; /* Réduction des tailles de police */
+        }
+    }
+
+    @media (max-width: 480px) {
+        .titreloc {
+            font-size: 20px; /* Plus petit pour les très petits écrans */
+        }
+
+        .map {
+            height: auto; /* Ajustement automatique */
+        }
+
+        .rectloc {
+            width: 80%; /* Prend toute la largeur */
+        }
+
+        .texte2,
+        .texte3,
+        .texte4 {
+            font-size: 12px; /* Police encore réduite */
+        }
+    }
+
+
+    @media (max-width: 1400px) {
+        .baspage {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: #074682;
+            color: white;
+            text-align: center;
+        }
+
+        .bloquelogobas {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            aspect-ratio: 1/1;
+            background: radial-gradient(50% 50% at 50% 50%, rgb(255, 255, 255) 48.5%, rgb(255, 255, 255) 75%, rgb(7, 70, 130) 91%);
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .logobaspage {
+            width: 80%;
+            height: auto;
+        }
+
+        .bloquelien {
+            margin-bottom: 20px;
+        }
+
+        .textelien {
+            display: block;
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 5px 0;
+        }
+
+        .suivrelien {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .suivernous {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #ffffff;
+            font-family: 'Jaldi-Blod', sans-serif;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .lienresaux {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 15px 0;
+        }
+
+        .lienresaux img {
+            width: 40px;
+            height: 40px;
+        }
+
+        .textebas {
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .textebas numero {
+            font-size: 45px;
+        }
+
+        .textebas nomadresse {
+            font-size: 25px;
+        }
+
+        .Sipersonne {
+            width: 200px;
+            height: 150px;
+            text-align: center;
+            background: rgba(250, 250, 250, 0.09);
+            border-radius: 90px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .imagesipersonne {
+            max-width: 80%;
+            max-height: 80%;
+        }
+
+        @media (max-width: 1400px) {
+            .bloquelogobas {
+                width: 40%;
+            }
+            .lienresaux img {
+                width: 35px;
+                height: 35px;
+            }
+            .Sipersonne {
+                width: 180px;
+                height: 130px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .bloquelogobas {
+                width: 60%;
+            }
+            .lienresaux img {
+                width: 30px;
+                height: 30px;
+            }
+            .Sipersonne {
+                width: 160px;
+                height: 120px;
+            }
+        }
+    }
+}

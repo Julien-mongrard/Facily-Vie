@@ -1,0 +1,799 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Jaldi-Bold', sans-serif;
+
+}
+
+
+
+/* PARTIE HAUT DE PAGE */
+
+@media(min-width:1000px){
+
+    #fixed {
+        padding: 5px 10px; /* Moins de padding */
+        box-shadow: none; /* Supprime l'ombre */
+        background-color: #f8f8f8; /* Couleur de fond pour bien différencier */
+        display: flex; /* Utilisation de Flexbox */
+        flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
+        justify-content: space-around; /* Centre les liens horizontalement */
+        align-items: center; /* Centre les liens verticalement */
+        gap: 10px; /* Espacement entre les éléments */
+    }
+
+    .barduhaut a {
+        font-size: 14px; 
+        padding: 5px 10px;
+        text-decoration: none; 
+        color: black; 
+        transition: color 0.3s ease; 
+    }
+
+    .barduhaut a:hover {
+        color: #007BFF; 
+    }
+
+    
+    .btn-contact {
+        background-color: #05e2ff; 
+        color: rgb(0, 0, 0); 
+        border: none;
+        padding: 10px 20px;
+        border-radius: 30px; 
+        cursor: pointer;
+        font-size: 16px;
+        text-transform: uppercase; 
+    }
+    
+    .btn-contact:hover {
+        background-color: #0056b3; 
+    }
+    
+}
+
+
+
+@media(max-width: 1000px) {
+
+    /* Barre fixe en haut */
+    #fixed {
+        padding: 5px 10px; /* Moins de padding */
+        box-shadow: none; /* Supprime l'ombre */
+        background-color: #f8f8f8; /* Couleur de fond pour bien différencier */
+        display: flex; /* Utilisation de Flexbox */
+        flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
+        justify-content: center; /* Centre les liens horizontalement */
+        align-items: center; /* Centre les liens verticalement */
+        gap: 10px; /* Espacement entre les éléments */
+    }
+
+    .barduhaut a {
+        font-size: 14px; 
+        padding: 5px 10px;
+        text-decoration: none; 
+        color: black; 
+        transition: color 0.3s ease; 
+    }
+
+    .barduhaut a:hover {
+        color: #007BFF; 
+    }
+
+    .btn-contact {
+        background-color: #05e2ff; 
+        color: rgb(0, 0, 0); 
+        border: none;
+        padding: 10px 20px;
+        border-radius: 30px; 
+        cursor: pointer;
+        font-size: 16px;
+        text-transform: uppercase; 
+    }
+
+    .btn-contact:hover {
+        background-color: #0056b3; 
+    }
+
+}
+
+
+
+/* FIN AU DE PAGE */
+
+
+
+@media(min-width:1000px){
+    .image-recrutement {
+        position: relative;
+        top: -100px;
+        width: 100%;
+        height: 800px;
+        flex-shrink: 0;
+        object-fit: cover;
+        z-index: -1;
+    }
+    
+    
+    .text-recrutement{
+        position: relative;
+        text-align: center;
+        width: 90%;
+        top: -100px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-family: 'Jaldi-Bold', sans-serif;
+        font-size: 30px;
+        color: rgb(0, 0, 0);
+    }
+    
+    
+    
+    .contact {
+        position: relative;
+        justify-content: center; 
+        align-items: center; 
+        width: 60%;
+        height: 720px;
+        top: 300px;
+        left: 50%;
+        transform: translate(-50%,-50%); /* Ajuste pour placer le centre de l'image au centre du conteneur */
+        background-color: #1D4C8D; 
+        border-radius: 87px;
+        color: rgb(255, 255, 255);
+    
+    }
+    
+    .contact h1 {
+        font-family: 'Jaldi-Bold', sans-serif;
+        font-size: 30px; 
+        text-align: center; 
+        padding-top: 30px; /* Ajoutez cette ligne pour créer de l'espace au-dessus du titre */
+    
+    }
+    
+    .contact p {
+        position: relative;
+        font-family: 'Jaldi-Regular', sans-serif;
+        text-align: center; 
+        width: 80%;
+        font-size: 18px; 
+        margin-top: 30px; 
+        left: 50%;
+        transform: translateX(-50%);
+    
+    }
+    
+    .contact form {
+        font-family: 'Jaldi-Bold', sans-serif;
+        font-size: 20px; 
+        margin-top: 20px; 
+        display: block; 
+        text-align: center; 
+    }
+    
+    .contact form input  {
+        width: 38%; 
+        padding: 10px; 
+        margin: 10px 0; 
+        border: none; 
+        border-radius: 30px; 
+        font-size: 16px; 
+    }
+    
+    .contact form select {
+        width: 80%; 
+        padding: 10px; 
+        margin: 10px; 
+        border: none; 
+        border-radius: 30px; 
+        font-size: 16px; 
+    }
+    
+    .contact form textarea {
+        width: 80%; 
+        height: 175px;
+        padding: 10px; 
+        margin: 10px 0; 
+        border: none; 
+        border-radius: 30px; 
+        font-size: 16px; 
+    }
+    
+    .contact form button {
+        width: 40%; 
+        padding: 15px; 
+        margin: 20px 0; 
+        border: none; 
+        border-radius: 30px; 
+        font-size: 18px; 
+        background-color: #ffffff; 
+        color: rgb(0, 0, 0); 
+        cursor: pointer; 
+        font-family: 'Jaldi-Bold', sans-serif;
+        transition: background-color 0.3s ease;
+    }
+    
+    .contact form button:hover {
+        background-color: #03b2cc; 
+    }
+    
+    
+    .contact form input[type="file"] {
+        width: 39%; 
+        padding: 10px; 
+        margin: 10px 0; 
+        border: none; 
+        border-radius: 30px; 
+        font-size: 16px; 
+        font-family: 'Jaldi-Bold', sans-serif;
+        background-color: #ffffff; 
+        color: #000; 
+        cursor: pointer; 
+        text-align: center;
+        transition: background-color 0.3s ease;
+    }
+    
+    .contact form input[type="file"]::file-selector-button {
+        padding: 8px 15px; 
+        border: none; 
+        border-radius: 30px; 
+        background-color: #1D4C8D; 
+        color: #fff; 
+        font-family: 'Jaldi-Bold', sans-serif;
+        font-size: 16px;
+        cursor: pointer; 
+        transition: background-color 0.3s ease;
+    }
+    
+    .contact form input[type="file"]::file-selector-button:hover {
+        background-color: #03b2cc; 
+    }
+    
+    .contact form input[type="file"]:hover {
+        background-color: #f0f0f0; 
+    }
+    
+    
+    
+    
+    
+    /* Style pour le conteneur du message */
+    #statusMessage {
+        position: fixed; /* Positionner au-dessus de tout */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); /* Centrer horizontalement et verticalement */
+        z-index: 1000; /* Assurez-vous qu'il soit au-dessus de tout */
+        background-color: white; /* Fond blanc pour le message */
+        padding: 20px 30px; /* Espacement interne */
+        border-radius: 10px; /* Coins arrondis */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce */
+        text-align: center; /* Centrer le texte */
+        font-family: Arial, sans-serif; /* Police de caractère */
+        font-size: 16px; /* Taille de la police */
+        color: #333; /* Couleur du texte */
+        display: none; /* Masquer par défaut */
+    
+    }
+    
+    /* Arrière-plan semi-transparent */
+    #overlay {
+        position: fixed; /* Couvrir tout l'écran */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.8); /* Fond noir semi-transparent */
+        z-index: 999; /* Juste en dessous du message */
+        display: none; /* Masquer par défaut */
+        border-radius: 87px;
+    }
+    
+    .map-container{
+        position: relative !important;
+        width: 100% !important;
+        height: 500px   !important;
+        top: 0px    !important;
+    }    
+}
+
+
+@media(max-width:1000px){
+    .image-recrutement {
+        position: relative;
+        top: -100px;
+        width: 100%;
+        height: 800px;
+        flex-shrink: 0;
+        object-fit: cover;
+        z-index: -1;
+    }
+    
+    
+    .text-recrutement{
+        position: relative;
+        text-align: center;
+        width: 90%;
+        top: -100px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-family: 'Jaldi-Bold', sans-serif;
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+    }
+
+    
+    
+    .contact {
+        position: relative;
+        justify-content: center; 
+        align-items: center; 
+        width: 80%;
+        padding: 10px;
+        top: 350px;
+        left: 50%;
+        transform: translate(-50%,-50%); /* Ajuste pour placer le centre de l'image au centre du conteneur */
+        background-color: #1D4C8D; 
+        border-radius: 87px;
+        color: rgb(255, 255, 255);
+    
+    }
+
+    @media(max-width: 500px) {
+        .contact {
+            width: 90%;
+        }
+    }
+    
+    .contact h1 {
+        font-family: 'Jaldi-Bold', sans-serif;
+        font-size: 30px; 
+        text-align: center; 
+        padding-top: 30px; /* Ajoutez cette ligne pour créer de l'espace au-dessus du titre */
+    
+    }
+    
+    .contact p {
+        position: relative;
+        font-family: 'Jaldi-Regular', sans-serif;
+        text-align: center; 
+        width: 80%;
+        font-size: 18px; 
+        margin-top: 30px; 
+        left: 50%;
+        transform: translateX(-50%);
+    
+    }
+    
+    .contact form {
+        font-family: 'Jaldi-Bold', sans-serif;
+        font-size: 20px; 
+        margin-top: 20px; 
+        display: block; 
+        text-align: center; 
+    }
+    
+    .contact form input  {
+        width: 38%; 
+        padding: 10px; 
+        margin: 10px 0; 
+        border: none; 
+        border-radius: 30px; 
+        font-size: 16px; 
+    }
+    
+    .contact form select {
+        width: 80%; 
+        padding: 10px; 
+        margin: 10px; 
+        border: none; 
+        border-radius: 30px; 
+        font-size: 16px; 
+    }
+    
+    .contact form textarea {
+        width: 80%; 
+        height: 175px;
+        padding: 10px; 
+        margin: 10px 0; 
+        border: none; 
+        border-radius: 30px; 
+        font-size: 16px; 
+    }
+    
+    .contact form button {
+        width: 40%; 
+        padding: 15px; 
+        margin: 20px 0; 
+        border: none; 
+        border-radius: 30px; 
+        font-size: 18px; 
+        background-color: #ffffff; 
+        color: rgb(0, 0, 0); 
+        cursor: pointer; 
+        font-family: 'Jaldi-Bold', sans-serif;
+        transition: background-color 0.3s ease;
+    }
+    
+    .contact form button:hover {
+        background-color: #03b2cc; 
+    }
+    
+    
+    .contact form input[type="file"] {
+        width: 80%; 
+        padding: 10px; 
+        margin: 10px 0; 
+        border: none; 
+        border-radius: 30px; 
+        font-size: 16px; 
+        font-family: 'Jaldi-Bold', sans-serif;
+        background-color: #ffffff; 
+        color: #000; 
+        cursor: pointer; 
+        text-align: center;
+        transition: background-color 0.3s ease;
+    }
+    
+    .contact form input[type="file"]::file-selector-button {
+        padding: 8px 15px; 
+        border: none; 
+        border-radius: 30px; 
+        background-color: #1D4C8D; 
+        color: #fff; 
+        font-family: 'Jaldi-Bold', sans-serif;
+        font-size: 16px;
+        cursor: pointer; 
+        transition: background-color 0.3s ease;
+    }
+    
+    .contact form input[type="file"]::file-selector-button:hover {
+        background-color: #03b2cc; 
+    }
+    
+    .contact form input[type="file"]:hover {
+        background-color: #f0f0f0; 
+    }
+    
+    
+    
+    
+    
+    /* Style pour le conteneur du message */
+    #statusMessage {
+        position: fixed; /* Positionner au-dessus de tout */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); /* Centrer horizontalement et verticalement */
+        z-index: 1000; /* Assurez-vous qu'il soit au-dessus de tout */
+        background-color: white; /* Fond blanc pour le message */
+        padding: 20px 30px; /* Espacement interne */
+        border-radius: 10px; /* Coins arrondis */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce */
+        text-align: center; /* Centrer le texte */
+        font-family: Arial, sans-serif; /* Police de caractère */
+        font-size: 16px; /* Taille de la police */
+        color: #333; /* Couleur du texte */
+        display: none; /* Masquer par défaut */
+    
+    }
+    
+    /* Arrière-plan semi-transparent */
+    #overlay {
+        position: fixed; /* Couvrir tout l'écran */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.8); /* Fond noir semi-transparent */
+        z-index: 999; /* Juste en dessous du message */
+        display: none; /* Masquer par défaut */
+        border-radius: 87px;
+    }
+    
+    
+    
+    
+    .map-container{
+        position: relative !important;
+        width: 100% !important;
+        height: 500px   !important;
+        top: 0px    !important;
+    }
+    
+}
+
+/* 
+
+
+BAS DE PAGE 
+
+
+*/
+
+
+
+@media(min-width:1450px){
+    .baspage {
+        position: relative;
+        width: 100%;
+        height: 800px;
+        top: 0px;
+        background: #074682;
+        z-index: 6;
+    }
+    
+    .bloquelogobas {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 600px;
+        height: 600px;
+        background: radial-gradient(50% 50% at 50% 50%, rgb(255, 255, 255) 48.5%, rgb(255, 255, 255) 75%, rgb(7, 70, 130) 91%);
+    }
+    
+    .logobaspage {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 80%;
+        width: 80%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .bloquelien {
+        position: absolute;
+        width: 30%;
+        height: 400px;
+        top: 20%;
+        left: 0;
+        z-index: 7;
+        text-align: center;
+        line-height: 1.7;
+    }
+    
+    .textelien {
+        position: relative;
+        width: 80%;
+        margin: 25% auto 0;
+        color: rgb(241, 241, 241);
+        font-family: 'Jaldi-Blod', sans-serif;
+        font-size: 22px;
+        text-decoration: none;
+    }
+    
+    .textebas {
+        position: absolute;
+        width: 100%;
+        top: 80%;
+        color: rgb(241, 241, 241);
+        font-family: 'Jaldi-Blod', sans-serif;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .textebas numero {
+        font-size: 45px;
+    }
+    
+    .textebas nomadresse {
+        font-size: 25px;
+    }
+    
+    .Sipersonne {
+        position: absolute;
+        width: 25%;
+        height: 310px;
+        top: 12%;
+        left: 70%;
+        text-align: center;
+        background: rgba(250, 250, 250, 0.09);
+        border-radius: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .imagesipersonne {
+        max-width: 100%;
+        max-height: 100%;
+    }
+    
+    .suivrelien {
+        position: absolute;
+        display: flex;
+        width: 400px;
+        height: 100px;
+        top: 60%;
+        left: 73%;
+    }
+    
+    .suivernous {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #ffffff;
+        font-family: 'Jaldi-Blod', sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    
+    .lienresaux {
+        position: absolute;
+        display: flex;
+        width: 300px;
+        height: 75px;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #FFFFFF;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 30px;
+        border-radius: 47px;
+    }
+    
+    .lien {
+        width: auto;
+    }
+    
+    /* FIN DU BAS DE PAGE */
+    
+}
+
+
+@media(max-width: 1450px) {
+    .baspage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        background-color: #074682;
+        color: white;
+        text-align: center;
+    }
+
+    .bloquelogobas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        aspect-ratio: 1/1;
+        background: radial-gradient(50% 50% at 50% 50%, rgb(255, 255, 255) 48.5%, rgb(255, 255, 255) 75%, rgb(7, 70, 130) 91%);
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+
+    .logobaspage {
+        width: 80%;
+        height: auto;
+    }
+
+    .bloquelien {
+        margin-bottom: 20px;
+    }
+
+    .textelien {
+        display: block;
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        margin: 5px 0;
+    }
+
+    .suivrelien {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .suivernous {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        color: #ffffff;
+        font-family: 'Jaldi-Blod', sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .lienresaux {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin: 15px 0;
+        background: #FFFFFF;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 30px;
+        border-radius: 47px;
+        height: 50px;
+
+
+    }
+
+    .lienresaux img {
+        width: 40px;
+        height: 40px;
+    }
+
+
+
+
+    .textebas {
+        position: relative;
+        width: 80%;
+        top: 70%;
+        color: rgb(241, 241, 241);
+        font-family: 'Jaldi-Bold', sans-serif;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .textebas .numero {
+        font-size: 45px;
+    }
+    
+    .textebas .nomadresse {
+        font-size: 25px;
+    }
+    
+    .textebas .condition {
+        margin-top: 50px; 
+        color: #000;
+        font-size: 15px;
+    }
+
+    .Sipersonne {
+        width: 200px;
+        height: 150px;
+        text-align: center;
+        background: rgba(250, 250, 250, 0.09);
+        border-radius: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .imagesipersonne {
+        max-width: 80%;
+        max-height: 80%;
+    }
+    .lien {
+        width: auto;
+    }
+
+    @media (max-width: 1400px) {
+        .bloquelogobas {
+            width: 40%;
+        }
+        .lienresaux img {
+            width: 35px;
+            height: 35px;
+        }
+        .Sipersonne {
+            width: 180px;
+            height: 130px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .bloquelogobas {
+            width: 60%;
+        }
+        .lienresaux img {
+            width: 30px;
+            height: 30px;
+        }
+        .Sipersonne {
+            width: 160px;
+            height: 120px;
+        }
+    }
+
+}
+

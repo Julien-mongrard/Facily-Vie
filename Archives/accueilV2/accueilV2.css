@@ -1,0 +1,826 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.imageaccueil {
+    position: absolute;
+    top: -200px;
+    left: 0px;
+    width: 100%;
+    height: 1464px;
+    flex-shrink: 0;
+    object-fit: cover;
+    z-index: -1;
+}
+
+#fixed {
+    position: fixed; /* Fixe l'élément */
+    top: 0; /* Positionné en haut de la page */
+    left: 0; /* Aligné à gauche */
+    width: 100%; /* S'étend sur toute la largeur */
+    background-color: #ffffff; /* Couleur de fond */
+    z-index: 1000; /* Assure que la barre est au-dessus des autres éléments */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optionnel : ombre pour un effet visuel */
+    padding: 10px 0; /* Optionnel : Espacement interne */
+}
+
+
+
+.barduhaut {
+    display: flex; 
+    justify-content: space-around; 
+    background-color: rgba(179, 179, 179, 0.5); 
+    height: 40px; 
+    max-width: 100%;
+
+}
+
+.barduhaut a {
+    text-decoration: none; 
+    color: black; 
+    font-family: 'Jaldi-Bold', sans-serif;
+    font-size: 18px; 
+    padding: 10px 10px; 
+    transition: color 0.3s; 
+}
+
+.barduhaut a:hover {
+    color: rgb(0, 183, 255); 
+}
+
+.btn-contact {
+    background-color: #05e2ff; 
+    color: rgb(0, 0, 0); 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px; 
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase; 
+}
+
+.btn-contact:hover {
+    background-color: #0056b3; 
+}
+
+.carrelogo{
+    position:absolute;
+    top: 100px;
+    left: 150px;
+    width: 500px;
+    height: 500px;
+    background-color: rgba(255, 255, 255, 0.712);
+    z-index: 2;
+    border-radius: 87px;
+
+}
+
+.logohautpage{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); /* Ajuste pour placer le centre de l'image au centre du conteneur */
+    z-index: 3;
+}
+
+
+/*PARTIE SERVIVES */
+
+.rectangleservives {
+    display: flex;
+    justify-content: space-evenly; /* Égalise l'espace entre les éléments */
+    align-items: flex-start; /* Aligne les éléments en haut */
+    flex-wrap: wrap; /* Permet le retour à la ligne sur petits écrans */
+    width: 100%;
+    height: 600px;
+    border-radius: 75px;
+    background: #ffffff7e;
+    position: relative;
+    top: 660px;
+    padding: 20px 0;
+}
+
+.overlap {
+    display: flex;
+    flex-direction: column; /* Empile les enfants verticalement */
+    align-items: center; /* Centre horizontalement */
+    justify-content: flex-start; /* Les éléments commencent en haut */
+    width: 290px;
+    height: 434px;
+    border-radius: 47px;
+    padding: 20px;
+    box-shadow: 20px 20px 0px 0px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 4;
+}
+
+.overlap-1 {
+    background: linear-gradient(180deg, #AE193F 0%, #4A0B1A 56.5%, #73293C 99.99%);
+    box-shadow: 20px 20px 0px 0px #4B0B1A;
+}
+
+.overlap-2 {
+    background: linear-gradient(180deg, #7DE9FF 0%, #416FE4 55%, #4B8C99 100%);
+    box-shadow: 20px 20px 0px 0px #4170E2;
+}
+
+.overlap-3 {
+    background: linear-gradient(180deg, #F5C2FF 0%, #C558DB 50.5%, #B99BBF 99.99%);
+    box-shadow: 20px 20px 0px 0px #C360D7;
+}
+
+.overlap-4 {
+    background: linear-gradient(180deg, #FCF2B8 0%, #FF8E0E 49.5%, #F3BB7B 100%);
+    box-shadow: 20px 20px 0px 0px #FD951D;
+}
+
+.imagemenage {
+    width: 100%; 
+    margin-bottom: 15px; /* Espace entre l'image et le texte */
+    height: 44%;
+}
+
+.titremenage {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: 'Jaldi-Blod', sans-serif;
+    font-size: 30px;
+    line-height: 1.5;
+    margin-bottom: 10px; /* Espace sous le titre */
+}
+
+.textemenage {
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-family: 'Jaldi-Blod', sans-serif;
+    font-size: 20px;
+    width: 100%;
+}
+
+/*FIN DE LA PARTIE SERVICES */
+
+/*PARTIE PICTOGRAMME ET FRISE */
+.rectanglepictogramefrise{
+    position: relative;
+    width: 100%;
+    height: 1500px;
+    top: 600px;
+    background: linear-gradient(180deg, #074C86 0%, #03A2C1 27.5%, #02A9CA 50%, #02ABCD 70%, #02ADCF 77%, #074682 100%);
+    z-index: 6;
+}
+
+/*PARTIE PICTOGRAMME */
+
+.rectanglepictograme {
+    position: relative;
+    display: flex;
+    justify-content: space-between; /* Crée des espaces égaux entre les pictogrammes */
+    width: 100%;
+    height: 500px;
+    top: 5%;
+    z-index: 5;
+}
+
+.pictograme {
+    width: 100%; /* Largeur de chaque pictogramme */
+    text-align: center;
+    z-index: 4;
+}
+
+.pictograme img {
+    width: 60%; /* Ajuste la taille de l'image */
+    height: 60%; /* Fixe la hauteur des images */
+    object-fit: contain; /* Pour s'assurer que l'image couvre correctement l'espace */
+    margin-top: -20%; /* Ajuste la position verticale de l'image */
+}
+
+.pictograme .titrepict,
+.pictograme .textepict {
+    color: rgb(255, 255, 255);
+    font-family: 'Jaldi-Blod', sans-serif;
+    font-size: 28px;
+}
+
+.pictograme .titrepict {
+    margin-top: 15px; /* Espace entre l'image et le titre */
+}
+
+.pictograme .textepict {
+    margin-top: 10px; /* Espace entre le titre et le texte */
+    font-size: 20px; /* Taille du texte */
+    width: 90%;
+    margin-left: 5%;
+}
+
+
+/*FIN DE LA PARTIE PICTOGRAMME */
+
+/* DEBUT DE LA FRISE !! BORDEL DE MERDE !! */
+
+.frise{
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 95%;
+    height: 55%;
+    z-index: 5;
+    background: #FFFFFF;
+    border-radius: 47px;
+}
+
+
+.frise-haut{
+    position: relative;
+    display: flex;
+    justify-content: space-between; /* Espacement égal entre les carrés */
+    align-items: center; /* Aligne verticalement les éléments */
+    left: 50%;
+    width: 62.7%;
+    height: 50%;
+    transform: translate(-50%);
+}
+
+
+.frise-bas{
+    position: relative;
+    display: flex;
+    justify-content: space-between; /* Espacement égal entre les carrés */
+    align-items: center; /* Aligne verticalement les éléments */
+    left: 50%;
+    width: 95%;
+    height: 50%;
+    transform: translate(-50%);
+}
+
+
+.section{
+    position: relative;
+    justify-content: space-between; /* Espacement égal entre les carrés */
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    z-index: 6;
+}
+
+
+.titre{
+    position: relative;
+    background-color: #1D4C8D; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    padding: 20px; /* Espacement autour du texte */
+    text-align: center; /* Centrer le texte */
+    font-size: 24px; /* Taille du texte */
+    width: 70%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 50px;
+    top: 5%;
+    font-family: 'Jaldi-Blod', sans-serif;
+    top: 33%;
+}
+
+.titrehaut{
+    position: relative;
+    background-color: #1D4C8D; /* Couleur de fond */
+    color: white; /* Couleur du texte */
+    padding: 20px; /* Espacement autour du texte */
+    text-align: center; /* Centrer le texte */
+    font-size: 24px; /* Taille du texte */
+    width: 70%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 50px;
+    top: 7%;
+    font-family: 'Jaldi-Blod', sans-serif;
+}
+
+
+.text{
+    position: relative;
+    color: rgb(0, 0, 0); /* Couleur du texte */
+    padding: 20px; /* Espacement autour du texte */
+    font-size: 24px; /* Taille du texte */
+    width: 95%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 50px;
+    top:33%;
+    font-family: 'Jaldi-Blod', sans-serif;
+}
+
+.texthaut{
+    position: relative;
+    color: rgb(0, 0, 0); /* Couleur du texte */
+    padding: 20px; /* Espacement autour du texte */
+    font-size: 24px; /* Taille du texte */
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 50px;
+    top:7%;
+    font-family: 'Jaldi-Blod', sans-serif;
+}
+
+.texthaut1{
+    position: relative;
+    color: rgb(0, 0, 0); /* Couleur du texte */
+    padding: 20px; /* Espacement autour du texte */
+    font-size: 24px; /* Taille du texte */
+    width: 100%;
+    left: 55%;
+    transform: translate(-50%);
+    border-radius: 50px;
+    top:7%;
+    font-family: 'Jaldi-Blod', sans-serif;
+}
+
+.flechehaut{
+    position: absolute;
+    height: 20%;
+    width: 2px;
+    background-color: #000000;
+    top: 70%;
+    left: 49.8%;
+}
+
+.fleche-haut {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent; /* Créer la partie gauche de la flèche */
+    border-right: 10px solid transparent; /* Créer la partie droite de la flèche */
+    border-top: 10px solid transparent; /* Créer la partie supérieure de la flèche */
+    border-bottom: 20px solid #000000; /* Créer la pointe de la flèche (vers le bas) */
+    top: 65%;
+    left: 48.2%;
+}
+
+.imghaut{
+    position: absolute;
+    top: 60%;
+    left: 25%;
+}
+
+.imghaut1{
+    position: absolute;
+    top: 65%;
+    left: 25%;
+}
+
+.fleche1{
+    position: absolute;
+    height: 15%;
+    width: 2px;
+    background-color: #000000;
+    top: 10%;
+    left: 51%;
+}
+
+.fleche2{
+    position: absolute;
+    height: 15%;
+    width: 2px;
+    background-color: #000000;
+    top: 10%;
+    left: 50%;
+}
+.fleche3{
+    position:  absolute;
+    height: 15%;
+    width: 2px;
+    background-color: #000000;
+    top: 10%;
+    left: 48.7%;
+}
+
+
+.finfleche1 {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;  /* Partie gauche de la flèche */
+    border-right: 10px solid transparent; /* Partie droite de la flèche */
+    border-top: 20px solid #000000;      /* Partie du haut de la flèche (invisible) */
+    border-bottom: 0;                    /* Aucune bordure en bas */    
+    top: 25%;
+    left: 51.1%;
+    transform: translate(-50%,0%);
+}
+.finfleche2 {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;  /* Partie gauche de la flèche */
+    border-right: 10px solid transparent; /* Partie droite de la flèche */
+    border-top: 20px solid #000000;      /* Partie du haut de la flèche (invisible) */
+    border-bottom: 0;                    /* Aucune bordure en bas */    
+    top: 25%;
+    left: 50.1%;
+    transform: translate(-50%,0%);
+}
+.finfleche3 {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;  /* Partie gauche de la flèche */
+    border-right: 10px solid transparent; /* Partie droite de la flèche */
+    border-top: 20px solid #000000;      /* Partie du haut de la flèche (invisible) */
+    border-bottom: 0;                    /* Aucune bordure en bas */    
+    top: 25%;
+    left: 48.9%;
+    transform: translate(-50%,0%);
+}
+
+
+.img1{
+    position: absolute;
+    top: 0%;
+    left: 10%;
+}
+.img2{
+    position: absolute;
+    top: 10%;
+    left: 25%;
+}
+.img3{
+    position: absolute;
+    top: 5%;
+    left: 25%;
+}
+
+.flechemilieu {
+    position: relative;
+    display: flex;
+    justify-content: space-between; /* Espacement égal entre les carrés */
+    align-items: center; /* Aligne verticalement les éléments */
+
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 90%;
+    height: 2px; /* Épaisseur du trait */
+    background-color: #000000; /* Couleur du trait */
+    z-index: 6;
+}
+
+.debutfrise{
+    position: relative;
+    width: 15px; 
+    height: 15px;
+    background: #000000;
+    transform: rotate(45deg);
+}
+
+.carre{
+    position: relative;
+    width: 100px; /* Taille des images (carrés) */
+    height: 100px;
+    z-index: 7; /* Pour s'assurer qu'elles sont au-dessus de la ligne */
+}
+
+.finfrise {
+    position: relative;
+    width: 0; /* Nécessaire pour le triangle */
+    height: 0; /* Nécessaire pour le triangle */
+    border-top: 10px solid transparent; /* Triangle supérieur */
+    border-bottom: 10px solid transparent; /* Triangle inférieur */
+    border-left: 15px solid #000000; /* Couleur de la flèche */
+    left: 3px; /* Décalage de la flèche vers la droite de 10px */
+
+}
+
+/* FIN DE LA FRISE !! DIEU MERCI !! */
+
+.btn-contactfirse{
+    position: absolute;
+    top: 94%;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #03B6D6; 
+    color: rgb(255, 255, 255); 
+    font-weight: bold;
+    border: none;
+    padding: 20px 20px;
+    border-radius: 30px; 
+    cursor: pointer;
+    font-size: 30px;
+    text-transform: uppercase; 
+}
+
+.btn-contactfirse:hover {
+    color: #000;
+    background-color: #ffffff; 
+}
+
+/*FIN DE LA PARTIE PICTOGRAMME ET FRISE */
+
+/* PARTIE LOCALISATION */
+
+.localisation{
+    position: relative;
+    width: 100%;
+    height: 900px;
+    top: 600px;
+    z-index: 5;
+    }
+
+
+.titreloc{
+    position: relative;
+    width: 60%;
+    left: 15%;
+    transform: translate(0,-50%);
+    top:5%;
+    color: #074682;
+    font-family: 'Jaldi-Blod', sans-serif;
+    font-size: 64px;
+    font-style: bold;
+}
+
+
+.map{
+    position: relative;
+    width: 60%;
+    height: 80%;
+    top: 42%;
+    left: 35%;
+    transform: translate(-50%,-50%);
+}
+
+.loc{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.taillan{
+    position: absolute;
+    top: 32.5%;
+    left: 32%;
+    font-family: 'Arial', sans-serif;
+    color: #636766;
+    -webkit-text-stroke-width: 1;
+    -webkit-text-stroke-color: #FFF;
+    font-style: normal;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 100%; /* 26px */
+}
+
+
+.facilyvie{
+    position: absolute;
+    top: 38%;
+    left: 42%;
+    color: #EF413A;
+    text-align: center;
+    font-family: 'Jaldi-Blod', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 40px */
+}
+
+.rectloc{
+    position: absolute;
+    width: 20%;
+    height: 50%;
+    top: 50%;
+    transform: translate(0,-50%); 
+    left: 72%;
+    border-radius: 47px;
+    background: #074682;
+    opacity: 0.9;
+    z-index: 6;
+}
+
+.titre1{
+    position: relative;
+    width: 80%;
+    left: 10%;
+    text-align: center;
+    top: 10%;
+    color: rgb(255, 255, 255);
+    font-family: 'Jaldi-Blod', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.texte2{
+    position: relative;
+    width: 80%;
+    left: 10%;
+    display: block; 
+    text-align: center;
+    top: 15%;
+    color: rgb(255, 255, 255);
+    font-family: 'Jaldi-Blod', sans-serif;
+    font-size: 20px;
+}
+
+.texte3{
+    position: relative;
+    width: 80%;
+    left: 10%;
+    text-align: center;
+    top: 25%;
+    color: rgb(255, 255, 255);
+    font-family: 'Jaldi-Blod', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+
+}
+.texte4{
+    position: relative;
+    width: 80%;
+    left: 10%;
+    text-align: center;
+    top: 30%;
+    color: rgb(255, 255, 255);
+    font-family: 'Jaldi-Blod', sans-serif;
+    font-size: 20px;
+}
+
+/*FIN DE LA LOCALISATION */
+
+/* BAS DE PAGE */
+
+
+.baspage{
+    position: relative;
+    width: 100%;
+    height: 800px;
+    top: 550px;
+    background: #074682;
+    opacity: 1;
+    z-index: 6;
+}
+
+.bloquelogobas{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%); /* Ajuste pour placer le centre de l'image au centre du conteneur */
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(50% 50% at 50% 50%,rgb(255, 255, 255)48.5%,rgb(255,255,255)75%,rgb(7,70,130)91%);
+}
+
+.logobaspage{
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    height: 80%;
+    width: 80%;
+    transform: translate(-50%,-50%); /* Ajuste pour placer le centre de l'image au centre du conteneur */
+}
+
+.bloquelien{
+    position: absolute;
+    width: 30%;
+    height: 400px;
+    top: 20%;
+    left: 0%;
+    z-index: 7;
+    text-align: center;
+    line-height: 1.7;
+
+}
+
+.textelien{
+    position: relative;
+    width: 80%;
+    left: 10%;
+    top: 25%;
+    color: rgb(241, 241, 241);
+    font-family: 'Jaldi-Blod', sans-serif;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.textebas{
+    position: absolute;
+    width: 100%;
+    top: 80%;
+    color: rgb(241, 241, 241);
+    font-family: 'Jaldi-Blod', sans-serif;
+    text-align: center;
+    font-weight : bold;
+}
+
+.textebas numero{
+    font-size: 45px;
+
+}
+.textebas nomadresse{
+    font-size: 25px;
+}
+
+.Sipersonne {
+    position: absolute;
+    width: 25%;
+    height: 310px;
+    top: 12%;
+    left: 70%;
+    text-align: center;
+    background: #fafafa17;
+    border-radius: 90px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.imagesipersonne {
+    max-width: 100%; 
+    max-height: 100%; 
+}
+
+
+.suivrelien{
+    position: absolute;
+    display: flex;
+    width: 400px;
+    height:100px;
+    top: 60%;
+    left: 73%;
+}
+
+.suivernous{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%); /* Ajuste pour placer le centre de l'image au centre du conteneur */
+    color: #ffffff;
+    font-family: 'Jaldi-Blod', sans-serif;
+    font-size: 25px;
+    font-weight : bold;
+
+}
+
+.lienresaux{
+    position: absolute;
+    display: flex;
+    width: 300px;
+    height:75px;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%); /* Ajuste pour placer le centre de l'image au centre du conteneur */
+    background: #FFFFFF;
+    justify-content: space-between; /* Crée des espaces égaux entre les pictogrammes */
+    align-items: center; /* Centre les éléments verticalement */
+    padding: 0 30px; /* Espace intérieur gauche et droit */
+    border-radius: 47px;
+}
+
+.lien{
+    width: auto;
+}
+
+/* FIN DU BAS DE PAGE */
+
+/* COOKIES */ 
+
+/* Bannière de cookies au centre */
+#cookie-banner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    z-index: 1000;
+  }
+  
+  /* Boutons dans la bannière */
+#cookie-banner button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+#cookie-banner button.reject {
+    background-color: #dc3545;
+  }
+  
+  /* Classe pour désactiver le défilement de l'arrière-plan */
+.no-scroll {
+    overflow: hidden; /* Désactive le défilement vertical */
+    position: fixed; /* Fixe la position */
+    top: 0; /* Verrouille en haut */
+    left: 0; /* Verrouille à gauche */
+    right: 0; /* Verrouille à droite */
+    bottom: 0; /* Verrouille en bas */
+    width: 100%; /* Empêche le contenu de bouger */
+  }

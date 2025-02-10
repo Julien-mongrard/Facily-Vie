@@ -1,0 +1,211 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+/* PARTIE HAUT DE PAGE */
+
+#fixed {
+    position: fixed; /* Fixe l'élément */
+    top: 0; /* Positionné en haut de la page */
+    left: 0; /* Aligné à gauche */
+    width: 100%; /* S'étend sur toute la largeur */
+    background-color: #ffffff; /* Couleur de fond */
+    z-index: 1000; /* Assure que la barre est au-dessus des autres éléments */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optionnel : ombre pour un effet visuel */
+    padding: 10px 0; /* Optionnel : Espacement interne */
+}
+
+.barduhaut {
+    display: flex; 
+    justify-content: space-around; 
+    background-color: rgba(179, 179, 179, 0.5); 
+    height: 40px; 
+    max-width: 100%;
+
+}
+
+.barduhaut a {
+    text-decoration: none; 
+    color: black; 
+    font-family: 'Jaldi-Bold', sans-serif;
+    font-size: 18px; 
+    padding: 10px 10px; 
+    transition: color 0.3s; 
+}
+
+.barduhaut a:hover {
+    color: rgb(0, 183, 255); 
+}
+
+.btn-contact {
+    background-color: #05e2ff; 
+    color: rgb(0, 0, 0); 
+    border: none;
+    padding: 10px 20px;
+    border-radius: 30px; 
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase; 
+}
+
+.btn-contact:hover {
+    background-color: #0056b3; 
+}
+
+/* FIN AU DE PAGE */
+
+
+.mention-legales{
+    position: absolute;
+    font-family: 'Jaldi-Blod', sans-serif;
+    top: 100px;
+    left: 1%;
+}
+
+.mention-legales titre{ 
+    position: relative;;
+    font-family: 'Jaldi-Blod', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+/* BAS DE PAGE */
+
+
+.baspage{
+    position: relative;
+    width: 100%;
+    height: 800px;
+    top: 900px;
+    background: #074682;
+    opacity: 1;
+    z-index: 6;
+}
+
+.bloquelogobas{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%); /* Ajuste pour placer le centre de l'image au centre du conteneur */
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(50% 50% at 50% 50%,rgb(255, 255, 255)48.5%,rgb(255,255,255)75%,rgb(7,70,130)91%);
+}
+
+.logobaspage{
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    height: 80%;
+    width: 80%;
+    transform: translate(-50%,-50%); /* Ajuste pour placer le centre de l'image au centre du conteneur */
+}
+
+.bloquelien{
+    position: absolute;
+    width: 30%;
+    height: 400px;
+    top: 20%;
+    left: 0%;
+    z-index: 7;
+    text-align: center;
+    line-height: 1.7;
+
+}
+
+.textelien{
+    position: relative;
+    width: 80%;
+    left: 10%;
+    top: 25%;
+    color: rgb(241, 241, 241);
+    font-family: 'Jaldi-Blod', sans-serif;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+.textebas{
+    position: absolute;
+    width: 100%;
+    top: 80%;
+    color: rgb(241, 241, 241);
+    font-family: 'Jaldi-Blod', sans-serif;
+    text-align: center;
+    font-weight : bold;
+}
+
+.textebas numero{
+    font-size: 45px;
+
+}
+.textebas nomadresse{
+    font-size: 25px;
+}
+
+.Sipersonne {
+    position: absolute;
+    width: 25%;
+    height: 310px;
+    top: 12%;
+    left: 70%;
+    text-align: center;
+    background: #fafafa17;
+    border-radius: 90px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.imagesipersonne {
+    max-width: 100%; 
+    max-height: 100%; 
+}
+
+
+.suivrelien{
+    position: absolute;
+    display: flex;
+    width: 400px;
+    height:100px;
+    top: 60%;
+    left: 73%;
+}
+
+.suivernous{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,-50%); /* Ajuste pour placer le centre de l'image au centre du conteneur */
+    color: #ffffff;
+    font-family: 'Jaldi-Blod', sans-serif;
+    font-size: 25px;
+    font-weight : bold;
+
+}
+
+.lienresaux{
+    position: absolute;
+    display: flex;
+    width: 300px;
+    height:75px;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%,-50%); /* Ajuste pour placer le centre de l'image au centre du conteneur */
+    background: #FFFFFF;
+    justify-content: space-between; /* Crée des espaces égaux entre les pictogrammes */
+    align-items: center; /* Centre les éléments verticalement */
+    padding: 0 30px; /* Espace intérieur gauche et droit */
+    border-radius: 47px;
+}
+
+.lien{
+    width: auto;
+}
+
+/* FIN DU BAS DE PAGE */

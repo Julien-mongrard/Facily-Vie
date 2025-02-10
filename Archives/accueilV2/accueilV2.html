@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="accueilV2.css">
+    <link rel="icon" sizes="32x32" href="/accueilV2/image-accueil/logohautsans fond.png">
+
+    <title>FACILY VIE</title>
+</head>
+
+<body>
+    <header>
+        <img class="imageaccueil" src="image-accueil/lili2.jpg"/>
+
+        <div class="barduhaut" id="fixed"> 
+            <button onclick="location.href='/contact/contact.html'" class="btn-contact">NOUS CONTACTER</button>
+            <a href="/accueil/accueil.html" >ACCUEIL</a>
+            <a href="/nos services/nos services.html" >NOS SERVICES</a>            
+            <a href="/recrutement/recrutement.html" >RECRUTEMENT</a>
+            <a href="/NewsLetter/newsletter.html" >NEWS LETTER</a>
+        </div>  
+
+        <img class="carrelogo" class="logohautpage" src="/accueilV2/image-accueil/logosansfond.png">    
+        
+    </header>
+
+    <main>
+
+        <div id="cookie-banner">
+            <p>Nous utilisons des cookies pour améliorer votre expérience. Acceptez-vous leur utilisation ?</p>
+            <button id="accept-cookies">Accepter</button>
+            <button class="reject" id="reject-cookies">Refuser</button>
+        </div>
+        
+            <script>
+                document.getElementById("accept-cookies").addEventListener("click", function () {
+                localStorage.setItem("cookiesAccepted", "true");
+                document.getElementById("cookie-banner").style.display = "none";
+                document.body.classList.remove("no-scroll"); // Réactiver le fond
+                console.log("Cookies acceptés !");
+                });
+
+                document.getElementById("reject-cookies").addEventListener("click", function () {
+                localStorage.setItem("cookiesAccepted", "false");
+                document.getElementById("cookie-banner").style.display = "none";
+                document.body.classList.remove("no-scroll"); // Réactiver le fond
+                console.log("Cookies refusés !");
+                });
+
+                // Vérifie si le consentement a déjà été donné
+                window.onload = function () {
+                if (!localStorage.getItem("cookiesAccepted")) {
+                    document.body.classList.add("no-scroll"); // Verrouiller l’arrière-plan
+                } else {
+                    document.getElementById("cookie-banner").style.display = "none";
+                }
+                };            
+            </script>
+        
+        <div class="rectangleservives">
+            <div class="overlap overlap-1">
+                <img class="imagemenage" src="image-accueil/img1.png" alt="Ménage">
+                <div class="titremenage">MENAGE</div>
+                <div class="textemenage">Redécouvrez le plaisir d'une maison propre et saine grâce à nos services de ménage écologique.</div>
+            </div>
+            
+            <div class="overlap overlap-2">
+                <img class="imagemenage" src="image-accueil/img2.png" alt="Testes">
+                <div class="titremenage">REPASSAGE</div>
+                <div class="textemenage">Nous vous proposons un service de repassage à domicile de  qualité. Profitez d'une prestation soignée et rapide pour des vêtements impeccables. </div>
+            </div>
+            
+            <div class="overlap overlap-3">
+                <img class="imagemenage" src="image-accueil/menage 2.png" alt="Testes">
+                <div class="titremenage">Aide à la personne</div>
+                <div class="textemenage">Simplifiez votre quotidien avec notre assistance personnalisée : courses, repas et accompagnement, nous sommes là pour vous.</div>
+            </div>
+            
+            <div class="overlap overlap-4">
+                <img class="imagemenage" src="image-accueil/menage 2.png" alt="Testes">
+                <div class="titremenage">Seniors</div>
+                <div class="textemenage">Offrez un soutien précieux à vos proches âgés, avec notre équipe dévouée qui veille à leur bien-être et leur confort au quotidien</div>
+            </div>
+        </div>
+        
+        <div class="rectanglepictogramefrise">
+            <div class="rectanglepictograme">
+                <div class="pictograme">
+                    <img class="imgpict" src="image-accueil/reductionompots.png" alt="Nature">
+                    <div class="titrepict">ÉCONOMIE</div>
+                    <div class="textepict">Crédit d’impôt de 50 % immédiat. 
+                        *sous conditions</div>
+                </div>
+                <div class="pictograme">
+                    <img class="imgpict" src="image-accueil/nature.png" alt="Nature">
+                    <div class="titrepict">ÉCO-RESPONSABLE</div>
+                    <div class="textepict">Nous utilisons des produits 100 % naturels et écologiques pour garantir une prestation de qualité,
+                        respectueuse de votre santé et de l'environnement.</div>
+                </div>
+                <div class="pictograme">
+                    <img class="imgpict" src="image-accueil/qualiter.png" alt="Nature">
+                    <div class="titrepict">QUALITÉ</div>
+                    <div class="textepict">Nous garantissons des services fiables, adaptés à vos besoins et réalisés avec soin et professionnalisme.</div>
+                </div>
+                <div class="pictograme">
+                    <img class="imgpict" src="image-accueil/famille.png" alt="Nature">
+                    <div class="titrepict">FAMILIAL</div>
+                    <div class="textepict"> 
+                        L'esprit de famille guide notre fonctionnement, favorisant respect, convivialité et travail d'équipe, autant avec nos collaborateurs qu'avec nos clients.</div>
+                </div>
+                <div class="pictograme">
+                    <img class="imgpict" src="image-accueil/flexi.png" alt="Nature">
+                    <div class="titrepict">FLEXIBILITÉ</div>
+                    <div class="textepict">nous nous adaptons à vos besoins : interventions ponctuelles ou régulières, planning ajustable et prestations personnalisées. Votre confort est notre priorité</div>
+                </div>
+            </div>
+
+            <!-- rajouter la sections pour la frise ici -->
+             <div class="frise">
+                <div class="frise-haut">
+                    <div class="section">
+                        <div class="titrehaut">Rendez-vous avec le client pour évaluer et définir les besoins </div>
+                        <div class="texthaut">- Visite à domicile pour analyser vos besoins et vos contraintes.<br>- Définition des prestations adaptées et sur-mesure.</div>
+                        <div class="flechehaut"></div>
+                        <div class="fleche-haut"></div>
+                        <img class="imghaut" src="/accueilV2/image-accueil/frise/img4.png">
+                    </div>
+      
+                    <div class="section">
+                        <div class="titrehaut">Présentation et suivi de l’intervenante </div>
+                        <div class="texthaut1">- Présentation de votre intervenante, sélectionnée en fonction de vos attentes.
+                            <br>- Suivi qualité régulier pour s’assurer de votre satisfaction et l'ajuster si nécessaire.</div>
+                        <div class="flechehaut"></div>
+                        <div class="fleche-haut"></div>
+                        <img class="imghaut1" src="/accueilV2/image-accueil/frise/img5.png">
+                    </div>
+     
+
+                </div>
+                <div class="flechemilieu">
+                    <div class="debutfrise"></div>
+                    <img class="carre" src="/accueilV2/image-accueil/frise/1.png">
+                    <img class="carre" src="/accueilV2/image-accueil/frise/2.png">
+                    <img class="carre" src="/accueilV2/image-accueil/frise/3.png">
+                    <img class="carre" src="/accueilV2/image-accueil/frise/4.png">
+                    <img class="carre" src="/accueilV2/image-accueil/frise/5.png">
+                    <div class="finfrise"></div>
+                </div>
+
+
+                <div class="frise-bas">
+                    <div class="section">
+                        <div class="titre">Prise de contact avec le client </div>
+                        <div class="text">- Échange initial pour comprendre vos attentes.<br>
+                            - Informations claires sur nos services, tarifs et nos engagements :
+                        <br>Avec Facily Vie vous êtes serein. </div>
+                        <div class="fleche1"></div>
+                        <div class="finfleche1"></div>
+                        <img class="img1" src="/accueilV2/image-accueil/frise/img.png">
+                    </div>
+                    <div class="section">
+                        <div class="titre">Mise en place du contrat et du planning de prestations </div>
+                        <div class="text">- Élaboration d’un contrat détaillé et transparent.<br>
+                            - Création d’un planning précis tenant compte de vos disponibilités.</div>
+                        <div class="fleche2"></div>
+                        <div class="finfleche2"></div>
+                        <img class="img2" src="/accueilV2/image-accueil/frise/img2.png">
+
+                    </div>
+                    <div class="section">
+                        <div class="titre">Suivi qualité régulier </div>
+                        <div class="text">- Contrôles périodiques pour garantir le respect des prestations définies.<br>
+                            - Recueil de vos retours pour ajuster le service si nécessaire.<br>
+                            - Communication proactive pour vous assurer une satisfaction durable.</div>
+                        <div class="fleche3"></div>
+                        <div class="finfleche3"></div>
+                        <img class="img3" src="/accueilV2/image-accueil/frise/img3.png">
+
+                    </div>
+
+                </div>
+
+             </div>
+             <button onclick="location.href='/contact/contact.html'" class="btn-contactfirse">Demander votre devis</button>
+
+
+        </div>
+        
+        
+    
+        <div class="localisation">
+            <div class="titreloc">Notre secteur d’intervention</div>
+            <div class="loc">
+                <img class="map" src="image-accueil/localisation.png">
+                <div class="taillan">Le Taillan-Médoc</div>
+                <div class="facilyvie">Facily Vie</div>
+
+            </div>
+            
+            <div class="rectloc">
+                <div class="titre1">Coordonnées</div>
+                <a href="https://www.google.com/maps/place/Facily+Vie/@44.9014792,-0.6699552,15.75z/data=!4m6!3m5!1s0xd54d6c88d9aaaab:0xf79df788b2b4a731!8m2!3d44.9018177!4d-0.6688119!16s%2Fg%2F11h6d7ngy9?entry=ttu&g_ep=EgoyMDI1MDEwNi4xIKXMDSoASAFQAw%3D%3D"
+                class="texte2">FACILY VIE<br>
+                30, Avenue de Soulac<br>
+                33320 LE TAILLAN MEDOC<br>
+                </a>
+                <div class="texte3">Horaires</div>
+                <div class="texte4">
+                    lun.08:00 - 18:00<br>
+                    mar.08:00 - 18:00<br>
+                    mer.08:00 - 18:00<br>
+                    jeu.08:00 - 18:00<br>
+                    ven.08:00 - 18:00
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    
+    <footer>
+        <div class="baspage">
+            <div class="bloquelogobas">
+                <img class="logobaspage" src="/accueilV2/image-accueil/logosansfond.png">
+            </div>
+            <div class="bloquelien">
+                <a href="/accueil/accueil.html" class="textelien">Accueil<br></a>
+                <a href="/contact/contact.html" class="textelien">Contact<br></a>
+                <a href="/nos services/nos services.html" class="textelien">Nos services<br></a>
+                <a href="/recrutement/recrutement.html" class="textelien">Recrutement<br></a>
+                <a href="/NewsLetter/newsletter.html" class="textelien">News Letter<br></a>
+                <a href="/Mentions légales/Mentions légales.html" class="textelien">Mention légales<br></a>
+                <a href="a" class="textelien">Données personnelles<br></a>
+                <a href="b" class="textelien">Gérer mes cookies</a>
+            </div>
+
+            <div class="Sipersonne">
+                <img class="imagesipersonne" src="image-accueil/savpersonne-removebg-preview 2.png">
+            </div>
+            
+            <div class="suivrelien">
+                <div class="suivernous">SUIVEZ-NOUS</div>
+                <div class="lienresaux">
+                    <a href="test" class="lien"><img src="image-accueil/15713420 1.png"></a>
+                    <a href="test" class="lien"><img src="image-accueil/124010 1.png"></a>
+                    <a href="test" class="lien"><img src="image-accueil/174857 1.png"></a>
+                    <a href="test" class="lien"><img src="image-accueil/pagesjaunes.png"></a>
+    
+                </div>
+            </div>
+
+            <div class="textebas">
+                <numero>05 56 47 67 62</numero><br>
+                <nomadresse>FACILY VIE <br>30, Avenue de Soulac 33320 LE TAILLAN MEDOC</nomadresse>
+            </div>
+        
+        </div>
+    </footer>
+
+
+</body>
+</html>                
+
+

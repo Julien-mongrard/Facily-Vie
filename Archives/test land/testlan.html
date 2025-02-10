@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prise de contact</title>
+    <link rel="stylesheet" href="testland.css">
+</head>
+<body>
+    <div class="contact">
+        <h1>Prise de contact</h1>
+        <p>Remplissez le formulaire ci-dessous et ajoutez vos fichiers.</p>
+
+        <!-- Formulaire -->
+        <form id="contactForm">
+            <input type="text" id="nom" name="nom" placeholder="Nom" required>
+            <input type="text" id="prenom" name="prenom" placeholder="Prénom" required>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            
+            <textarea id="message" name="message" placeholder="Message" required></textarea>
+
+            <!-- Ajout de fichiers -->
+            <div id="fileSection">
+                <label for="fileInput">Ajouter un fichier :</label>
+                <input type="file" id="fileInput">
+            </div>
+
+            <!-- Liste des fichiers sélectionnés -->
+            <ul id="fileList"></ul>
+
+            <button type="submit">Envoyer</button>
+        </form>
+    </div>
+
+    <script src="test land.js"></script>
+</body>
+</html>
