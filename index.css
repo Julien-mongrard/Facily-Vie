@@ -1,14 +1,16 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Jaldi-Bold', sans-serif;
+
+}
     
+
+
 @media(min-width: 1450px){
 
-
-    body, html {
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        height: 100%;
-        font-family: 'Jaldi-Blod', sans-serif;
-    }
 
     .imageaccueil {
         position: absolute;
@@ -58,12 +60,12 @@
     }
 
     .barduhaut a:hover {
-        color: rgb(0, 183, 255); 
+        color: #0056b3; 
     }
 
     .btn-contact {
-        background-color: #05e2ff; 
-        color: rgb(0, 0, 0); 
+        background-color: #1D4C8D; 
+        color: rgb(255, 255, 255); 
         border: none;
         padding: 10px 20px;
         border-radius: 30px; 
@@ -874,8 +876,8 @@ body{
     }
 
     .btn-contact {
-        background-color: #05e2ff; 
-        color: rgb(0, 0, 0); 
+        background-color: #1D4C8D; 
+        color: rgb(255, 255, 255); 
         border: none;
         padding: 10px 20px;
         border-radius: 30px; 
@@ -890,6 +892,9 @@ body{
 
 
 
+    .barduhaut img{
+        display: none;
+    }
 
     /* 
     Image de la page d'accueil
@@ -914,7 +919,7 @@ body{
         top: 20%;
         left: 10%; 
         background-color: #ffffffc5;
-        border-radius: 50px;
+        border-radius: 45px;
     }
 
     .logohautpage {
@@ -1048,7 +1053,7 @@ body{
         box-sizing: border-box; /* Inclut padding et bordures dans la largeur */
         margin-bottom: 20px; /* Espacement en bas entre les boîtes */
         background-color: #f9f9f9; /* (Optionnel) Ajoute un fond pour visualiser les dimensions */
-        border-radius: 50px;
+        border-radius: 45px;
         display: flex;
         flex-direction: column; /* Aligne le contenu verticalement */
         justify-content: flex-start; /* Le contenu commence en haut */

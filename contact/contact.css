@@ -39,12 +39,12 @@ body, html {
     }
     
     .barduhaut a:hover {
-        color: rgb(0, 183, 255); 
+        color: #0056b3; 
     }
     
     .btn-contact {
-        background-color: #05e2ff; 
-        color: rgb(0, 0, 0); 
+        background-color: #1D4C8D; 
+        color: rgb(255, 255, 255); 
         border: none;
         padding: 10px 20px;
         border-radius: 30px; 
@@ -55,7 +55,7 @@ body, html {
     
     .btn-contact:hover {
         background-color: #0056b3; 
-    }    
+    }
 }
 
 @media(max-width:1300px){
@@ -79,12 +79,12 @@ body, html {
     }
 
     .barduhaut a:hover {
-        color: #007BFF; 
+        color: #0056b3; 
     }
-
+    
     .btn-contact {
-        background-color: #05e2ff; 
-        color: rgb(0, 0, 0); 
+        background-color: #1D4C8D; 
+        color: rgb(255, 255, 255); 
         border: none;
         padding: 10px 20px;
         border-radius: 30px; 
@@ -92,11 +92,14 @@ body, html {
         font-size: 16px;
         text-transform: uppercase; 
     }
-
+    
     .btn-contact:hover {
         background-color: #0056b3; 
     }
-
+    
+    .barduhaut img{
+        display: none;
+    }
 }
 
 
