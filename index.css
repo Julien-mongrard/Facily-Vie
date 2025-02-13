@@ -269,6 +269,10 @@ body, html {
 
     */
 
+    .frise-tel{
+        display: none;
+    }
+
     .frise{
         position: absolute;
         top: 36%;
@@ -1115,7 +1119,11 @@ body{
 
     */
 
-    .frise {
+    .frise{
+        display: none;
+    }
+
+    .frise-tel {
         position: relative;
         width: 100%;
         padding: 20px;
@@ -1125,7 +1133,7 @@ body{
         background: linear-gradient(180deg, #074C86 0%, #03A2C1 27.5%, #02A9CA 50%, #02ABCD 70%, #02ADCF 77%, #074682 100%)
     }
 
-    .frise  h2{
+    .frise-tel  h2{
         color: rgb(255, 255, 255);
         font-family: 'Jaldi-Bold', sans-serif;
         text-align: center;
@@ -1134,15 +1142,6 @@ body{
 
 
 
-    .frise-haut, .frise-bas {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: auto;
-        gap: 20px; /* Réduire l'espace entre les étapes */
-        box-sizing: border-box;
-    }
 
     .section {
         width: 100%;
@@ -1185,9 +1184,6 @@ body{
         height: auto;
     }
 
-    .flechehaut, .fleche1, .fleche2, .fleche3, .flechemilieu {
-        display: none; /* Masquer les flèches */
-    }
 
     .btn-contactfirse {
         position: relative;
