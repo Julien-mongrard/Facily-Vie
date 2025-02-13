@@ -112,13 +112,21 @@ body {
     padding: 20px auto;
     margin: 0;
 }
+
 .container {
     width: 80%;
     margin: 80px auto 30px auto; /* Ajuste 80px en fonction de la hauteur de ta barre */
     background: white;
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 5px solid #1D4C8D;
+}
+
+.img-logo {
+    width: 150px;
+    height: auto;
+    border-radius: 15px;
+
 }
 h1 {
     color: #0073e6;
