@@ -854,7 +854,37 @@ Partie Frise
         width: 50px; /* Réduire la taille des images */
         height: auto;
     }
+}
 
+
+/*
+bouton contact
+*/
+
+@media(min-width:1000px){
+    .btn-contactfirse{
+        position: absolute;
+        top: 92.5%;
+        left: 50%;
+        transform: translate(-50%);
+        background-color: #03B6D6; 
+        color: rgb(255, 255, 255); 
+        font-weight: bold;
+        border: none;
+        padding: 20px 20px;
+        border-radius: 30px; 
+        cursor: pointer;
+        font-size: 45px;
+        text-transform: uppercase; 
+    }
+
+    .btn-contactfirse:hover {
+        color: #000;
+        background-color: #ffffff; 
+    }
+}
+
+@media(max-width:1000px){
 
     .btn-contactfirse {
         position: relative;
@@ -877,4 +907,567 @@ Partie Frise
         background-color: #ffffff; 
     }
 
+}
+
+/* 
+
+
+Partie Localcisation 
+
+*/
+
+
+@media(min-width:1000px){
+    .localisation{
+        position: relative;
+        width: 100%;
+        height: 900px;
+        top: 600px;
+        z-index: 5;
+        }
+
+
+    .titreloc{
+        position: relative;
+        width: 100%;
+        left: 10%;
+        transform: translate(0,-50%);
+        top:5%;
+        color: #074682;
+        font-family: 'Jaldi-Blod', sans-serif;
+        font-size: 64px;
+        font-style: bold;
+    }
+
+
+    .map{
+        position: relative;
+        height: 100%;
+        width: 100%;
+        background-color: #000;
+        border-radius: 80px;
+
+    }
+
+    .loc{
+        position: absolute;
+        width: 60%;
+        height: 80%;
+        top: 42%;
+        left: 35%;
+        transform: translate(-50%,-50%);
+    }
+
+
+    .rectloc{
+        position: absolute;
+        width: 20%;
+        height: 50%;
+        top: 50%;
+        transform: translate(0,-50%); 
+        left: 72%;
+        border-radius: 47px;
+        background: #074682;
+        opacity: 0.9;
+        z-index: 6;
+    }
+
+    .titre1{
+        position: relative;
+        width: 80%;
+        left: 10%;
+        text-align: center;
+        top: 10%;
+        color: rgb(255, 255, 255);
+        font-family: 'Jaldi-Blod', sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+    }
+
+    .texte2{
+        position: relative;
+        width: 80%;
+        left: 10%;
+        display: block; 
+        text-align: center;
+        top: 15%;
+        color: rgb(255, 255, 255);
+        font-family: 'Jaldi-Blod', sans-serif;
+        font-size: 20px;
+    }
+
+    .texte3{
+        position: relative;
+        width: 80%;
+        left: 10%;
+        text-align: center;
+        top: 25%;
+        color: rgb(255, 255, 255);
+        font-family: 'Jaldi-Blod', sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+
+    }
+    .texte4{
+        position: relative;
+        width: 80%;
+        left: 10%;
+        text-align: center;
+        top: 30%;
+        color: rgb(255, 255, 255);
+        font-family: 'Jaldi-Blod', sans-serif;
+        font-size: 20px;
+    }
+
+}
+
+
+@media(max-width:1000px){
+    .localisation {
+        position: relative;
+        width: 100%;
+        padding: 20px 10px; 
+        box-sizing: border-box;
+    }
+
+    .titreloc {
+        width: 100%;
+        font-size: 28px; 
+        color: #000000;
+        font-family: 'Jaldi-Bold', sans-serif;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 20px; 
+    }
+
+    .map {
+        width: 90%; 
+        height: auto; 
+        display: block; 
+        margin: 0 auto 20px auto;
+        border-radius: 80px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); 
+    }
+
+
+    .rectloc {
+        background-color: #074682;
+        border-radius: 20px;
+        padding: 20px;
+        color: #ffffff;
+        text-align: center;
+        margin: 0 auto;
+        width: 50%; 
+    }
+
+*    .texte2 {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #ffffff;
+        text-decoration: none; 
+    }
+
+    .texte2:hover {
+        text-decoration: underline; 
+    }
+
+    .texte3 {
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 20px; 
+    }
+
+    .texte4 {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-top: 10px; 
+    }
+
+
+
+    @media (max-width: 768px) {
+        .localisation {
+            padding: 10px;
+        }
+
+        .titreloc {
+            font-size: 24px; 
+        }
+
+        .map {
+            width: 100%;
+        }
+
+        .rectloc {
+            padding: 15px;
+            width: 70%; 
+        }
+
+        .texte2,
+        .texte3,
+        .texte4 {
+            font-size: 14px; 
+        }
+    }
+
+    @media (max-width: 480px) {
+        .titreloc {
+            font-size: 20px; 
+        }
+
+        .map {
+            height: auto; 
+        }
+
+        .rectloc {
+            width: 80%;
+        }
+
+        .texte2,
+        .texte3,
+        .texte4 {
+            font-size: 12px;
+        }
+    }
+
+}
+
+
+
+/*
+
+Bas de page
+
+*/
+
+@media(min-width:1000px){
+    .baspage {
+        position: relative;
+        width: 100%;
+        height: 900px;
+        top: 550px;
+        background: #074682;
+        z-index: 6;
+    }
+
+    .bloquelogobas {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 600px;
+        height: 600px;
+        background: radial-gradient(50% 50% at 50% 50%, rgb(255, 255, 255) 48.5%, rgb(255, 255, 255) 75%, rgb(7, 70, 130) 91%);
+    }
+
+    .logobaspage {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 80%;
+        width: 80%;
+        transform: translate(-50%, -50%);
+    }
+
+    .bloquelien {
+        position: absolute;
+        width: 30%;
+        height: 400px;
+        top: 20%;
+        left: 0;
+        z-index: 7;
+        text-align: center;
+        line-height: 1.7;
+    }
+
+    .textelien {
+        position: relative;
+        width: 80%;
+        margin: 25% auto 0;
+        color: rgb(241, 241, 241);
+        font-family: 'Jaldi-Blod', sans-serif;
+        font-size: 22px;
+        text-decoration: none;
+    }
+
+    .textebas {
+        position: relative;
+        width: 80%;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%);
+        color: rgb(241, 241, 241);
+        font-family: 'Jaldi-Bold', sans-serif;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .textebas .numero {
+        font-size: 45px;
+    }
+    
+    .textebas .nomadresse {
+        font-size: 25px;
+    }
+    
+    /* Ajoute un espace entre la condition et les autres textes */
+    .textebas .condition {
+        margin-top: 50px; /* Ajuste l'écart entre le texte principal et la condition */
+        color: #000;
+        font-size: 15px;
+    }
+
+
+    .Sipersonne {
+        position: absolute;
+        width: 25%;
+        height: 310px;
+        top: 12%;
+        left: 70%;
+        text-align: center;
+        background: rgba(250, 250, 250, 0.09);
+        border-radius: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imagesipersonne {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .suivrelien {
+        position: absolute;
+        display: flex;
+        width: 400px;
+        height: 100px;
+        top: 60%;
+        left: 73%;
+    }
+
+    .suivernous {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #ffffff;
+        font-family: 'Jaldi-Blod', sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .lienresaux {
+        position: absolute;
+        display: flex;
+        width: 300px;
+        height: 75px;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #FFFFFF;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 30px;
+        border-radius: 47px;
+    }
+
+    .lien {
+        width: auto;
+    }
+}
+
+@media(max-width:1000px){
+    .baspage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        background-color: #074682;
+        color: white;
+        text-align: center;
+    }
+
+    .bloquelogobas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        aspect-ratio: 1/1;
+        background: radial-gradient(50% 50% at 50% 50%, rgb(255, 255, 255) 48.5%, rgb(255, 255, 255) 75%, rgb(7, 70, 130) 91%);
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+
+    .logobaspage {
+        width: 80%;
+        height: auto;
+    }
+
+    .bloquelien {
+        margin-bottom: 20px;
+    }
+
+    .textelien {
+        display: block;
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        margin: 5px 0;
+    }
+
+    .suivrelien {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .suivernous {
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        color: #ffffff;
+        font-family: 'Jaldi-Blod', sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .lienresaux {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin: 15px 0;
+        background: #FFFFFF;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 30px;
+        border-radius: 47px;
+        height: 50px;
+
+
+    }
+
+    .lienresaux img {
+        width: 40px;
+        height: 40px;
+    }
+
+
+
+
+    .textebas {
+        position: relative;
+        width: 80%;
+        top: 70%;
+        color: rgb(241, 241, 241);
+        font-family: 'Jaldi-Bold', sans-serif;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .textebas .numero {
+        font-size: 45px;
+    }
+    
+    .textebas .nomadresse {
+        font-size: 25px;
+    }
+    
+    .textebas .condition {
+        margin-top: 50px; 
+        color: #000;
+        font-size: 15px;
+    }
+
+    .Sipersonne {
+        width: 200px;
+        height: 150px;
+        text-align: center;
+        background: rgba(250, 250, 250, 0.09);
+        border-radius: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .imagesipersonne {
+        max-width: 80%;
+        max-height: 80%;
+    }
+    .lien {
+        width: auto;
+    }
+
+    @media (max-width: 1400px) {
+        .bloquelogobas {
+            width: 40%;
+        }
+        .lienresaux img {
+            width: 35px;
+            height: 35px;
+        }
+        .Sipersonne {
+            width: 180px;
+            height: 130px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .bloquelogobas {
+            width: 60%;
+        }
+        .lienresaux img {
+            width: 30px;
+            height: 30px;
+        }
+        .Sipersonne {
+            width: 160px;
+            height: 120px;
+        }
+    }
+
+}
+
+
+/* Banniere des COOKIES */
+
+#cookie-banner {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #f4f4f4;
+    padding: 20px 10px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 87px;
+    z-index: 1000;
+    font-family: 'Jaldi-Blod', sans-serif;
+
+}
+
+/* Boutons dans la bannière */
+#cookie-banner button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 50px;
+
+}
+#cookie-banner button.reject {
+    background-color: #dc3545;
+    
+}
+
+/* Classe pour désactiver le défilement de l'arrière-plan */
+.no-scroll {
+    overflow: hidden; /* Désactive le défilement vertical */
+    position: fixed; /* Fixe la position */
+    top: 0; /* Verrouille en haut */
+    left: 0; /* Verrouille à gauche */
+    right: 0; /* Verrouille à droite */
+    bottom: 0; /* Verrouille en bas */
+    width: 100%; /* Empêche le contenu de bouger */
 }
