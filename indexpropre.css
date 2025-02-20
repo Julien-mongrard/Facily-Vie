@@ -16,7 +16,6 @@ HAUT DE PAGE
 
 @media(min-width : 1000px){
     
-    /* barre de navigation */
     #fixed {
         position: fixed; 
         top: 0; 
@@ -71,14 +70,14 @@ HAUT DE PAGE
 
 
     #fixed {
-        padding: 5px 10px; /* Moins de padding */
-        box-shadow: none; /* Supprime l'ombre */
-        background-color: #f8f8f8; /* Couleur de fond pour bien différencier */
-        display: flex; /* Utilisation de Flexbox */
-        flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
-        justify-content: space-around; /* Centre les liens horizontalement */
-        align-items: center; /* Centre les liens verticalement */
-        gap: 10px; /* Espacement entre les éléments */
+        padding: 5px 10px; 
+        box-shadow: none; 
+        background-color: #f8f8f8;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around; 
+        align-items: center; 
+        gap: 10px;
     }
 
     .barduhaut a {
@@ -150,8 +149,7 @@ PARTIE LOGOO ET IMAGE
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%); /* Ajuste pour placer le centre de l'image au centre du conteneur */
-        z-index: 3;
+        transform: translate(-50%,-50%); 
     }
 }
 
@@ -160,22 +158,22 @@ PARTIE LOGOO ET IMAGE
 
     .accueil {
         position: relative;
-        top: 0; /* Ajustement vertical */
-        height: auto; /* Adapte automatiquement la hauteur */
-        width: 100%; /* Remplit la largeur */
+        top: 0; 
+        height: auto; 
+        width: 100%; 
     }
 
     .imageaccueil{
         height: 100%;
         width: 100%;
         object-fit: cover;
-        max-height: 750px; /* Limite la hauteur à 100% de la hauteur de la fenêtre */
+        max-height: 750px; 
     }
 
     .carrelogo {
         position: absolute;
-        width: 40%; /* Taille réduite */
-        aspect-ratio: 1/1; /* Carré */
+        width: 40%; 
+        aspect-ratio: 1/1; 
         top: 20%;
         left: 10%; 
         background-color: #ffffffc5;
@@ -184,7 +182,7 @@ PARTIE LOGOO ET IMAGE
 
     .logohautpage {
         width: 50%;
-        height: auto; /* Garde le ratio d'aspect */
+        height: auto;
     }
 }
 
@@ -197,9 +195,9 @@ Parties Serrvices
 @media(min-width: 1500px){
     .rectangleservives {
         display: flex;
-        justify-content: space-evenly; /* Égalise l'espace entre les éléments */
-        align-items: flex-start; /* Aligne les éléments en haut */
-        flex-wrap: wrap; /* Permet le retour à la ligne sur petits écrans */
+        justify-content: space-evenly;
+        align-items: flex-start; 
+        flex-wrap: wrap; 
         width: 100%;
         height: 600px;
         border-radius: 75px;
@@ -211,9 +209,9 @@ Parties Serrvices
 
     .overlap {
         display: flex;
-        flex-direction: column; /* Empile les enfants verticalement */
-        align-items: center; /* Centre horizontalement */
-        justify-content: flex-start; /* Les éléments commencent en haut */
+        flex-direction: column; 
+        align-items: center;
+        justify-content: flex-start; 
         width: 290px;
         height: 434px;
         border-radius: 47px;
@@ -245,7 +243,7 @@ Parties Serrvices
 
     .imagemenage {
         width: 100%; 
-        margin-bottom: 15px; /* Espace entre l'image et le texte */
+        margin-bottom: 15px; 
         height: 44%;
     }
 
@@ -255,7 +253,7 @@ Parties Serrvices
         font-family: 'Jaldi-Blod', sans-serif;
         font-size: 30px;
         line-height: 1.5;
-        margin-bottom: 10px; /* Espace sous le titre */
+        margin-bottom: 10px;
     }
 
     .textemenage {
@@ -274,22 +272,22 @@ Parties Serrvices
     .rectangleservives {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center; /* Centre les cartes sur chaque ligne */
-        align-items: stretch; /* Étire les cartes pour qu'elles aient la même hauteur */
+        justify-content: center; 
+        align-items: stretch; 
         gap: 20px;
         padding: 30px 0;
     }
     
     .overlap {
         position: relative;
-        width: calc(25% - 20px); /* 4 cartes par ligne avec un espace entre elles */
+        width: calc(25% - 20px); 
         height: auto;
         border-radius: 20px;
         padding: 20px;
         text-align: center;
         display: flex;
         flex-direction: column;
-        justify-content: flex-start; /* Aligner le contenu en haut */
+        justify-content: flex-start; 
         align-items: center;
         box-sizing: border-box;
     }
@@ -315,13 +313,12 @@ Parties Serrvices
     }
 
     .imagemenage {
-        width: 150px; /* Taille uniforme pour toutes les images */
-        height: 100px; /* Hauteur fixe pour uniformiser */
-        object-fit: cover; /* Assure un bon affichage même si l'image n'est pas carrée */
+        width: 150px; 
+        height: 100px;
+        object-fit: cover; 
         margin-bottom: 10px;
     }
     
-    /* Styles pour le texte */
     .titremenage {
         font-size: 18px;
         font-weight: bold;
@@ -336,25 +333,23 @@ Parties Serrvices
     }
     
 
-    /* Responsive : Écrans moyens (tablettes) */
     @media (max-width: 768px) {
         .overlap {
-            width: calc(50% - 10%); /* 2 cartes par ligne */
+            width: calc(50% - 10%); 
         }
     }
 
-    /* Responsive : Petits écrans (mobiles) */
     @media (max-width: 480px) {
         .overlap {
-            width: 80%; /* 1 carte par ligne */
+            width: 80%; 
         }
         .imagemenage {
-            width: 90%; /* Réduit la taille des images */
-            height: auto; /* Conserve les proportions */
-            margin-bottom: 10px; /* Espace entre l'image et le texte */
+            width: 90%; 
+            height: auto; 
+            margin-bottom: 10px;
         }    
         .titremenage {
-            font-size: 16px; /* Texte plus petit pour mobiles */
+            font-size: 16px;
         }
         .textemenage {
             font-size: 14px;
@@ -383,7 +378,7 @@ Partie Pictogrammes
     .rectanglepictograme {
         position: relative;
         display: flex;
-        justify-content: space-between; /* Crée des espaces égaux entre les pictogrammes */
+        justify-content: space-between; 
         width: 100%;
         height: 500px;
         top: 5%;
@@ -391,16 +386,16 @@ Partie Pictogrammes
     }
 
     .pictograme {
-        width: 100%; /* Largeur de chaque pictogramme */
+        width: 100%; 
         text-align: center;
         z-index: 4;
     }
 
     .pictograme img {
-        width: 60%; /* Ajuste la taille de l'image */
-        height: 60%; /* Fixe la hauteur des images */
-        object-fit: contain; /* Pour s'assurer que l'image couvre correctement l'espace */
-        margin-top: -20%; /* Ajuste la position verticale de l'image */
+        width: 60%; 
+        height: 60%; 
+        object-fit: contain; 
+        margin-top: -20%;
     }
 
     .pictograme .titrepict,
@@ -411,12 +406,12 @@ Partie Pictogrammes
     }
 
     .pictograme .titrepict {
-        margin-top: 15px; /* Espace entre l'image et le titre */
+        margin-top: 15px;
     }
 
     .pictograme .textepict {
-        margin-top: 10px; /* Espace entre le titre et le texte */
-        font-size: 20px; /* Taille du texte */
+        margin-top: 10px;
+        font-size: 20px;
         width: 90%;
         margin-left: 5%;
     }
@@ -426,74 +421,72 @@ Partie Pictogrammes
 
 @media(max-width:1500px){
     .rectanglepictogramefrise {
-        height: auto; /* Adapte la hauteur */
-        padding: 20px 0; /* Ajoute un espace intérieur */
+        height: auto; 
+        padding: 20px 0; 
     }
 
     .rectanglepictograme {
         display: flex;
-        flex-wrap: wrap; /* Permet aux éléments de passer à la ligne */
-        justify-content: center; /* Centre tous les éléments sur la ligne */
-        align-items: stretch; /* Étire les boîtes pour uniformiser les tailles */
-        gap: 20px; /* Ajoute un espacement uniforme entre les boîtes */
-        text-align: center; /* Centre le texte à l'intérieur des boîtes */
+        flex-wrap: wrap; 
+        justify-content: center; 
+        align-items: stretch;
+        gap: 20px;
+        text-align: center; 
         position: relative;
     }
 
     .pictograme {
-        width: calc(33.33% - 20px); /* Largeur fixe pour 3 éléments par ligne */
-        box-sizing: border-box; /* Inclut padding et bordures dans la largeur */
-        margin-bottom: 20px; /* Espacement en bas entre les boîtes */
-        background-color: #f9f9f9; /* (Optionnel) Ajoute un fond pour visualiser les dimensions */
+        width: calc(33.33% - 20px); 
+        box-sizing: border-box; 
+        margin-bottom: 20px; 
+        background-color: #f9f9f9; 
         border-radius: 45px;
         display: flex;
-        flex-direction: column; /* Aligne le contenu verticalement */
-        justify-content: flex-start; /* Le contenu commence en haut */
-        align-items: center; /* Centre horizontalement */
-        height: auto; /* Ajuste la hauteur automatiquement */
-        min-height: 250px; /* Fixe une hauteur minimale pour éviter les chevauchements */
-        padding: 10px; /* Ajoute un espace autour du contenu */
+        flex-direction: column; 
+        justify-content: flex-start; 
+        align-items: center;
+        height: auto; 
+        min-height: 250px; 
+        padding: 10px; 
         color: #000;
 
     }
 
     .pictograme img {
-        width: auto; /* Images occupent 80% de la largeur de la boîte */
-        aspect-ratio: 1/1; /* Carré */
-        max-height: 120px; /* Limite la hauteur maximale pour éviter qu'elle dépasse */
-        margin-bottom: 10px; /* Ajoute un espace sous l'image */
+        width: auto; 
+        aspect-ratio: 1/1; 
+        max-height: 120px; 
+        margin-bottom: 10px; 
     }
 
     .pictograme .titrepict {
         font-size: 20px;
-        margin: 10px 0; /* Espace autour du titre */
-        word-wrap: break-word; /* Permet au texte long de passer à la ligne */
+        margin: 10px 0; 
+        word-wrap: break-word; 
 
     }
 
 
     .pictograme .textepict {
         font-size: 14px;
-        width: 100%; /* Le texte prend toute la largeur disponible */
-        word-wrap: break-word; /* Permet au texte long de ne pas déborder */
+        width: 100%; 
+        word-wrap: break-word; 
         margin-top: 5px;
         text-decoration: none;
 
     }
 
-    /* Responsive : Ajustement pour les écrans moyens */
     @media (max-width: 768px) {
         .pictograme {
-            width: calc(50% - 20px); /* Largeur fixe pour 2 éléments par ligne */
-            min-height: 200px; /* Réduit la hauteur minimale */
+            width: calc(50% - 20px); 
+            min-height: 200px; 
         }
     }
 
-    /* Responsive : Ajustement pour les petits écrans */
     @media (max-width: 380px) {
         .pictograme {
-            width: 100%; /* Chaque élément occupe toute la largeur */
-            min-height: 180px; /* Réduit encore plus la hauteur minimale */
+            width: 100%; 
+            min-height: 180px; 
         }
     }
 
@@ -533,8 +526,8 @@ Partie Frise
     .frise-haut{
         position: relative;
         display: flex;
-        justify-content: space-between; /* Espacement égal entre les carrés */
-        align-items: center; /* Aligne verticalement les éléments */
+        justify-content: space-between; 
+        align-items: center;
         left: 50%;
         width: 62.7%;
         height: 50%;
@@ -556,7 +549,7 @@ Partie Frise
 
     .section{
         position: relative;
-        justify-content: space-between; /* Espacement égal entre les carrés */
+        justify-content: space-between; 
         height: 100%;
         width: 100%;
         top: 0%;
@@ -566,11 +559,11 @@ Partie Frise
 
     .titre{
         position: relative;
-        background-color: #1D4C8D; /* Couleur de fond */
-        color: white; /* Couleur du texte */
-        padding: 20px; /* Espacement autour du texte */
-        text-align: center; /* Centrer le texte */
-        font-size: 24px; /* Taille du texte */
+        background-color: #1D4C8D; 
+        color: white; 
+        padding: 20px; 
+        text-align: center; 
+        font-size: 24px;
         width: 70%;
         left: 50%;
         transform: translate(-50%);
@@ -582,11 +575,11 @@ Partie Frise
 
     .titrehaut{
         position: relative;
-        background-color: #1D4C8D; /* Couleur de fond */
-        color: white; /* Couleur du texte */
-        padding: 20px; /* Espacement autour du texte */
-        text-align: center; /* Centrer le texte */
-        font-size: 24px; /* Taille du texte */
+        background-color: #1D4C8D; 
+        color: white; 
+        padding: 20px; 
+        text-align: center; 
+        font-size: 24px; 
         width: 70%;
         left: 50%;
         transform: translate(-50%);
@@ -598,9 +591,9 @@ Partie Frise
 
     .text{
         position: relative;
-        color: rgb(0, 0, 0); /* Couleur du texte */
-        padding: 20px; /* Espacement autour du texte */
-        font-size: 24px; /* Taille du texte */
+        color: rgb(0, 0, 0); 
+        padding: 20px; 
+        font-size: 24px; 
         width: 95%;
         left: 50%;
         transform: translate(-50%);
@@ -611,9 +604,9 @@ Partie Frise
 
     .texthaut{
         position: relative;
-        color: rgb(0, 0, 0); /* Couleur du texte */
-        padding: 20px; /* Espacement autour du texte */
-        font-size: 24px; /* Taille du texte */
+        color: rgb(0, 0, 0); 
+        padding: 20px; 
+        font-size: 24px; 
         width: 100%;
         left: 50%;
         transform: translate(-50%);
@@ -624,9 +617,9 @@ Partie Frise
 
     .texthaut1{
         position: relative;
-        color: rgb(0, 0, 0); /* Couleur du texte */
-        padding: 20px; /* Espacement autour du texte */
-        font-size: 24px; /* Taille du texte */
+        color: rgb(0, 0, 0); 
+        padding: 20px;
+        font-size: 24px; 
         width: 100%;
         left: 55%;
         transform: translate(-50%);
@@ -648,10 +641,10 @@ Partie Frise
         position: absolute;
         width: 0;
         height: 0;
-        border-left: 10px solid transparent; /* Créer la partie gauche de la flèche */
-        border-right: 10px solid transparent; /* Créer la partie droite de la flèche */
-        border-top: 10px solid transparent; /* Créer la partie supérieure de la flèche */
-        border-bottom: 20px solid #000000; /* Créer la pointe de la flèche (vers le bas) */
+        border-left: 10px solid transparent; 
+        border-right: 10px solid transparent; 
+        border-top: 10px solid transparent; 
+        border-bottom: 20px solid #000000; 
         top: 65%;
         left: 48.2%;
     }
@@ -699,10 +692,10 @@ Partie Frise
         position: absolute;
         width: 0;
         height: 0;
-        border-left: 10px solid transparent;  /* Partie gauche de la flèche */
-        border-right: 10px solid transparent; /* Partie droite de la flèche */
-        border-top: 20px solid #000000;      /* Partie du haut de la flèche (invisible) */
-        border-bottom: 0;                    /* Aucune bordure en bas */    
+        border-left: 10px solid transparent;  
+        border-right: 10px solid transparent; 
+        border-top: 20px solid #000000;     
+        border-bottom: 0;                  
         top: 25%;
         left: 51.1%;
         transform: translate(-50%,0%);
@@ -711,10 +704,10 @@ Partie Frise
         position: absolute;
         width: 0;
         height: 0;
-        border-left: 10px solid transparent;  /* Partie gauche de la flèche */
-        border-right: 10px solid transparent; /* Partie droite de la flèche */
-        border-top: 20px solid #000000;      /* Partie du haut de la flèche (invisible) */
-        border-bottom: 0;                    /* Aucune bordure en bas */    
+        border-left: 10px solid transparent;  
+        border-right: 10px solid transparent; 
+        border-top: 20px solid #000000;     
+        border-bottom: 0;          
         top: 25%;
         left: 50.1%;
         transform: translate(-50%,0%);
@@ -723,10 +716,10 @@ Partie Frise
         position: absolute;
         width: 0;
         height: 0;
-        border-left: 10px solid transparent;  /* Partie gauche de la flèche */
-        border-right: 10px solid transparent; /* Partie droite de la flèche */
-        border-top: 20px solid #000000;      /* Partie du haut de la flèche (invisible) */
-        border-bottom: 0;                    /* Aucune bordure en bas */    
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent; 
+        border-top: 20px solid #000000;  
+        border-bottom: 0;                  
         top: 25%;
         left: 48.9%;
         transform: translate(-50%,0%);
@@ -752,15 +745,15 @@ Partie Frise
     .flechemilieu {
         position: relative;
         display: flex;
-        justify-content: space-between; /* Espacement égal entre les carrés */
-        align-items: center; /* Aligne verticalement les éléments */
+        justify-content: space-between;
+        align-items: center; 
 
         top: 0%;
         left: 50%;
         transform: translate(-50%,-50%);
         width: 90%;
-        height: 2px; /* Épaisseur du trait */
-        background-color: #000000; /* Couleur du trait */
+        height: 2px; 
+        background-color: #000000; 
         z-index: 6;
     }
 
@@ -774,19 +767,19 @@ Partie Frise
 
     .carre{
         position: relative;
-        width: 100px; /* Taille des images (carrés) */
+        width: 100px; 
         height: 100px;
-        z-index: 7; /* Pour s'assurer qu'elles sont au-dessus de la ligne */
+        z-index: 7;
     }
 
     .finfrise {
         position: relative;
-        width: 0; /* Nécessaire pour le triangle */
-        height: 0; /* Nécessaire pour le triangle */
-        border-top: 10px solid transparent; /* Triangle supérieur */
-        border-bottom: 10px solid transparent; /* Triangle inférieur */
-        border-left: 15px solid #000000; /* Couleur de la flèche */
-        left: 3px; /* Décalage de la flèche vers la droite de 10px */
+        width: 0; 
+        height: 0; 
+        border-top: 10px solid transparent; 
+        border-bottom: 10px solid transparent; 
+        border-left: 15px solid #000000;
+        left: 3px; 
 
     }
 }
@@ -802,7 +795,7 @@ Partie Frise
         padding: 20px;
         background: #ffffff;
         border-radius: 20px;
-        box-sizing: border-box; /* Inclure padding dans la largeur totale */
+        box-sizing: border-box; 
         background: linear-gradient(180deg, #074C86 0%, #03A2C1 27.5%, #02A9CA 50%, #02ABCD 70%, #02ADCF 77%, #074682 100%)
     }
 
@@ -823,11 +816,10 @@ Partie Frise
         padding: 15px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         text-align: center;
-        box-sizing: border-box; /* Inclure padding dans la largeur */
+        box-sizing: border-box; 
         margin-bottom: 30px;
     }
 
-    /* Centrage des titres */
     .titre, .titrehaut {
         font-size: 18px;
         background-color: #1D4C8D;
@@ -836,9 +828,9 @@ Partie Frise
         border-radius: 10px;
         margin-bottom: 10px;
         text-align: center;
-        width: 90%; /* Largeur limitée pour le titre */
-        max-width: 350px; /* Ne dépasse pas 350px */
-        margin: 0 auto; /* Centrer le titre */
+        width: 90%;
+        max-width: 350px; 
+        margin: 0 auto; 
     }
 
 
@@ -846,14 +838,14 @@ Partie Frise
         font-size: 16px;
         color: #333;
         line-height: 1.5;
-        width: 90%; /* Réduire la largeur pour le texte */
-        margin: 0 auto; /* Centrer le texte */
+        width: 90%; 
+        margin: 0 auto; 
     }
 
     .imghaut, .imghaut1, .img1, .img2, .img3 {
         position: relative;
         margin: 15px auto;
-        width: 50px; /* Réduire la taille des images */
+        width: 50px; 
         height: auto;
     }
 }
@@ -890,7 +882,7 @@ bouton contact
 
     .btn-contactfirse {
         position: relative;
-        width: 80%; /* Réduire la largeur du bouton */
+        width: 80%;
         font-size: 18px;
         padding: 12px 20px;
         border-radius: 10px;
@@ -1212,9 +1204,8 @@ Bas de page
         font-size: 25px;
     }
     
-    /* Ajoute un espace entre la condition et les autres textes */
     .textebas .condition {
-        margin-top: 50px; /* Ajuste l'écart entre le texte principal et la condition */
+        margin-top: 50px; 
         color: #000;
         font-size: 15px;
     }
