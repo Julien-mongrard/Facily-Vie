@@ -155,12 +155,12 @@ Bas de page
 
 */
 
-@media(min-width:1000px){
+@media(min-width:1400px){
     .baspage {
         position: relative;
         width: 100%;
         height: 900px;
-        top: 550px;
+        top: 0px;
         background: #074682;
         z-index: 6;
     }
@@ -292,7 +292,7 @@ Bas de page
     }
 }
 
-@media(max-width:1000px){
+@media(max-width:1400px){
     .baspage {
         display: flex;
         flex-direction: column;
