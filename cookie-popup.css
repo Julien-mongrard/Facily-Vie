@@ -1,0 +1,98 @@
+/* Styles de la pop-up */
+.modal {
+    display: none; /* Caché par défaut */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+}
+
+/* Contenu de la pop-up */
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Bouton pour fermer */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Boutons */
+.cookie-button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Bouton Accepter */
+.accept {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Bouton Refuser */
+.refuse {
+    background-color: #f44336;
+    color: white;
+}
+
+/* Bouton hover */
+.cookie-button:hover {
+    opacity: 0.8;
+}
+
+.cookie-category {
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
+
+.cookie-category h3 {
+    margin-bottom: 10px;
+}
+
+.cookie-button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #ddd; /* gris au départ */
+    transition: background-color 0.3s ease;
+}
+
+.save-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.save-button:hover {
+    background-color: #0056b3;
+}
