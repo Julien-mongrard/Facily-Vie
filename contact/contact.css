@@ -124,8 +124,7 @@ body, html {
         justify-content: center; 
         align-items: center; 
         width: 60%;
-        height: 650px;
-        top: 50%;
+        top: 52%;
         left: 50%;
         transform: translate(-50%,-50%); /* Ajuste pour placer le centre de l'image au centre du conteneur */
         background-color: #f2f2f2e1; 
@@ -195,17 +194,24 @@ body, html {
         border: none; 
         border-radius: 30px; 
         font-size: 18px; 
-        background-color: #1D4C8D; 
+        background-color: #05e2ff; 
         color: rgb(255, 255, 255); 
         cursor: pointer; 
         transition: background-color 0.3s ease;
     }
     
     .contact form button:hover {
-        background-color: #083d86; 
+        background-color: #03b2cc; 
+    }
+
+    #recaptcha {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px; /* Ajoute de l'espace au-dessus si nécessaire */
     }
     
-    
+
     
     /* Style pour le conteneur du message */
     #statusMessage {
@@ -321,14 +327,21 @@ body, html {
         border: none; 
         border-radius: 30px; 
         font-size: 18px; 
-        background-color: #1D4C8D; 
+        background-color: #05e2ff; 
         color: rgb(255, 255, 255); 
         cursor: pointer; 
         transition: background-color 0.3s ease;
     }
     
     .contact form button:hover {
-        background-color: #083d86; 
+        background-color: #03b2cc; 
+    }
+    
+    #recaptcha {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px; /* Ajoute de l'espace au-dessus si nécessaire */
     }
     
     /* Style pour le conteneur du message */
