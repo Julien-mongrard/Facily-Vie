@@ -8,6 +8,7 @@
 
     <title>Recrutement</title>
     <script src="recrutement.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
     <header>
@@ -50,6 +51,10 @@
                 <label for="fichier1">Depot CV et lettre de motivation</label><br>
                 <input type="file" id="fichier1" name="fichiers[]" accept=".pdf,.doc,.docx,.png,.jpg,.jpeg" multiple>
                 <input type="file" id="fichier2" name="fichiers[]" accept=".pdf,.doc,.docx,.png,.jpg,.jpeg" multiple>
+
+                <input type="hidden" name="recaptcha_token" id="recaptcha_token">
+                <div class="g-recaptcha" id="recaptcha" data-sitekey="6LfMdd4qAAAAALgZPTQiROc9t2B6J29Pan_n_VmH"></div>
+
 
                 <button type="submit">Envoyer</button>
             </form>

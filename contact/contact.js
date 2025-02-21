@@ -19,6 +19,11 @@ function envoyerFormulaire(event) {
     })
     .then(response => response.json())
     .then(data => {
+        // Afficher le score reCAPTCHA dans la console
+        if (data.recaptcha_score !== undefined) {
+            console.log("Score reCAPTCHA: ", data.recaptcha_score);
+        }
+
         if (data.success) {
             statusMessage.textContent = "✅ Message envoyé avec succès !";
             form.reset(); // Réinitialiser les champs du formulaire
@@ -36,3 +41,30 @@ function envoyerFormulaire(event) {
         }, 5000); // Disparaît après 5 secondes
     });
 }
+
+document.querySelector('form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Empêcher l'envoi classique du formulaire
+    
+    // Créer un FormData pour envoyer les données du formulaire
+    var formData = new FormData(this);
+    
+    // Envoyer la requête AJAX
+    fetch('ton_script_php.php', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => response.json())
+    .then(data => {
+        // Si l'envoi a réussi
+        if (data.success) {
+            alert(data.message); // Afficher le message de succès
+            // Réinitialiser le reCAPTCHA
+            grecaptcha.reset(); // Cette fonction réinitialise le reCAPTCHA
+        } else {
+            alert(data.message); // Afficher le message d'erreur
+        }
+    })
+    .catch(error => {
+        alert("Erreur lors de l'envoi. Veuillez réessayer.");
+    });
+});

@@ -8,6 +8,8 @@
 
     <title>contact</title>
     <script src="./contact.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 </head>
 
 <body>
@@ -43,7 +45,13 @@
                 <input type="text" id="telephone" name="telephone" placeholder="Téléphone" required>
                 <input type="email" id="email" name="email" placeholder="Email" required><br>
                 <textarea id="message" name="message" placeholder="Message" required></textarea><br>
+
+
+                <input type="hidden" name="recaptcha_token" id="recaptcha_token">
+                <div class="g-recaptcha" id="recaptcha" data-sitekey="6LfMdd4qAAAAALgZPTQiROc9t2B6J29Pan_n_VmH"></div>
+
                 <button type="submit">Envoyer</button>
+     
             </form>
 
             <!-- Message de statut -->

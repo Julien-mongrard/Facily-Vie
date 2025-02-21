@@ -3,6 +3,42 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Activer un buffer pour éviter des sorties non désirées
     ob_start();
 
+    // Récupérer la réponse de reCAPTCHA
+    $recaptchaResponse = $_POST['g-recaptcha-response'] ?? '';
+
+    // Vérifier la réponse reCAPTCHA via l'API Google
+    $secretKey = '6LfMdd4qAAAAAKiaAjKQpKSXUpRLLtct8PrtQ3nR'; // Remplace par ta clé secrète
+    $verifyURL = 'https://www.google.com/recaptcha/api/siteverify';
+    $data = [
+        'secret' => $secretKey,
+        'response' => $recaptchaResponse
+    ];
+    
+    $options = [
+        'http' => [
+            'method' => 'POST',
+            'content' => http_build_query($data),
+            'header' => "Content-type: application/x-www-form-urlencoded\r\n"
+        ]
+    ];
+
+    $context = stream_context_create($options);
+    $response = file_get_contents($verifyURL, false, $context);
+    $responseKeys = json_decode($response, true);
+
+    // Vérifier si reCAPTCHA est validé
+    if (intval($responseKeys["success"]) !== 1) {
+        // Si reCAPTCHA échoue
+        $response = [
+            "success" => false,
+            "message" => "Erreur de validation reCAPTCHA. Veuillez réessayer."
+        ];
+        ob_end_clean();
+        header('Content-Type: application/json');
+        echo json_encode($response);
+        exit;
+    }
+
     // Récupérer les données du formulaire en les sécurisant
     $choix = htmlspecialchars($_POST['choix'] ?? '');
     $nom = htmlspecialchars($_POST['nom'] ?? '');
@@ -12,8 +48,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = htmlspecialchars($_POST['message'] ?? '');
 
     // Préparer les variables de l'email
-    $to = "mongrardjulien@gmail.com"; // Remplacez par votre e-mail de test
-    $subject = "Candidature - $choix";
+    $to = "mongrardjulien@gmail.com"; // Remplacez par ton e-mail
+    $subject = "Prise de Contact - $choix";
     $headers = "From: $email\r\n";
     $headers .= "Reply-To: $email\r\n";
 
