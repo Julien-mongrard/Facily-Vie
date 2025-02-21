@@ -194,14 +194,14 @@ body, html {
         border: none; 
         border-radius: 30px; 
         font-size: 18px; 
-        background-color: #05e2ff; 
+        background-color: #1D4C8D; 
         color: rgb(255, 255, 255); 
         cursor: pointer; 
         transition: background-color 0.3s ease;
     }
     
     .contact form button:hover {
-        background-color: #03b2cc; 
+        background-color: #0056b3; 
     }
 
     #recaptcha {
@@ -327,14 +327,14 @@ body, html {
         border: none; 
         border-radius: 30px; 
         font-size: 18px; 
-        background-color: #05e2ff; 
+        background-color: #1D4C8D; 
         color: rgb(255, 255, 255); 
         cursor: pointer; 
         transition: background-color 0.3s ease;
     }
     
     .contact form button:hover {
-        background-color: #03b2cc; 
+        background-color: #0056b3; 
     }
     
     #recaptcha {
