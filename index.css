@@ -8,37 +8,23 @@ body, html {
 }
     
 
+/* 
 
-@media(min-width: 1450px){
+HAUT DE PAGE
 
+*/
 
-    .imageaccueil {
-        position: absolute;
-        top: -200px;
-        width: 100%;
-        height: 1464px;
-        flex-shrink: 0;
-        object-fit: cover;
-        z-index: -1;
-    }
-
-    /* 
-
-
-    PARTIE HAUT DE PAGE 
-
-
-    */
-
+@media(min-width : 1000px){
+    
     #fixed {
-        position: fixed; /* Fixe l'élément */
-        top: 0; /* Positionné en haut de la page */
-        left: 0; /* Aligné à gauche */
-        width: 100%; /* S'étend sur toute la largeur */
-        background-color: #ffffff; /* Couleur de fond */
-        z-index: 1000; /* Assure que la barre est au-dessus des autres éléments */
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optionnel : ombre pour un effet visuel */
-        padding: 10px 0; /* Optionnel : Espacement interne */
+        position: fixed; 
+        top: 0; 
+        left: 0; 
+        width: 100%;
+        background-color: #ffffff; 
+        z-index: 1000; 
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+        padding: 10px 0; 
     }
 
     .barduhaut {
@@ -78,8 +64,73 @@ body, html {
         background-color: #0056b3; 
     }
 
-    /* FIN AU DE PAGE */
+}
 
+@media(max-width : 1000px){
+
+
+    #fixed {
+        padding: 5px 10px; 
+        box-shadow: none; 
+        background-color: #f8f8f8;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around; 
+        align-items: center; 
+        gap: 10px;
+    }
+
+    .barduhaut a {
+        font-size: 14px; 
+        padding: 5px 10px;
+        text-decoration: none; 
+        color: black; 
+        transition: color 0.3s ease; 
+    }
+
+    .barduhaut a:hover {
+        color: #007BFF; 
+    }
+
+    .btn-contact {
+        background-color: #1D4C8D; 
+        color: rgb(255, 255, 255); 
+        border: none;
+        padding: 10px 20px;
+        border-radius: 30px; 
+        cursor: pointer;
+        font-size: 16px;
+        text-transform: uppercase; 
+    }
+
+    .btn-contact:hover {
+        background-color: #0056b3; 
+    }
+    
+    .barduhaut img{
+        display: none;
+    }
+}
+
+
+/*
+
+PARTIE LOGOO ET IMAGE
+
+*/
+
+@media(min-width :1500px) {
+
+    .imageaccueil {
+        position: absolute;
+        top: -200px;
+        width: 100%;
+        height: 1464px;
+        flex-shrink: 0;
+        object-fit: cover;
+        z-index: -1;
+    }
+    
     .carrelogo{
         position:absolute;
         top: 100px;
@@ -98,20 +149,55 @@ body, html {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%); /* Ajuste pour placer le centre de l'image au centre du conteneur */
-        z-index: 3;
+        transform: translate(-50%,-50%); 
+    }
+}
+
+
+@media(max-width :1500px) {
+
+    .accueil {
+        position: relative;
+        top: 0; 
+        height: auto; 
+        width: 100%; 
     }
 
+    .imageaccueil{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        max-height: 750px; 
+    }
 
+    .carrelogo {
+        position: absolute;
+        width: 40%; 
+        aspect-ratio: 1/1; 
+        top: 20%;
+        left: 10%; 
+        background-color: #ffffffc5;
+        border-radius: 45px;
+    }
 
+    .logohautpage {
+        width: 50%;
+        height: auto;
+    }
+}
 
-    /*PARTIE SERVIVES */
+/*
 
+Parties Serrvices
+
+*/
+
+@media(min-width: 1500px){
     .rectangleservives {
         display: flex;
-        justify-content: space-evenly; /* Égalise l'espace entre les éléments */
-        align-items: flex-start; /* Aligne les éléments en haut */
-        flex-wrap: wrap; /* Permet le retour à la ligne sur petits écrans */
+        justify-content: space-evenly;
+        align-items: flex-start; 
+        flex-wrap: wrap; 
         width: 100%;
         height: 600px;
         border-radius: 75px;
@@ -123,9 +209,9 @@ body, html {
 
     .overlap {
         display: flex;
-        flex-direction: column; /* Empile les enfants verticalement */
-        align-items: center; /* Centre horizontalement */
-        justify-content: flex-start; /* Les éléments commencent en haut */
+        flex-direction: column; 
+        align-items: center;
+        justify-content: flex-start; 
         width: 290px;
         height: 434px;
         border-radius: 47px;
@@ -157,7 +243,7 @@ body, html {
 
     .imagemenage {
         width: 100%; 
-        margin-bottom: 15px; /* Espace entre l'image et le texte */
+        margin-bottom: 15px; 
         height: 44%;
     }
 
@@ -167,7 +253,7 @@ body, html {
         font-family: 'Jaldi-Blod', sans-serif;
         font-size: 30px;
         line-height: 1.5;
-        margin-bottom: 10px; /* Espace sous le titre */
+        margin-bottom: 10px;
     }
 
     .textemenage {
@@ -178,28 +264,108 @@ body, html {
         width: 100%;
     }
 
-    /*FIN DE LA PARTIE SERVICES */
+}
 
-    /*PARTIE PICTOGRAMME ET FRISE */
-    .rectanglepictogramefrise{
+
+
+@media(max-width: 1500px){
+    .rectangleservives {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; 
+        align-items: stretch; 
+        gap: 20px;
+        padding: 30px 0;
+    }
+    
+    .overlap {
         position: relative;
-        width: 100%;
-        height: 1500px;
-        top: 600px;
-        background: linear-gradient(180deg, #074C86 0%, #03A2C1 27.5%, #02A9CA 50%, #02ABCD 70%, #02ADCF 77%, #074682 100%);
-        z-index: 6;
+        width: calc(25% - 20px); 
+        height: auto;
+        border-radius: 20px;
+        padding: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; 
+        align-items: center;
+        box-sizing: border-box;
+    }
+    
+    .overlap-1 {
+        background: linear-gradient(180deg, #AE193F 0%, #4A0B1A 56.5%, #73293C 99.99%);
+        box-shadow: 10px 10px 0px 0px #4B0B1A;
     }
 
+    .overlap-2 {
+        background: linear-gradient(180deg, #7DE9FF 0%, #416FE4 55%, #4B8C99 100%);
+        box-shadow: 10px 10px 0px 0px #4170E2;
+    }
 
-    /*FIN DE LA PARTIE SERVICES */
+    .overlap-3 {
+        background: linear-gradient(180deg, #F5C2FF 0%, #C558DB 50.5%, #B99BBF 99.99%);
+        box-shadow: 10px 10px 0px 0px #C360D7;
+    }
 
-    /*
+    .overlap-4 {
+        background: linear-gradient(180deg, #FCF2B8 0%, #FF8E0E 49.5%, #F3BB7B 100%);
+        box-shadow: 10px 10px 0px 0px #FD951D;
+    }
+
+    .imagemenage {
+        width: 150px; 
+        height: 100px;
+        object-fit: cover; 
+        margin-bottom: 10px;
+    }
+    
+    .titremenage {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #fff;
+    }
+    
+    .textemenage {
+        font-size: 16px;
+        margin-top: 5px;
+        color: #fff;
+    }
+    
+
+    @media (max-width: 768px) {
+        .overlap {
+            width: calc(50% - 10%); 
+        }
+    }
+
+    @media (max-width: 480px) {
+        .overlap {
+            width: 80%; 
+        }
+        .imagemenage {
+            width: 90%; 
+            height: auto; 
+            margin-bottom: 10px;
+        }    
+        .titremenage {
+            font-size: 16px;
+        }
+        .textemenage {
+            font-size: 14px;
+        }
+    }
+}
 
 
-    PARTIE PICTOGRAMME ET FRISE 
 
+/*
 
-    */
+Partie Pictogrammes
+
+*/
+
+@media(min-width:1500px){
     .rectanglepictogramefrise{
         position: relative;
         width: 100%;
@@ -209,18 +375,10 @@ body, html {
         z-index: 6;
     }
 
-    /*
-
-
-    PARTIE PICTOGRAMME 
-
-
-    */
-
     .rectanglepictograme {
         position: relative;
         display: flex;
-        justify-content: space-between; /* Crée des espaces égaux entre les pictogrammes */
+        justify-content: space-between; 
         width: 100%;
         height: 500px;
         top: 5%;
@@ -228,16 +386,16 @@ body, html {
     }
 
     .pictograme {
-        width: 100%; /* Largeur de chaque pictogramme */
+        width: 100%; 
         text-align: center;
         z-index: 4;
     }
 
     .pictograme img {
-        width: 60%; /* Ajuste la taille de l'image */
-        height: 60%; /* Fixe la hauteur des images */
-        object-fit: contain; /* Pour s'assurer que l'image couvre correctement l'espace */
-        margin-top: -20%; /* Ajuste la position verticale de l'image */
+        width: 60%; 
+        height: 60%; 
+        object-fit: contain; 
+        margin-top: -20%;
     }
 
     .pictograme .titrepict,
@@ -248,26 +406,101 @@ body, html {
     }
 
     .pictograme .titrepict {
-        margin-top: 15px; /* Espace entre l'image et le titre */
+        margin-top: 15px;
     }
 
     .pictograme .textepict {
-        margin-top: 10px; /* Espace entre le titre et le texte */
-        font-size: 20px; /* Taille du texte */
+        margin-top: 10px;
+        font-size: 20px;
         width: 90%;
         margin-left: 5%;
     }
+}
 
 
-    /*FIN DE LA PARTIE PICTOGRAMME */
 
-    /*
+@media(max-width:1500px){
+    .rectanglepictogramefrise {
+        height: auto; 
+        padding: 20px 0; 
+    }
+
+    .rectanglepictograme {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center; 
+        align-items: stretch;
+        gap: 20px;
+        text-align: center; 
+        position: relative;
+    }
+
+    .pictograme {
+        width: calc(33.33% - 20px); 
+        box-sizing: border-box; 
+        margin-bottom: 20px; 
+        background-color: #f9f9f9; 
+        border-radius: 45px;
+        display: flex;
+        flex-direction: column; 
+        justify-content: flex-start; 
+        align-items: center;
+        height: auto; 
+        min-height: 250px; 
+        padding: 10px; 
+        color: #000;
+
+    }
+
+    .pictograme img {
+        width: auto; 
+        aspect-ratio: 1/1; 
+        max-height: 120px; 
+        margin-bottom: 10px; 
+    }
+
+    .pictograme .titrepict {
+        font-size: 20px;
+        margin: 10px 0; 
+        word-wrap: break-word; 
+
+    }
 
 
-    DEBUT DE LA FRISE !! BORDEL DE MERDE !!
+    .pictograme .textepict {
+        font-size: 14px;
+        width: 100%; 
+        word-wrap: break-word; 
+        margin-top: 5px;
+        text-decoration: none;
+
+    }
+
+    @media (max-width: 768px) {
+        .pictograme {
+            width: calc(50% - 20px); 
+            min-height: 200px; 
+        }
+    }
+
+    @media (max-width: 380px) {
+        .pictograme {
+            width: 100%; 
+            min-height: 180px; 
+        }
+    }
+
+}
 
 
-    */
+
+/* 
+
+Partie Frise
+
+*/
+
+@media(min-width:1500px){
 
     .frise-tel{
         display: none;
@@ -293,8 +526,8 @@ body, html {
     .frise-haut{
         position: relative;
         display: flex;
-        justify-content: space-between; /* Espacement égal entre les carrés */
-        align-items: center; /* Aligne verticalement les éléments */
+        justify-content: space-between; 
+        align-items: center;
         left: 50%;
         width: 62.7%;
         height: 50%;
@@ -316,7 +549,7 @@ body, html {
 
     .section{
         position: relative;
-        justify-content: space-between; /* Espacement égal entre les carrés */
+        justify-content: space-between; 
         height: 100%;
         width: 100%;
         top: 0%;
@@ -326,11 +559,11 @@ body, html {
 
     .titre{
         position: relative;
-        background-color: #1D4C8D; /* Couleur de fond */
-        color: white; /* Couleur du texte */
-        padding: 20px; /* Espacement autour du texte */
-        text-align: center; /* Centrer le texte */
-        font-size: 24px; /* Taille du texte */
+        background-color: #1D4C8D; 
+        color: white; 
+        padding: 20px; 
+        text-align: center; 
+        font-size: 24px;
         width: 70%;
         left: 50%;
         transform: translate(-50%);
@@ -342,11 +575,11 @@ body, html {
 
     .titrehaut{
         position: relative;
-        background-color: #1D4C8D; /* Couleur de fond */
-        color: white; /* Couleur du texte */
-        padding: 20px; /* Espacement autour du texte */
-        text-align: center; /* Centrer le texte */
-        font-size: 24px; /* Taille du texte */
+        background-color: #1D4C8D; 
+        color: white; 
+        padding: 20px; 
+        text-align: center; 
+        font-size: 24px; 
         width: 70%;
         left: 50%;
         transform: translate(-50%);
@@ -358,9 +591,9 @@ body, html {
 
     .text{
         position: relative;
-        color: rgb(0, 0, 0); /* Couleur du texte */
-        padding: 20px; /* Espacement autour du texte */
-        font-size: 24px; /* Taille du texte */
+        color: rgb(0, 0, 0); 
+        padding: 20px; 
+        font-size: 24px; 
         width: 95%;
         left: 50%;
         transform: translate(-50%);
@@ -371,9 +604,9 @@ body, html {
 
     .texthaut{
         position: relative;
-        color: rgb(0, 0, 0); /* Couleur du texte */
-        padding: 20px; /* Espacement autour du texte */
-        font-size: 24px; /* Taille du texte */
+        color: rgb(0, 0, 0); 
+        padding: 20px; 
+        font-size: 24px; 
         width: 100%;
         left: 50%;
         transform: translate(-50%);
@@ -384,9 +617,9 @@ body, html {
 
     .texthaut1{
         position: relative;
-        color: rgb(0, 0, 0); /* Couleur du texte */
-        padding: 20px; /* Espacement autour du texte */
-        font-size: 24px; /* Taille du texte */
+        color: rgb(0, 0, 0); 
+        padding: 20px;
+        font-size: 24px; 
         width: 100%;
         left: 55%;
         transform: translate(-50%);
@@ -408,10 +641,10 @@ body, html {
         position: absolute;
         width: 0;
         height: 0;
-        border-left: 10px solid transparent; /* Créer la partie gauche de la flèche */
-        border-right: 10px solid transparent; /* Créer la partie droite de la flèche */
-        border-top: 10px solid transparent; /* Créer la partie supérieure de la flèche */
-        border-bottom: 20px solid #000000; /* Créer la pointe de la flèche (vers le bas) */
+        border-left: 10px solid transparent; 
+        border-right: 10px solid transparent; 
+        border-top: 10px solid transparent; 
+        border-bottom: 20px solid #000000; 
         top: 65%;
         left: 48.2%;
     }
@@ -459,10 +692,10 @@ body, html {
         position: absolute;
         width: 0;
         height: 0;
-        border-left: 10px solid transparent;  /* Partie gauche de la flèche */
-        border-right: 10px solid transparent; /* Partie droite de la flèche */
-        border-top: 20px solid #000000;      /* Partie du haut de la flèche (invisible) */
-        border-bottom: 0;                    /* Aucune bordure en bas */    
+        border-left: 10px solid transparent;  
+        border-right: 10px solid transparent; 
+        border-top: 20px solid #000000;     
+        border-bottom: 0;                  
         top: 25%;
         left: 51.1%;
         transform: translate(-50%,0%);
@@ -471,10 +704,10 @@ body, html {
         position: absolute;
         width: 0;
         height: 0;
-        border-left: 10px solid transparent;  /* Partie gauche de la flèche */
-        border-right: 10px solid transparent; /* Partie droite de la flèche */
-        border-top: 20px solid #000000;      /* Partie du haut de la flèche (invisible) */
-        border-bottom: 0;                    /* Aucune bordure en bas */    
+        border-left: 10px solid transparent;  
+        border-right: 10px solid transparent; 
+        border-top: 20px solid #000000;     
+        border-bottom: 0;          
         top: 25%;
         left: 50.1%;
         transform: translate(-50%,0%);
@@ -483,10 +716,10 @@ body, html {
         position: absolute;
         width: 0;
         height: 0;
-        border-left: 10px solid transparent;  /* Partie gauche de la flèche */
-        border-right: 10px solid transparent; /* Partie droite de la flèche */
-        border-top: 20px solid #000000;      /* Partie du haut de la flèche (invisible) */
-        border-bottom: 0;                    /* Aucune bordure en bas */    
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent; 
+        border-top: 20px solid #000000;  
+        border-bottom: 0;                  
         top: 25%;
         left: 48.9%;
         transform: translate(-50%,0%);
@@ -512,15 +745,15 @@ body, html {
     .flechemilieu {
         position: relative;
         display: flex;
-        justify-content: space-between; /* Espacement égal entre les carrés */
-        align-items: center; /* Aligne verticalement les éléments */
+        justify-content: space-between;
+        align-items: center; 
 
         top: 0%;
         left: 50%;
         transform: translate(-50%,-50%);
         width: 90%;
-        height: 2px; /* Épaisseur du trait */
-        background-color: #000000; /* Couleur du trait */
+        height: 2px; 
+        background-color: #000000; 
         z-index: 6;
     }
 
@@ -534,24 +767,95 @@ body, html {
 
     .carre{
         position: relative;
-        width: 100px; /* Taille des images (carrés) */
+        width: 100px; 
         height: 100px;
-        z-index: 7; /* Pour s'assurer qu'elles sont au-dessus de la ligne */
+        z-index: 7;
     }
 
     .finfrise {
         position: relative;
-        width: 0; /* Nécessaire pour le triangle */
-        height: 0; /* Nécessaire pour le triangle */
-        border-top: 10px solid transparent; /* Triangle supérieur */
-        border-bottom: 10px solid transparent; /* Triangle inférieur */
-        border-left: 15px solid #000000; /* Couleur de la flèche */
-        left: 3px; /* Décalage de la flèche vers la droite de 10px */
+        width: 0; 
+        height: 0; 
+        border-top: 10px solid transparent; 
+        border-bottom: 10px solid transparent; 
+        border-left: 15px solid #000000;
+        left: 3px; 
 
     }
+}
 
-    /* FIN DE LA FRISE !! DIEU MERCI !! */
+@media(max-width:1500px){
+    .frise{
+        display: none;
+    }
 
+    .frise-tel {
+        position: relative;
+        width: 100%;
+        padding: 20px;
+        background: #ffffff;
+        border-radius: 20px;
+        box-sizing: border-box; 
+        background: linear-gradient(180deg, #074C86 0%, #03A2C1 27.5%, #02A9CA 50%, #02ABCD 70%, #02ADCF 77%, #074682 100%)
+    }
+
+    .frise-tel  h2{
+        color: rgb(255, 255, 255);
+        font-family: 'Jaldi-Bold', sans-serif;
+        text-align: center;
+        font-weight: bold;
+    }
+
+
+
+
+    .section {
+        width: 100%;
+        background: #ffffff;
+        border-radius: 15px;
+        padding: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        box-sizing: border-box; 
+        margin-bottom: 30px;
+    }
+
+    .titre, .titrehaut {
+        font-size: 18px;
+        background-color: #1D4C8D;
+        color: #fff;
+        padding: 15px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+        width: 90%;
+        max-width: 350px; 
+        margin: 0 auto; 
+    }
+
+
+    .text, .texthaut, .texthaut1 {
+        font-size: 16px;
+        color: #333;
+        line-height: 1.5;
+        width: 90%; 
+        margin: 0 auto; 
+    }
+
+    .imghaut, .imghaut1, .img1, .img2, .img3 {
+        position: relative;
+        margin: 15px auto;
+        width: 50px; 
+        height: auto;
+    }
+}
+
+
+/*
+bouton contact
+*/
+
+@media(min-width:1500px){
     .btn-contactfirse{
         position: absolute;
         top: 92.5%;
@@ -572,17 +876,42 @@ body, html {
         color: #000;
         background-color: #ffffff; 
     }
+}
 
-    /*FIN DE LA PARTIE PICTOGRAMME ET FRISE */
+@media(max-width:1500px){
 
-    /* 
+    .btn-contactfirse {
+        position: relative;
+        width: 80%;
+        font-size: 18px;
+        padding: 12px 20px;
+        border-radius: 10px;
+        margin-top: 20px;
+        text-align: center;
+        left: 50%;
+        transform: translate(-50%);
+        background-color: #03B6D6; 
+        color: #ffffff;
+        text-transform: uppercase;
+        border: none;
+    }
+
+    .btn-contactfirse:hover {
+        color: #000;
+        background-color: #ffffff; 
+    }
+
+}
+
+/* 
 
 
-    PARTIE LOCALISATION 
+Partie Localcisation 
+
+*/
 
 
-    */
-
+@media(min-width:1500px){
     .localisation{
         position: relative;
         width: 100%;
@@ -684,15 +1013,128 @@ body, html {
         font-size: 20px;
     }
 
-    /*FIN DE LA LOCALISATION */
-
-    /* 
+}
 
 
-    BAS DE PAGE
+@media(max-width:1500px){
+    .localisation {
+        position: relative;
+        width: 100%;
+        padding: 20px 10px; 
+        box-sizing: border-box;
+    }
+
+    .titreloc {
+        width: 100%;
+        font-size: 28px; 
+        color: #000000;
+        font-family: 'Jaldi-Bold', sans-serif;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 20px; 
+    }
+
+    .map {
+        width: 90%; 
+        height: auto; 
+        display: block; 
+        margin: 0 auto 20px auto;
+        border-radius: 80px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); 
+    }
 
 
-    */
+    .rectloc {
+        background-color: #074682;
+        border-radius: 20px;
+        padding: 20px;
+        color: #ffffff;
+        text-align: center;
+        margin: 0 auto;
+        width: 50%; 
+    }
+
+*    .texte2 {
+        font-size: 16px;
+        line-height: 1.5;
+        color: #ffffff;
+        text-decoration: none; 
+    }
+
+    .texte2:hover {
+        text-decoration: underline; 
+    }
+
+    .texte3 {
+        font-size: 20px;
+        font-weight: bold;
+        margin-top: 20px; 
+    }
+
+    .texte4 {
+        font-size: 16px;
+        line-height: 1.5;
+        margin-top: 10px; 
+    }
+
+
+
+    @media (max-width: 768px) {
+        .localisation {
+            padding: 10px;
+        }
+
+        .titreloc {
+            font-size: 24px; 
+        }
+
+        .map {
+            width: 100%;
+        }
+
+        .rectloc {
+            padding: 15px;
+            width: 70%; 
+        }
+
+        .texte2,
+        .texte3,
+        .texte4 {
+            font-size: 14px; 
+        }
+    }
+
+    @media (max-width: 480px) {
+        .titreloc {
+            font-size: 20px; 
+        }
+
+        .map {
+            height: auto; 
+        }
+
+        .rectloc {
+            width: 80%;
+        }
+
+        .texte2,
+        .texte3,
+        .texte4 {
+            font-size: 12px;
+        }
+    }
+
+}
+
+
+
+/*
+
+Bas de page
+
+*/
+
+@media(min-width:1500px){
     .baspage {
         position: relative;
         width: 100%;
@@ -762,9 +1204,8 @@ body, html {
         font-size: 25px;
     }
     
-    /* Ajoute un espace entre la condition et les autres textes */
     .textebas .condition {
-        margin-top: 50px; /* Ajuste l'écart entre le texte principal et la condition */
+        margin-top: 50px; 
         color: #000;
         font-size: 15px;
     }
@@ -827,509 +1268,9 @@ body, html {
     .lien {
         width: auto;
     }
-
-
-
-    /* FIN DU BAS DE PAGE */
-
 }
 
-
-/*
-
-
-
-
-PARTIE MOBILE
-
-
-
-*/
-
-
-
-body{
-    font-family: 'Jaldi-Blod', sans-serif;
-}
-
-
-/* Réglages pour les écrans en dessous de 1000px */
-@media (max-width: 1450px) {
-
-    #fixed {
-        padding: 5px 10px; /* Moins de padding */
-        box-shadow: none; /* Supprime l'ombre */
-        background-color: #f8f8f8; /* Couleur de fond pour bien différencier */
-        display: flex; /* Utilisation de Flexbox */
-        flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
-        justify-content: space-around; /* Centre les liens horizontalement */
-        align-items: center; /* Centre les liens verticalement */
-        gap: 10px; /* Espacement entre les éléments */
-    }
-
-    .barduhaut a {
-        font-size: 14px; 
-        padding: 5px 10px;
-        text-decoration: none; 
-        color: black; 
-        transition: color 0.3s ease; 
-    }
-
-    .barduhaut a:hover {
-        color: #007BFF; 
-    }
-
-    .btn-contact {
-        background-color: #1D4C8D; 
-        color: rgb(255, 255, 255); 
-        border: none;
-        padding: 10px 20px;
-        border-radius: 30px; 
-        cursor: pointer;
-        font-size: 16px;
-        text-transform: uppercase; 
-    }
-
-    .btn-contact:hover {
-        background-color: #0056b3; 
-    }
-
-
-
-    .barduhaut img{
-        display: none;
-    }
-
-    /* 
-    Image de la page d'accueil
-    */
-    .accueil {
-        position: relative;
-        top: 0; /* Ajustement vertical */
-        height: auto; /* Adapte automatiquement la hauteur */
-        width: 100%; /* Remplit la largeur */
-    }
-
-    .imageaccueil{
-        height: 100%;
-        width: 100%;
-    }
-
-    /* Carré logo */
-    .carrelogo {
-        position: absolute;
-        width: 40%; /* Taille réduite */
-        aspect-ratio: 1/1; /* Carré */
-        top: 20%;
-        left: 10%; 
-        background-color: #ffffffc5;
-        border-radius: 45px;
-    }
-
-    .logohautpage {
-        width: 50%;
-        height: auto; /* Garde le ratio d'aspect */
-    }
-
-
-    /* 
-
-
-    Section services
-
-
-    */
-    .rectangleservives {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center; /* Centre les cartes sur chaque ligne */
-        align-items: stretch; /* Étire les cartes pour qu'elles aient la même hauteur */
-        gap: 20px;
-        padding: 30px 0;
-    }
-    
-    .overlap {
-        position: relative;
-        width: calc(25% - 20px); /* 4 cartes par ligne avec un espace entre elles */
-        height: auto;
-        border-radius: 20px;
-        padding: 20px;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start; /* Aligner le contenu en haut */
-        align-items: center;
-        box-sizing: border-box;
-    }
-    
-    .overlap-1 {
-        background: linear-gradient(180deg, #AE193F 0%, #4A0B1A 56.5%, #73293C 99.99%);
-        box-shadow: 10px 10px 0px 0px #4B0B1A;
-    }
-
-    .overlap-2 {
-        background: linear-gradient(180deg, #7DE9FF 0%, #416FE4 55%, #4B8C99 100%);
-        box-shadow: 10px 10px 0px 0px #4170E2;
-    }
-
-    .overlap-3 {
-        background: linear-gradient(180deg, #F5C2FF 0%, #C558DB 50.5%, #B99BBF 99.99%);
-        box-shadow: 10px 10px 0px 0px #C360D7;
-    }
-
-    .overlap-4 {
-        background: linear-gradient(180deg, #FCF2B8 0%, #FF8E0E 49.5%, #F3BB7B 100%);
-        box-shadow: 10px 10px 0px 0px #FD951D;
-    }
-
-    .imagemenage {
-        width: 150px; /* Taille uniforme pour toutes les images */
-        height: 100px; /* Hauteur fixe pour uniformiser */
-        object-fit: cover; /* Assure un bon affichage même si l'image n'est pas carrée */
-        margin-bottom: 10px;
-    }
-    
-    /* Styles pour le texte */
-    .titremenage {
-        font-size: 18px;
-        font-weight: bold;
-        margin-bottom: 10px;
-        color: #fff;
-    }
-    
-    .textemenage {
-        font-size: 16px;
-        margin-top: 5px;
-        color: #fff;
-    }
-    
-
-    /* Responsive : Écrans moyens (tablettes) */
-    @media (max-width: 768px) {
-        .overlap {
-            width: calc(50% - 10%); /* 2 cartes par ligne */
-        }
-    }
-
-    /* Responsive : Petits écrans (mobiles) */
-    @media (max-width: 480px) {
-        .overlap {
-            width: 80%; /* 1 carte par ligne */
-        }
-        .imagemenage {
-            width: 90%; /* Réduit la taille des images */
-            height: auto; /* Conserve les proportions */
-            margin-bottom: 10px; /* Espace entre l'image et le texte */
-        }    
-        .titremenage {
-            font-size: 16px; /* Texte plus petit pour mobiles */
-        }
-        .textemenage {
-            font-size: 14px;
-        }
-    }
-
-    /*
-
-
-    Section pictogrammes 
-
-
-    */
-
-    .rectanglepictogramefrise {
-        height: auto; /* Adapte la hauteur */
-        padding: 20px 0; /* Ajoute un espace intérieur */
-    }
-
-    .rectanglepictograme {
-        display: flex;
-        flex-wrap: wrap; /* Permet aux éléments de passer à la ligne */
-        justify-content: center; /* Centre tous les éléments sur la ligne */
-        align-items: stretch; /* Étire les boîtes pour uniformiser les tailles */
-        gap: 20px; /* Ajoute un espacement uniforme entre les boîtes */
-        text-align: center; /* Centre le texte à l'intérieur des boîtes */
-        position: relative;
-    }
-
-    .pictograme {
-        width: calc(33.33% - 20px); /* Largeur fixe pour 3 éléments par ligne */
-        box-sizing: border-box; /* Inclut padding et bordures dans la largeur */
-        margin-bottom: 20px; /* Espacement en bas entre les boîtes */
-        background-color: #f9f9f9; /* (Optionnel) Ajoute un fond pour visualiser les dimensions */
-        border-radius: 45px;
-        display: flex;
-        flex-direction: column; /* Aligne le contenu verticalement */
-        justify-content: flex-start; /* Le contenu commence en haut */
-        align-items: center; /* Centre horizontalement */
-        height: auto; /* Ajuste la hauteur automatiquement */
-        min-height: 250px; /* Fixe une hauteur minimale pour éviter les chevauchements */
-        padding: 10px; /* Ajoute un espace autour du contenu */
-        color: #000;
-
-    }
-
-    .pictograme img {
-        width: auto; /* Images occupent 80% de la largeur de la boîte */
-        aspect-ratio: 1/1; /* Carré */
-        max-height: 120px; /* Limite la hauteur maximale pour éviter qu'elle dépasse */
-        margin-bottom: 10px; /* Ajoute un espace sous l'image */
-    }
-
-    .pictograme .titrepict {
-        font-size: 20px;
-        margin: 10px 0; /* Espace autour du titre */
-        word-wrap: break-word; /* Permet au texte long de passer à la ligne */
-
-    }
-
-
-    .pictograme .textepict {
-        font-size: 14px;
-        width: 100%; /* Le texte prend toute la largeur disponible */
-        word-wrap: break-word; /* Permet au texte long de ne pas déborder */
-        margin-top: 5px;
-        text-decoration: none;
-
-    }
-
-    /* Responsive : Ajustement pour les écrans moyens */
-    @media (max-width: 768px) {
-        .pictograme {
-            width: calc(50% - 20px); /* Largeur fixe pour 2 éléments par ligne */
-            min-height: 200px; /* Réduit la hauteur minimale */
-        }
-    }
-
-    /* Responsive : Ajustement pour les petits écrans */
-    @media (max-width: 380px) {
-        .pictograme {
-            width: 100%; /* Chaque élément occupe toute la largeur */
-            min-height: 180px; /* Réduit encore plus la hauteur minimale */
-        }
-    }
-
-
-
-    /*
-
-
-    Section Frise 
-
-
-    */
-
-    .frise{
-        display: none;
-    }
-
-    .frise-tel {
-        position: relative;
-        width: 100%;
-        padding: 20px;
-        background: #ffffff;
-        border-radius: 20px;
-        box-sizing: border-box; /* Inclure padding dans la largeur totale */
-        background: linear-gradient(180deg, #074C86 0%, #03A2C1 27.5%, #02A9CA 50%, #02ABCD 70%, #02ADCF 77%, #074682 100%)
-    }
-
-    .frise-tel  h2{
-        color: rgb(255, 255, 255);
-        font-family: 'Jaldi-Bold', sans-serif;
-        text-align: center;
-        font-weight: bold;
-    }
-
-
-
-
-    .section {
-        width: 100%;
-        background: #ffffff;
-        border-radius: 15px;
-        padding: 15px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        text-align: center;
-        box-sizing: border-box; /* Inclure padding dans la largeur */
-        margin-bottom: 30px;
-    }
-
-    /* Centrage des titres */
-    .titre, .titrehaut {
-        font-size: 18px;
-        background-color: #1D4C8D;
-        color: #fff;
-        padding: 15px;
-        border-radius: 10px;
-        margin-bottom: 10px;
-        text-align: center;
-        width: 90%; /* Largeur limitée pour le titre */
-        max-width: 350px; /* Ne dépasse pas 350px */
-        margin: 0 auto; /* Centrer le titre */
-    }
-
-
-    .text, .texthaut, .texthaut1 {
-        font-size: 16px;
-        color: #333;
-        line-height: 1.5;
-        width: 90%; /* Réduire la largeur pour le texte */
-        margin: 0 auto; /* Centrer le texte */
-    }
-
-    .imghaut, .imghaut1, .img1, .img2, .img3 {
-        position: relative;
-        margin: 15px auto;
-        width: 50px; /* Réduire la taille des images */
-        height: auto;
-    }
-
-
-    .btn-contactfirse {
-        position: relative;
-        width: 80%; /* Réduire la largeur du bouton */
-        font-size: 18px;
-        padding: 12px 20px;
-        border-radius: 10px;
-        margin-top: 20px;
-        text-align: center;
-        left: 50%;
-        transform: translate(-50%);
-        background-color: #03B6D6; 
-        color: #ffffff;
-        text-transform: uppercase;
-        border: none;
-    }
-
-    .btn-contactfirse:hover {
-        color: #000;
-        background-color: #ffffff; 
-    }
-
-    /*
-
-
-    Section localisation 
-
-
-    */
-
-    /* Section localisation */
-    .localisation {
-        position: relative;
-        width: 100%;
-        padding: 20px 10px; /* Marges pour un contenu espacé */
-        box-sizing: border-box;
-    }
-
-    /* Titre principal */
-    .titreloc {
-        width: 100%;
-        font-size: 28px; /* Taille adaptée pour le mobile */
-        color: #000000;
-        font-family: 'Jaldi-Bold', sans-serif;
-        font-weight: bold;
-        text-align: center;
-        margin-bottom: 20px; /* Espacement sous le titre */
-    }
-
-    /* Image de la carte */
-    .map {
-        width: 90%; /* La carte prend 90% de la largeur */
-        height: auto; /* Hauteur automatique pour préserver les proportions */
-        display: block; /* Bloque l'image pour centrer */
-        margin: 0 auto 20px auto; /* Centrer horizontalement avec un espace en dessous */
-        border-radius: 80px; /* Coins arrondis */
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Légère ombre pour un effet esthétique */
-    }
-
-
-    /* Bloc rectangulaire pour les coordonnées et horaires */
-    .rectloc {
-        background-color: #074682;
-        border-radius: 20px;
-        padding: 20px;
-        color: #ffffff;
-        text-align: center;
-        margin: 0 auto;
-        width: 50%; 
-    }
-
-    /* Coordonnées */
-    .texte2 {
-        font-size: 16px;
-        line-height: 1.5;
-        color: #ffffff;
-        text-decoration: none; /* Supprime le soulignement des liens */
-    }
-
-    .texte2:hover {
-        text-decoration: underline; /* Souligne au survol pour accessibilité */
-    }
-
-    /* Titre des horaires */
-    .texte3 {
-        font-size: 20px;
-        font-weight: bold;
-        margin-top: 20px; /* Espacement au-dessus */
-    }
-
-    /* Horaires */
-    .texte4 {
-        font-size: 16px;
-        line-height: 1.5; /* Espacement entre les lignes */
-        margin-top: 10px; /* Petit espace au-dessus */
-    }
-
-
-
-    /* Responsive pour les téléphones */
-    @media (max-width: 768px) {
-        .localisation {
-            padding: 10px; /* Réduction des marges */
-        }
-
-        .titreloc {
-            font-size: 24px; /* Titre légèrement plus petit */
-        }
-
-        .map {
-            width: 100%; /* La carte prend toute la largeur */
-        }
-
-        .rectloc {
-            padding: 15px; /* Réduction des marges internes */
-            width: 70%; /* Légèrement plus large sur mobile */
-        }
-
-        .texte2,
-        .texte3,
-        .texte4 {
-            font-size: 14px; /* Réduction des tailles de police */
-        }
-    }
-
-    @media (max-width: 480px) {
-        .titreloc {
-            font-size: 20px; /* Plus petit pour les très petits écrans */
-        }
-
-        .map {
-            height: auto; /* Ajustement automatique */
-        }
-
-        .rectloc {
-            width: 80%; /* Prend toute la largeur */
-        }
-
-        .texte2,
-        .texte3,
-        .texte4 {
-            font-size: 12px; /* Police encore réduite */
-        }
-    }
-
-
+@media(max-width:1500px){
     .baspage {
         display: flex;
         flex-direction: column;
@@ -1476,10 +1417,12 @@ body{
             height: 120px;
         }
     }
+
 }
 
 
-/* Bannière de cookies au centre */
+/* Banniere des COOKIES */
+
 #cookie-banner {
     position: fixed;
     top: 50%;
