@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $recaptchaResponse = $_POST['g-recaptcha-response'] ?? '';
 
     // Vérifier la réponse reCAPTCHA via l'API Google
-    $secretKey = '6LfMdd4qAAAAAKiaAjKQpKSXUpRLLtct8PrtQ3nR'; // Remplace par ta clé secrète
+    $secretKey = '6Ldund4qAAAAAMBOZYL1vhHCXwTdxZhHt8aqBDV5'; // Remplace par ta clé secrète
     $verifyURL = 'https://www.google.com/recaptcha/api/siteverify';
     $data = [
         'secret' => $secretKey,
