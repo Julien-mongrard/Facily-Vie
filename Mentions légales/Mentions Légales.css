@@ -376,6 +376,8 @@ body, html {
     @media (max-width: 1400px) {
         .bloquelogobas {
             width: 40%;
+            aspect-ratio: 1/1;
+
         }
         .lienresaux img {
             width: 35px;
@@ -390,6 +392,8 @@ body, html {
     @media (max-width: 768px) {
         .bloquelogobas {
             width: 60%;
+            aspect-ratio: 1/1;
+
         }
         .lienresaux img {
             width: 30px;
@@ -401,7 +405,5 @@ body, html {
         }
     }
 
-
 }
 
-/* FIN DE LA PARTIE BAS DE PAGE */

@@ -632,6 +632,8 @@ BAS DE PAGE
     @media (max-width: 1400px) {
         .bloquelogobas {
             width: 40%;
+            aspect-ratio: 1/1;
+
         }
         .lienresaux img {
             width: 35px;
@@ -646,6 +648,8 @@ BAS DE PAGE
     @media (max-width: 768px) {
         .bloquelogobas {
             width: 60%;
+            aspect-ratio: 1/1;
+
         }
         .lienresaux img {
             width: 30px;
@@ -656,4 +660,6 @@ BAS DE PAGE
             height: 120px;
         }
     }
+
 }
+
