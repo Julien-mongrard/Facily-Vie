@@ -8,7 +8,7 @@ body, html {
 
 /* PARTIE HAUT DE PAGE */
 
-@media(min-width:1300px){
+@media(min-width:1000px){
     #fixed {
         position: fixed; /* Fixe l'élément */
         top: 0; /* Positionné en haut de la page */
@@ -58,7 +58,7 @@ body, html {
     }
 }
 
-@media(max-width:1300px){
+@media(max-width:1000px){
     #fixed {
         padding: 5px 10px; /* Moins de padding */
         box-shadow: none; /* Supprime l'ombre */

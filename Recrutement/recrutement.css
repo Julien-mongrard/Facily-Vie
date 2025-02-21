@@ -11,8 +11,9 @@ body, html {
 
 /* PARTIE HAUT DE PAGE */
 
-@media(min-width:1000px){
+/* PARTIE HAUT DE PAGE */
 
+@media(min-width:1000px){
     #fixed {
         position: fixed; /* Fixe l'élément */
         top: 0; /* Positionné en haut de la page */
@@ -23,16 +24,16 @@ body, html {
         box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optionnel : ombre pour un effet visuel */
         padding: 10px 0; /* Optionnel : Espacement interne */
     }
-
+    
     .barduhaut {
         display: flex; 
         justify-content: space-around; 
         background-color: rgba(179, 179, 179, 0.5); 
         height: 40px; 
         max-width: 100%;
-
+    
     }
-
+    
     .barduhaut a {
         text-decoration: none; 
         color: black; 
@@ -41,7 +42,7 @@ body, html {
         padding: 10px 10px; 
         transition: color 0.3s; 
     }
-
+    
     .barduhaut a:hover {
         color: #0056b3; 
     }
@@ -62,18 +63,14 @@ body, html {
     }
 }
 
-
-
-@media(max-width: 1000px) {
-
-    /* Barre fixe en haut */
+@media(max-width:1000px){
     #fixed {
         padding: 5px 10px; /* Moins de padding */
         box-shadow: none; /* Supprime l'ombre */
         background-color: #f8f8f8; /* Couleur de fond pour bien différencier */
         display: flex; /* Utilisation de Flexbox */
         flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
-        justify-content: center; /* Centre les liens horizontalement */
+        justify-content: space-around; /* Centre les liens horizontalement */
         align-items: center; /* Centre les liens verticalement */
         gap: 10px; /* Espacement entre les éléments */
     }
@@ -104,10 +101,13 @@ body, html {
     .btn-contact:hover {
         background-color: #0056b3; 
     }
+    
     .barduhaut img{
         display: none;
     }
 }
+
+
 
 
 
