@@ -3,7 +3,7 @@ body, html {
     padding: 0;
     width: 100%;
     height: 100%;
-
+    font-family: 'Jaldi-Bold', sans-serif;
 }
 
 
@@ -108,10 +108,11 @@ body, html {
 
 
 .mention-legales{
-    position: absolute;
+    position: relative;
+    height: auto;
     font-family: 'Jaldi-Blod', sans-serif;
-    top: 100px;
     left: 1%;
+    margin: 0px 50px;
 }
 
 .mention-legales titre{ 
