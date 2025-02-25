@@ -44,12 +44,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
             <div class="cookie-category">
                 <h3>Google reCAPTCHA</h3>
+                <p>Le service reCAPTCHA est utilisé pour vérifier que vous n'êtes pas un robot.<br>En acceptant ce service, vous pourrez accéder aux formulaires de contacts / recrutement</p>
                 <button id="acceptRecaptcha" class="cookie-button">Accepter</button>
                 <button id="refuseRecaptcha" class="cookie-button">Refuser</button>
             </div>
 
             <div class="cookie-category">
                 <h3>Google Analytics</h3>
+                <p>Google Analytics est utilisé pour analyser le trafic de notre site.<br>En acceptant ce service, vous nous aidez à améliorer notre site</p>
                 <button id="acceptAnalytics" class="cookie-button">Accepter</button>
                 <button id="refuseAnalytics" class="cookie-button">Refuser</button>
             </div>
