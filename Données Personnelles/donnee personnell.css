@@ -61,14 +61,14 @@ HAUT DE PAGE
 
 
     #fixed {
-        padding: 5px 10px; /* Moins de padding */
-        box-shadow: none; /* Supprime l'ombre */
-        background-color: #f8f8f8; /* Couleur de fond pour bien différencier */
-        display: flex; /* Utilisation de Flexbox */
-        flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
-        justify-content: space-around; /* Centre les liens horizontalement */
-        align-items: center; /* Centre les liens verticalement */
-        gap: 10px; /* Espacement entre les éléments */
+        padding: 5px 10px; 
+        box-shadow: none;
+        background-color: #f8f8f8; 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around; 
+        align-items: center; 
+        gap: 10px;
     }
 
     .barduhaut a {
@@ -154,85 +154,77 @@ ul {
 Bas de page
 
 */
-
 @media(min-width:1400px){
-    .baspage {
+    .baspage{
         position: relative;
         width: 100%;
-        height: 900px;
-        top: 0px;
+        height: 800px;
         background: #074682;
+        opacity: 1;
         z-index: 6;
     }
-
-    .bloquelogobas {
+    
+    
+    .bloquelogobas{
         position: absolute;
-        top: 0;
+        top: 0%;
         left: 50%;
-        transform: translateX(-50%);
+        transform: translate(-50%);
         width: 600px;
         height: 600px;
-        background: radial-gradient(50% 50% at 50% 50%, rgb(255, 255, 255) 48.5%, rgb(255, 255, 255) 75%, rgb(7, 70, 130) 91%);
+        background: radial-gradient(50% 50% at 50% 50%,rgb(255, 255, 255)48.5%,rgb(255,255,255)75%,rgb(7,70,130)91%);
     }
-
-    .logobaspage {
+    
+    .logobaspage{
         position: absolute;
-        top: 50%;
+        top: 47%;
         left: 50%;
         height: 80%;
         width: 80%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%,-50%); 
     }
-
-    .bloquelien {
+    
+    .bloquelien{
         position: absolute;
         width: 30%;
         height: 400px;
         top: 20%;
-        left: 0;
+        left: 0%;
         z-index: 7;
         text-align: center;
         line-height: 1.7;
+    
     }
-
-    .textelien {
+    
+    .textelien{
         position: relative;
         width: 80%;
-        margin: 25% auto 0;
+        left: 10%;
+        top: 25%;
         color: rgb(241, 241, 241);
         font-family: 'Jaldi-Blod', sans-serif;
         font-size: 22px;
         text-decoration: none;
     }
-
-    .textebas {
-        position: relative;
-        width: 80%;
-        top: 70%;
-        left: 50%;
-        transform: translate(-50%);
+    
+    .textebas{
+        position: absolute;
+        width: 100%;
+        top: 80%;
         color: rgb(241, 241, 241);
-        font-family: 'Jaldi-Bold', sans-serif;
+        font-family: 'Jaldi-Blod', sans-serif;
         text-align: center;
-        font-weight: bold;
+        font-weight : bold;
     }
     
-    .textebas .numero {
+    .textebas numero{
         font-size: 45px;
-    }
     
-    .textebas .nomadresse {
+    }
+    .textebas nomadresse{
         font-size: 25px;
     }
     
-    /* Ajoute un espace entre la condition et les autres textes */
-    .textebas .condition {
-        margin-top: 50px; /* Ajuste l'écart entre le texte principal et la condition */
-        color: #000;
-        font-size: 15px;
-    }
-
-
     .Sipersonne {
         position: absolute;
         width: 25%;
@@ -240,56 +232,57 @@ Bas de page
         top: 12%;
         left: 70%;
         text-align: center;
-        background: rgba(250, 250, 250, 0.09);
+        background: #fafafa17;
         border-radius: 90px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
     }
-
+    
     .imagesipersonne {
-        max-width: 100%;
-        max-height: 100%;
+        max-width: 100%; 
+        max-height: 100%; 
     }
-
-    .suivrelien {
+    
+    
+    .suivrelien{
         position: absolute;
         display: flex;
         width: 400px;
-        height: 100px;
+        height:100px;
         top: 60%;
         left: 73%;
     }
-
-    .suivernous {
+    
+    .suivernous{
         position: absolute;
         top: 10%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%,-50%);
         color: #ffffff;
         font-family: 'Jaldi-Blod', sans-serif;
         font-size: 25px;
-        font-weight: bold;
+        font-weight : bold;
     }
-
-    .lienresaux {
+    
+    .lienresaux{
         position: absolute;
         display: flex;
         width: 300px;
-        height: 75px;
+        height:75px;
         top: 70%;
         left: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-50%,-50%); 
         background: #FFFFFF;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 30px;
+        justify-content: space-between; 
+        align-items: center; 
+        padding: 0 30px; 
         border-radius: 47px;
     }
-
-    .lien {
+    
+    .lien{
         width: auto;
-    }
+    }    
 }
 
 @media(max-width:1400px){
@@ -356,17 +349,12 @@ Bas de page
         padding: 0 30px;
         border-radius: 47px;
         height: 50px;
-
-
     }
 
     .lienresaux img {
         width: 40px;
         height: 40px;
     }
-
-
-
 
     .textebas {
         position: relative;
@@ -443,6 +431,4 @@ Bas de page
             height: 120px;
         }
     }
-
 }
-
