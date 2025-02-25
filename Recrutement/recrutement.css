@@ -348,6 +348,7 @@ body, html {
         position: relative;
         justify-content: center; 
         align-items: center; 
+        margin-top: 100px;
         width: 80%;
         padding: 10px;
         top: 350px;
