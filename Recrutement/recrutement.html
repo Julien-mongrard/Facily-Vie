@@ -9,6 +9,7 @@
     <script src="/Facily-Vie/cookie-popup.js"></script>
     <link rel="stylesheet" href="/Facily-Vie/cookie-popup.css">
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="recrutement.js" defer></script>
 </head>
 <body>
     <header>
@@ -37,12 +38,7 @@
             
             <!-- Formulaire -->
             <form id="contactForm" onsubmit="envoyerFormulaire(event)">
-                <select id="choix" name="choix" required>
-                    <option value="" disabled selected>Choisissez une option</option>
-                    <option value="option1">Option 1</option>
-                    <option value="option2">Option 2</option>
-                    <option value="option3">Option 3</option>
-                </select><br>
+  
                 <input type="text" id="nom" name="nom" placeholder="Nom" required>
                 <input type="text" id="prenom" name="prenom" placeholder="Prénom" required><br>
                 <input type="text" id="telephone" name="telephone" placeholder="Téléphone" required>
@@ -52,11 +48,19 @@
                 <input type="file" id="fichier1" name="fichiers[]" accept=".pdf,.doc,.docx,.png,.jpg,.jpeg" multiple>
                 <input type="file" id="fichier2" name="fichiers[]" accept=".pdf,.doc,.docx,.png,.jpg,.jpeg" multiple>
 
-                <input type="hidden" name="recaptcha_token" id="recaptcha_token">
-                <div class="g-recaptcha" id="recaptcha" data-sitekey="6Ldund4qAAAAAD6-BFVMCSn9Ky1bNaVzgyknomjz"></div>
 
+                <div id="formContainer">
+                    <p id="recaptchaWarning" style="color: red; display: none;">
+                        ⚠️ Vous devez accepter les cookies Google reCAPTCHA pour pouvoir envoyer le formulaire.
+                    </p>
+                    
+                    <div id="recaptchaButton" style="display: none;">
+                        <div class="g-recaptcha" data-sitekey="6Ldund4qAAAAAD6-BFVMCSn9Ky1bNaVzgyknomjz"></div>
+                    </div>
+                
+                    <button id="submitButton" style="display: none;">Envoyer</button>
+                </div>
 
-                <button type="submit">Envoyer</button>
             </form>
 
             <!-- Message de statut -->

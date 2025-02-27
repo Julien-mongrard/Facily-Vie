@@ -1,6 +1,26 @@
 document.addEventListener("DOMContentLoaded", function () {
-    console.log("Script chargé ✅");
-
+    console.log("📢 [DEBUG] Script cookie-popup.js chargé !");
+    if (window.location.pathname.includes("recrutement.html") || window.location.pathname.includes("contact.html")) {
+        updateRecaptchaVisibility();
+    }
+        const modifyCookiesButton = document.getElementById("modifyCookies");
+    if (modifyCookiesButton) {
+        modifyCookiesButton.addEventListener("click", function (event) {
+            event.preventDefault(); // Empêche le rechargement de la page
+            console.log("🔧 [DEBUG] Bouton 'Modifier mes cookies' cliqué !");
+            
+            // Vérifie si la pop-up des cookies existe
+            const modal = document.getElementById("cookieModal");
+            if (modal) {
+                modal.style.display = "block";
+                console.log("✅ [DEBUG] Fenêtre des cookies affichée !");
+            } else {
+                console.error("❌ [ERREUR] Impossible de trouver 'cookieModal' !");
+            }
+        });
+    } else {
+        console.error("❌ [ERREUR] Impossible de trouver le bouton 'Modifier mes cookies' !");
+    }
     if (document.getElementById("cookieModal")) return;
 
     // Création de la pop-up de consentement global
@@ -67,9 +87,11 @@ document.addEventListener("DOMContentLoaded", function () {
     function getCookie(name) {
         const value = `; ${document.cookie}`;
         const parts = value.split(`; ${name}=`);
-        if (parts.length === 2) return parts.pop().split(";").shift();
+        if (parts.length === 2) {
+            return parts.pop().split(";").shift();
+        }
+        return null; // 🔥 Ajoute cette ligne pour éviter `undefined`
     }
-
     function setCookie(name, value, days) {
         let expires = "";
         if (days) {
@@ -78,7 +100,10 @@ document.addEventListener("DOMContentLoaded", function () {
             expires = `; expires=${date.toUTCString()}`;
         }
         document.cookie = `${name}=${value}; path=/; SameSite=Lax${expires}`;
+        console.log(`Cookie défini : ${name}=${value}`);
     }
+    
+    
 
     // Récupérer les boutons de la pop-up de préférences
     const acceptRecaptcha = document.getElementById("acceptRecaptcha");
@@ -155,7 +180,10 @@ document.addEventListener("DOMContentLoaded", function () {
         setCookie("consentAnalytics", analyticsChoice, 365);
         updateButtonColors();
         console.log("Préférences sauvegardées ✅");
-
+        if (window.location.pathname.includes("recrutement.html") || window.location.pathname.includes("contact.html")) {
+            updateRecaptchaVisibility();
+        }
+        
         // Log des options activées
         console.log(`Google reCAPTCHA : ${recaptchaChoice === "accepted" ? "Acceptee" : "Refusee"}`);
         console.log(`Google Analytics : ${analyticsChoice === "accepted" ? "Acceptee" : "Refusee"}`);
@@ -166,12 +194,18 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log("Pop-up fermée après sauvegarde ✅");
     });
 
+ 
+
     // Clic sur "Tout accepter" ou "Refuser tout"
     acceptAllCookies.addEventListener("click", function () {
         recaptchaChoice = "accepted";
         analyticsChoice = "accepted";
         setCookie("consentRecaptcha", recaptchaChoice, 365);
         setCookie("consentAnalytics", analyticsChoice, 365);
+        if (window.location.pathname.includes("recrutement.html") || window.location.pathname.includes("contact.html")) {
+            updateRecaptchaVisibility();
+        }
+        
         updateButtonColors();
         globalConsentModal.style.display = "none"; // Fermer la pop-up globale
         overlay.style.display = "none"; // Retirer le fond gris
@@ -225,4 +259,33 @@ document.addEventListener("DOMContentLoaded", function () {
         globalConsentModal.style.display = "block";
         overlay.style.display = "block";  // Activer le fond gris pour verrouiller l'arrière-plan
     }
+    function updateRecaptchaVisibility() {
+        console.log("🔄 [DEBUG] Vérification de l'affichage du formulaire...");
+        
+        const recaptchaConsent = getCookie("consentRecaptcha");
+        console.log("🔎 [DEBUG] Valeur du cookie 'consentRecaptcha' récupérée :", recaptchaConsent);
+    
+        const recaptchaWarning = document.getElementById("recaptchaWarning");
+        const recaptchaButton = document.getElementById("recaptchaButton");
+        const submitButton = document.getElementById("submitButton");
+    
+        if (recaptchaConsent === "accepted") {
+            console.log("✅ [DEBUG] Le consentement reCAPTCHA est accepté. Affichage des éléments.");
+            recaptchaWarning.style.display = "none"; 
+            recaptchaButton.style.display = "block"; 
+            submitButton.style.display = "block"; 
+        } else if (recaptchaConsent === "refused") {
+            console.log("❌ [DEBUG] Consentement reCAPTCHA refusé. Cachage des éléments.");
+            recaptchaWarning.style.display = "block"; 
+            recaptchaButton.style.display = "none"; 
+            submitButton.style.display = "none"; 
+        } else {
+            console.log("⚠️ [DEBUG] Aucun consentement trouvé. Cachage des éléments.");
+            recaptchaWarning.style.display = "block"; 
+            recaptchaButton.style.display = "none"; 
+            submitButton.style.display = "none"; 
+        }
+    }
+ 
 });
+

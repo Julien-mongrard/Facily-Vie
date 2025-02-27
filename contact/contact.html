@@ -7,7 +7,7 @@
     <link rel="icon" type="image/png" href="/Facily-Vie/image-accueil/fav.png">
 
     <title>contact</title>
-    <script src="./contact.js"></script>
+    <script src="contact.js"></script>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script src="/Facily-Vie/cookie-popup.js"></script>
     <link rel="stylesheet" href="/Facily-Vie/cookie-popup.css">
@@ -37,9 +37,9 @@
             <form id="contactForm" onsubmit="envoyerFormulaire(event)">
                 <select id="choix" name="choix" required>
                     <option value="" disabled selected>Choisissez une option</option>
-                    <option value="option1">Option 1</option>
-                    <option value="option2">Option 2</option>
-                    <option value="option3">Option 3</option>
+                    <option value="Devis">Devis</option>
+                    <option value="Information">Information</option>
+                    <option value="Autres">Autres</option>
                 </select><br>
                 <input type="text" id="nom" name="nom" placeholder="Nom" required>
                 <input type="text" id="prenom" name="prenom" placeholder="Prénom" required><br>
@@ -47,11 +47,17 @@
                 <input type="email" id="email" name="email" placeholder="Email" required><br>
                 <textarea id="message" name="message" placeholder="Message" required></textarea><br>
 
-
-                <input type="hidden" name="recaptcha_token" id="recaptcha_token">
-                <div class="g-recaptcha" id="recaptcha" data-sitekey="6Ldund4qAAAAAD6-BFVMCSn9Ky1bNaVzgyknomjz"></div>
-
-                <button type="submit">Envoyer</button>
+                <div id="formContainer">
+                    <p id="recaptchaWarning" style="color: red; display: none;">
+                        ⚠️ Vous devez accepter les cookies Google reCAPTCHA pour pouvoir envoyer le formulaire.
+                    </p>
+                    
+                    <div id="recaptchaButton" style="display: none;">
+                        <div class="g-recaptcha" data-sitekey="6Ldund4qAAAAAD6-BFVMCSn9Ky1bNaVzgyknomjz"></div>
+                    </div>
+                
+                    <button id="submitButton" style="display: none;">Envoyer</button>
+                </div>
      
             </form>
 

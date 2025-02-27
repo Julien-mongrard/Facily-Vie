@@ -204,13 +204,30 @@ body, html {
         background-color: #0056b3; 
     }
 
-    #recaptcha {
+    #formContainer {
+        padding-bottom: 20px;
+    }
+    
+
+    #recaptchaButton {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 20px; /* Ajoute de l'espace au-dessus si nécessaire */
+        width: 100%;
+        margin: 20px auto;
+        text-align: center;
     }
-    
+
+    .g-recaptcha {
+        display: inline-block;
+    }
+
+    #submitButton {
+        display: block;
+        margin: 20px auto 0; 
+        text-align: center;
+    }
+
 
     
     /* Style pour le conteneur du message */
@@ -337,12 +354,32 @@ body, html {
         background-color: #0056b3; 
     }
     
-    #recaptcha {
+    #formContainer {
+        padding-bottom: 20px;
+    }
+    
+
+    #recaptchaButton {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 20px; /* Ajoute de l'espace au-dessus si nécessaire */
+        width: 100%;
+        margin: 20px auto;
+        text-align: center;
     }
+
+    .g-recaptcha {
+        display: inline-block;
+    }
+
+    #submitButton {
+        display: block;
+        margin: 20px auto 0; 
+        text-align: center;
+        
+    }
+
+
     
     /* Style pour le conteneur du message */
     #statusMessage {

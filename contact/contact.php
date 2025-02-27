@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         'secret' => $secretKey,
         'response' => $recaptchaResponse
     ];
-    
+
     $options = [
         'http' => [
             'method' => 'POST',
@@ -33,12 +33,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             "success" => false,
             "message" => "Erreur de validation reCAPTCHA. Veuillez réessayer."
         ];
-        ob_end_clean();
         header('Content-Type: application/json');
         echo json_encode($response);
         exit;
     }
-
+    
     // Récupérer les données du formulaire en les sécurisant
     $choix = htmlspecialchars($_POST['choix'] ?? '');
     $nom = htmlspecialchars($_POST['nom'] ?? '');
