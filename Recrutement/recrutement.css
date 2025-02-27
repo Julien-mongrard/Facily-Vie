@@ -15,14 +15,14 @@ body, html {
 
 @media(min-width:1000px){
     #fixed {
-        position: fixed; /* Fixe l'élément */
-        top: 0; /* Positionné en haut de la page */
-        left: 0; /* Aligné à gauche */
-        width: 100%; /* S'étend sur toute la largeur */
-        background-color: #ffffff; /* Couleur de fond */
-        z-index: 1000; /* Assure que la barre est au-dessus des autres éléments */
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optionnel : ombre pour un effet visuel */
-        padding: 10px 0; /* Optionnel : Espacement interne */
+        position: fixed; 
+        top: 0; 
+        left: 0;
+        width: 100%; 
+        background-color: #ffffff; 
+        z-index: 1000; 
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+        padding: 10px 0; 
     }
     
     .barduhaut {
@@ -65,14 +65,14 @@ body, html {
 
 @media(max-width:1000px){
     #fixed {
-        padding: 5px 10px; /* Moins de padding */
-        box-shadow: none; /* Supprime l'ombre */
-        background-color: #f8f8f8; /* Couleur de fond pour bien différencier */
-        display: flex; /* Utilisation de Flexbox */
-        flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
-        justify-content: space-around; /* Centre les liens horizontalement */
-        align-items: center; /* Centre les liens verticalement */
-        gap: 10px; /* Espacement entre les éléments */
+        padding: 5px 10px; 
+        box-shadow: none; 
+        background-color: #f8f8f8; 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around; 
+        align-items: center;
+        gap: 10px;
     }
 
     .barduhaut a {
@@ -148,7 +148,7 @@ body, html {
         width: 60%;
         top: 300px;
         left: 50%;
-        transform: translate(-50%,-50%); /* Ajuste pour placer le centre de l'image au centre du conteneur */
+        transform: translate(-50%,-50%); 
         background-color: #1D4C8D; 
         border-radius: 87px;
         color: rgb(255, 255, 255);
@@ -158,7 +158,7 @@ body, html {
         font-family: 'Jaldi-Bold', sans-serif;
         font-size: 30px; 
         text-align: center; 
-        padding-top: 30px; /* Ajoutez cette ligne pour créer de l'espace au-dessus du titre */
+        padding-top: 30px;
     
     }
     
@@ -277,35 +277,33 @@ body, html {
     
     
     
-    /* Style pour le conteneur du message */
     #statusMessage {
-        position: fixed; /* Positionner au-dessus de tout */
+        position: fixed; 
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%); /* Centrer horizontalement et verticalement */
-        z-index: 1000; /* Assurez-vous qu'il soit au-dessus de tout */
-        background-color: white; /* Fond blanc pour le message */
-        padding: 20px 30px; /* Espacement interne */
-        border-radius: 10px; /* Coins arrondis */
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce */
-        text-align: center; /* Centrer le texte */
-        font-family: Arial, sans-serif; /* Police de caractère */
-        font-size: 16px; /* Taille de la police */
-        color: #333; /* Couleur du texte */
-        display: none; /* Masquer par défaut */
+        transform: translate(-50%, -50%); 
+        z-index: 1000;
+        background-color: white; 
+        padding: 20px 30px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center; 
+        font-family: Arial, sans-serif; 
+        font-size: 16px; 
+        color: #333; 
+        display: none;
     
     }
     
-    /* Arrière-plan semi-transparent */
     #overlay {
-        position: fixed; /* Couvrir tout l'écran */
+        position: fixed; 
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(255, 255, 255, 0.8); /* Fond noir semi-transparent */
-        z-index: 999; /* Juste en dessous du message */
-        display: none; /* Masquer par défaut */
+        background-color: rgba(255, 255, 255, 0.8); 
+        z-index: 999;
+        display: none; 
         border-radius: 87px;
     }
     
@@ -378,7 +376,7 @@ body, html {
         padding: 10px;
         top: 350px;
         left: 50%;
-        transform: translate(-50%,-50%); /* Ajuste pour placer le centre de l'image au centre du conteneur */
+        transform: translate(-50%,-50%); 
         background-color: #1D4C8D; 
         border-radius: 87px;
         color: rgb(255, 255, 255);
@@ -395,7 +393,7 @@ body, html {
         font-family: 'Jaldi-Bold', sans-serif;
         font-size: 30px; 
         text-align: center; 
-        padding-top: 30px; /* Ajoutez cette ligne pour créer de l'espace au-dessus du titre */
+        padding-top: 30px; 
     
     }
     
@@ -530,35 +528,33 @@ body, html {
     }
 
     
-    /* Style pour le conteneur du message */
     #statusMessage {
-        position: fixed; /* Positionner au-dessus de tout */
+        position: fixed; 
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%); /* Centrer horizontalement et verticalement */
-        z-index: 1000; /* Assurez-vous qu'il soit au-dessus de tout */
-        background-color: white; /* Fond blanc pour le message */
-        padding: 20px 30px; /* Espacement interne */
-        border-radius: 10px; /* Coins arrondis */
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce */
-        text-align: center; /* Centrer le texte */
-        font-family: Arial, sans-serif; /* Police de caractère */
-        font-size: 16px; /* Taille de la police */
-        color: #333; /* Couleur du texte */
-        display: none; /* Masquer par défaut */
+        transform: translate(-50%, -50%);
+        z-index: 1000; 
+        background-color: white; 
+        padding: 20px 30px; 
+        border-radius: 10px; 
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+        text-align: center;
+        font-family: Arial, sans-serif; 
+        font-size: 16px; 
+        color: #333; 
+        display: none; 
     
     }
     
-    /* Arrière-plan semi-transparent */
     #overlay {
-        position: fixed; /* Couvrir tout l'écran */
+        position: fixed;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(255, 255, 255, 0.8); /* Fond noir semi-transparent */
-        z-index: 999; /* Juste en dessous du message */
-        display: none; /* Masquer par défaut */
+        background-color: rgba(255, 255, 255, 0.8); 
+        z-index: 999; 
+        display: none; 
         border-radius: 87px;
     }
     

@@ -115,7 +115,7 @@ body {
 
 .container {
     width: 80%;
-    margin: 80px auto 30px auto; /* Ajuste 80px en fonction de la hauteur de ta barre */
+    margin: 80px auto 30px auto; 
     background: white;
     padding: 30px;
     border-radius: 15px;
@@ -175,7 +175,7 @@ ul li {
 
 .social-icons {
     display: flex;
-    flex-wrap: wrap; /* Permet le retour à la ligne */
+    flex-wrap: wrap;
 
     justify-content: center;
     gap: 15px;
@@ -216,7 +216,7 @@ ul li {
         position: absolute;
         top: 0%;
         left: 50%;
-        transform: translate(-50%); /* Ajuste pour placer le centre de l'image au centre du conteneur */
+        transform: translate(-50%);
         width: 600px;
         height: 600px;
         background: radial-gradient(50% 50% at 50% 50%,rgb(255, 255, 255)48.5%,rgb(255,255,255)75%,rgb(7,70,130)91%);
@@ -228,7 +228,7 @@ ul li {
         left: 50%;
         height: 80%;
         width: 80%;
-        transform: translate(-50%,-50%); /* Ajuste pour placer le centre de l'image au centre du conteneur */
+        transform: translate(-50%,-50%); 
     }
 
     .bloquelien{
@@ -305,7 +305,7 @@ ul li {
         position: absolute;
         top: 10%;
         left: 50%;
-        transform: translate(-50%,-50%); /* Ajuste pour placer le centre de l'image au centre du conteneur */
+        transform: translate(-50%,-50%); 
         color: #ffffff;
         font-family: 'Jaldi-Blod', sans-serif;
         font-size: 25px;
@@ -320,11 +320,11 @@ ul li {
         height:75px;
         top: 70%;
         left: 50%;
-        transform: translate(-50%,-50%); /* Ajuste pour placer le centre de l'image au centre du conteneur */
+        transform: translate(-50%,-50%); 
         background: #FFFFFF;
-        justify-content: space-between; /* Crée des espaces égaux entre les pictogrammes */
-        align-items: center; /* Centre les éléments verticalement */
-        padding: 0 30px; /* Espace intérieur gauche et droit */
+        justify-content: space-between;
+        align-items: center;    
+        padding: 0 30px;
         border-radius: 47px;
     }
 

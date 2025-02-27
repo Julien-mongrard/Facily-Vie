@@ -10,14 +10,14 @@ body, html {
 
 @media(min-width:1000px){
     #fixed {
-        position: fixed; /* Fixe l'élément */
-        top: 0; /* Positionné en haut de la page */
-        left: 0; /* Aligné à gauche */
-        width: 100%; /* S'étend sur toute la largeur */
-        background-color: #ffffff; /* Couleur de fond */
-        z-index: 1000; /* Assure que la barre est au-dessus des autres éléments */
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optionnel : ombre pour un effet visuel */
-        padding: 10px 0; /* Optionnel : Espacement interne */
+        position: fixed; 
+        top: 0; 
+        left: 0; 
+        width: 100%; 
+        background-color: #ffffff; 
+        z-index: 1000; 
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+        padding: 10px 0;
     }
     
     .barduhaut {
@@ -60,14 +60,14 @@ body, html {
 
 @media(max-width:1000px){
     #fixed {
-        padding: 5px 10px; /* Moins de padding */
-        box-shadow: none; /* Supprime l'ombre */
-        background-color: #f8f8f8; /* Couleur de fond pour bien différencier */
-        display: flex; /* Utilisation de Flexbox */
-        flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
-        justify-content: space-around; /* Centre les liens horizontalement */
-        align-items: center; /* Centre les liens verticalement */
-        gap: 10px; /* Espacement entre les éléments */
+        padding: 5px 10px; 
+        box-shadow: none;
+        background-color: #f8f8f8; 
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        gap: 10px;
     }
 
     .barduhaut a {
@@ -126,7 +126,7 @@ body, html {
         width: 60%;
         top: 52%;
         left: 50%;
-        transform: translate(-50%,-50%); /* Ajuste pour placer le centre de l'image au centre du conteneur */
+        transform: translate(-50%,-50%); 
         background-color: #f2f2f2e1; 
         border-radius: 87px;
     
@@ -230,35 +230,33 @@ body, html {
 
 
     
-    /* Style pour le conteneur du message */
     #statusMessage {
-        position: fixed; /* Positionner au-dessus de tout */
+        position: fixed;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%); /* Centrer horizontalement et verticalement */
-        z-index: 1000; /* Assurez-vous qu'il soit au-dessus de tout */
-        background-color: white; /* Fond blanc pour le message */
-        padding: 20px 30px; /* Espacement interne */
-        border-radius: 10px; /* Coins arrondis */
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce */
-        text-align: center; /* Centrer le texte */
-        font-family: Arial, sans-serif; /* Police de caractère */
-        font-size: 16px; /* Taille de la police */
-        color: #333; /* Couleur du texte */
-        display: none; /* Masquer par défaut */
+        transform: translate(-50%, -50%); 
+        z-index: 1000; 
+        background-color: white;
+        padding: 20px 30px; 
+        border-radius: 10px; 
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+        text-align: center;  
+        font-family: Arial, sans-serif;  
+        font-size: 16px;  
+        color: #333;  
+        display: none;  
     
     }
     
-    /* Arrière-plan semi-transparent */
-    #overlay {
-        position: fixed; /* Couvrir tout l'écran */
+     #overlay {
+        position: fixed; 
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(255, 255, 255, 0.8); /* Fond noir semi-transparent */
-        z-index: 999; /* Juste en dessous du message */
-        display: none; /* Masquer par défaut */
+        background-color: rgba(255, 255, 255, 0.8);  
+        z-index: 999;  
+        display: none;  
         border-radius: 87px;
     }
 }
@@ -269,7 +267,7 @@ body, html {
     main {
         position: relative;
         width: 100%;
-        min-height: 100vh; /* S'adapte à la hauteur du contenu */
+        min-height: 100vh;  
         display: flex;
         justify-content: center;
         align-items: center;
@@ -284,20 +282,20 @@ body, html {
         left: 0;
         width: 100%;
         height: 100%;
-        object-fit: cover; /* Ajuste l’image pour remplir sans déformer */
-        z-index: -1; /* Place l’image en arrière-plan */
+        object-fit: cover;  
+        z-index: -1;  
     }
     
     .contact {
         position: relative;
         width: 90%;
-        max-width: 600px; /* Ajuste la largeur */
+        max-width: 600px;  
         background-color: #f2f2f2e1;
         padding: 20px;
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         border-radius: 87px;
         text-align: center;
-        z-index: 2; /* Place le formulaire au-dessus */
+        z-index: 2;  
     }
     
     .contact form {
@@ -381,35 +379,33 @@ body, html {
 
 
     
-    /* Style pour le conteneur du message */
-    #statusMessage {
-        position: fixed; /* Positionner au-dessus de tout */
+     #statusMessage {
+        position: fixed; 
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%); /* Centrer horizontalement et verticalement */
-        z-index: 1000; /* Assurez-vous qu'il soit au-dessus de tout */
-        background-color: white; /* Fond blanc pour le message */
-        padding: 20px 30px; /* Espacement interne */
-        border-radius: 10px; /* Coins arrondis */
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre douce */
-        text-align: center; /* Centrer le texte */
-        font-family: Arial, sans-serif; /* Police de caractère */
-        font-size: 16px; /* Taille de la police */
-        color: #333; /* Couleur du texte */
-        display: none; /* Masquer par défaut */
+        transform: translate(-50%, -50%); 
+        z-index: 1000;  
+        background-color: white;  
+        padding: 20px 30px;  
+        border-radius: 10px;  
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+        text-align: center; 
+        font-family: Arial, sans-serif;  
+        font-size: 16px; 
+        color: #333; 
+        display: none; 
     
     }
     
-    /* Arrière-plan semi-transparent */
-    #overlay {
-        position: fixed; /* Couvrir tout l'écran */
+     #overlay {
+        position: fixed; 
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(255, 255, 255, 0.8); /* Fond noir semi-transparent */
-        z-index: 999; /* Juste en dessous du message */
-        display: none; /* Masquer par défaut */
+        background-color: rgba(255, 255, 255, 0.8);  
+        z-index: 999;  
+        display: none;  
         border-radius: 87px;
     }
 }
@@ -449,7 +445,7 @@ BAS DE PAGE
         position: absolute;
         top: 0%;
         left: 50%;
-        transform: translate(-50%); /* Ajuste pour placer le centre de l'image au centre du conteneur */
+        transform: translate(-50%);  
         width: 600px;
         height: 600px;
         background: radial-gradient(50% 50% at 50% 50%,rgb(255, 255, 255)48.5%,rgb(255,255,255)75%,rgb(7,70,130)91%);
@@ -461,7 +457,7 @@ BAS DE PAGE
         left: 50%;
         height: 80%;
         width: 80%;
-        transform: translate(-50%,-50%); /* Ajuste pour placer le centre de l'image au centre du conteneur */
+        transform: translate(-50%,-50%); 
     }
     
     .bloquelien{
@@ -538,7 +534,7 @@ BAS DE PAGE
         position: absolute;
         top: 10%;
         left: 50%;
-        transform: translate(-50%,-50%); /* Ajuste pour placer le centre de l'image au centre du conteneur */
+        transform: translate(-50%,-50%);  
         color: #ffffff;
         font-family: 'Jaldi-Blod', sans-serif;
         font-size: 25px;
@@ -553,11 +549,11 @@ BAS DE PAGE
         height:75px;
         top: 70%;
         left: 50%;
-        transform: translate(-50%,-50%); /* Ajuste pour placer le centre de l'image au centre du conteneur */
+        transform: translate(-50%,-50%); 
         background: #FFFFFF;
-        justify-content: space-between; /* Crée des espaces égaux entre les pictogrammes */
-        align-items: center; /* Centre les éléments verticalement */
-        padding: 0 30px; /* Espace intérieur gauche et droit */
+        justify-content: space-between;  
+        align-items: center;  
+        padding: 0 30px;  
         border-radius: 47px;
     }
     

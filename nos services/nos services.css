@@ -1,34 +1,32 @@
-
 body, html {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: auto; /* S'adapte au contenu */
+    height: auto; 
     font-family: 'Jaldi', sans-serif;
-
 }
 
 .services{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Centre les cartes sur chaque ligne */
-    align-items: stretch; /* Étire les cartes pour qu'elles aient la même hauteur */
+    justify-content: center; 
+    align-items: stretch; 
     gap: 20px;
     padding: 30px 0;
-    
 }
 
 .section{
     position: relative;
     border-radius: 50px;
-    width: calc(50% - 5%); /* 4 cartes par ligne avec un espace entre elles */
+    width: calc(50% - 5%);
     text-align: center;
-
 }
+
 .image{
     width: 100%;
     height: 100%;
 }
+
 .carre{
     position: absolute;
     width: 85%;
@@ -68,8 +66,7 @@ body, html {
     transform: translate(-50%);
     text-align: center;
     box-sizing: border-box;
-    padding: 20px 10px; /* Marges pour un contenu espacé */
-
+    padding: 20px 10px; 
 }
 
 .quisommesnous h2{
@@ -88,24 +85,17 @@ body, html {
     color: rgb(0, 0, 0);
 }
 
-
-
-
-
-
 @media(min-width: 1000px){
-
     /* PARTIE HAUT DE PAGE */
-
     #fixed {
-        position: fixed; /* Fixe l'élément */
-        top: 0; /* Positionné en haut de la page */
-        left: 0; /* Aligné à gauche */
-        width: 100%; /* S'étend sur toute la largeur */
-        background-color: #ffffff; /* Couleur de fond */
-        z-index: 1000; /* Assure que la barre est au-dessus des autres éléments */
-        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Optionnel : ombre pour un effet visuel */
-        padding: 10px 0; /* Optionnel : Espacement interne */
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #ffffff;
+        z-index: 1000;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 10px 0;
     }
 
     .barduhaut {
@@ -114,7 +104,6 @@ body, html {
         background-color: rgba(179, 179, 179, 0.5); 
         height: 40px; 
         max-width: 100%;
-
     }
 
     .barduhaut a {
@@ -144,10 +133,7 @@ body, html {
     .btn-contact:hover {
         background-color: #0056b3; 
     }
-    /* FIN HAUT DE PAGE */
-
-    /* Image et titre*/
-
+    /* Image et titre */
     .hautpage{
         position: relative;
         height: 600px;
@@ -174,7 +160,6 @@ body, html {
         background-color: #0057b3ef;
         border-radius: 45px;
         text-align: center;
-        
     }
 
     .bloquehautpage h1{
@@ -186,6 +171,7 @@ body, html {
         font-weight: normal;
         top: 10%;
     }
+
     .bloquehautpage p{
         position: absolute;
         width: 100%;
@@ -194,33 +180,20 @@ body, html {
         font-family: 'Jaldi-Bold', sans-serif;
         top: 40%;
     }
-
-
-
     /* FIN PARTIE NOS SERVICES */
-
     /* PARTIE Qui sommes-nous ? */
-
-
-
-
 }
-
-
-
-
-
 
 @media(max-width : 1000px){
     #fixed {
-        padding: 5px 10px; /* Moins de padding */
-        box-shadow: none; /* Supprime l'ombre */
-        background-color: #f8f8f8; /* Couleur de fond pour bien différencier */
-        display: flex; /* Utilisation de Flexbox */
-        flex-wrap: wrap; /* Permet aux éléments de passer à la ligne si nécessaire */
-        justify-content: space-around; /* Centre les liens horizontalement */
-        align-items: center; /* Centre les liens verticalement */
-        gap: 10px; /* Espacement entre les éléments */
+        padding: 5px 10px;
+        box-shadow: none;
+        background-color: #f8f8f8;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        gap: 10px;
     }
 
     .barduhaut a {
@@ -301,16 +274,6 @@ body, html {
         top: 40%;
     }
 
-    /* 
-    
-    
-    PARTIE SERVICES 
-    
-    
-    */
-
-
-
     @media (max-width: 1150px) {
         .carre h2{
             font-size: 30px;
@@ -331,7 +294,7 @@ body, html {
 
     @media (max-width: 700px) {
         .section{
-            width: 90%; /* 1 carte par ligne */
+            width: 90%;
         }
         .carre h2{
             font-size: 30px;
@@ -347,6 +310,7 @@ body, html {
             font-size: 30px;
         }
     }
+
     @media (max-width: 420px) {
         .bloquehautpage{
             width: 90%;
@@ -360,23 +324,9 @@ body, html {
     } 
 }
 
-
-
-/* 
-
-
-BAS DE PAGE 
-
-
-*/
-
-
+/* BAS DE PAGE */
 
 @media(min-width: 1480px){
-
-    /* BAS DE PAGE */
-
-
     .baspage{
         position: relative;
         width: 100%;
@@ -390,7 +340,7 @@ BAS DE PAGE
         position: absolute;
         top: 0%;
         left: 50%;
-        transform: translate(-50%); /* Ajuste pour placer le centre de l'image au centre du conteneur */
+        transform: translate(-50%);
         width: 600px;
         height: 600px;
         background: radial-gradient(50% 50% at 50% 50%,rgb(255, 255, 255)48.5%,rgb(255,255,255)75%,rgb(7,70,130)91%);
@@ -402,7 +352,7 @@ BAS DE PAGE
         left: 50%;
         height: 80%;
         width: 80%;
-        transform: translate(-50%,-50%); /* Ajuste pour placer le centre de l'image au centre du conteneur */
+        transform: translate(-50%,-50%);
     }
 
     .bloquelien{
@@ -414,7 +364,6 @@ BAS DE PAGE
         z-index: 7;
         text-align: center;
         line-height: 1.7;
-
     }
 
     .textelien{
@@ -440,8 +389,8 @@ BAS DE PAGE
 
     .textebas numero{
         font-size: 45px;
-
     }
+
     .textebas nomadresse{
         font-size: 25px;
     }
@@ -465,7 +414,6 @@ BAS DE PAGE
         max-height: 100%; 
     }
 
-
     .suivrelien{
         position: absolute;
         display: flex;
@@ -479,12 +427,11 @@ BAS DE PAGE
         position: absolute;
         top: 10%;
         left: 50%;
-        transform: translate(-50%,-50%); /* Ajuste pour placer le centre de l'image au centre du conteneur */
+        transform: translate(-50%,-50%);
         color: #ffffff;
         font-family: 'Jaldi-Blod', sans-serif;
         font-size: 25px;
         font-weight : bold;
-
     }
 
     .lienresaux{
@@ -494,11 +441,11 @@ BAS DE PAGE
         height:75px;
         top: 70%;
         left: 50%;
-        transform: translate(-50%,-50%); /* Ajuste pour placer le centre de l'image au centre du conteneur */
+        transform: translate(-50%,-50%);
         background: #FFFFFF;
-        justify-content: space-between; /* Crée des espaces égaux entre les pictogrammes */
-        align-items: center; /* Centre les éléments verticalement */
-        padding: 0 30px; /* Espace intérieur gauche et droit */
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 30px;
         border-radius: 47px;
     }
 
@@ -507,9 +454,7 @@ BAS DE PAGE
     }
 }
 
-
 @media(max-width:1480px){
-
     .baspage {
         display: flex;
         flex-direction: column;
@@ -552,6 +497,7 @@ BAS DE PAGE
         font-size: 20px;
         font-weight: bold;
     }
+
     .suivernous {
         position: relative;
         left: 50%;
@@ -573,17 +519,12 @@ BAS DE PAGE
         padding: 0 30px;
         border-radius: 47px;
         height: 50px;
-
-
     }
 
     .lienresaux img {
         width: 40px;
         height: 40px;
     }
-
-
-
 
     .textebas {
         position: relative;
@@ -625,6 +566,7 @@ BAS DE PAGE
         max-width: 80%;
         max-height: 80%;
     }
+
     .lien {
         width: auto;
     }
@@ -633,12 +575,13 @@ BAS DE PAGE
         .bloquelogobas {
             width: 40%;
             aspect-ratio: 1/1;
-
         }
+
         .lienresaux img {
             width: 35px;
             height: 35px;
         }
+
         .Sipersonne {
             width: 180px;
             height: 130px;
@@ -649,17 +592,17 @@ BAS DE PAGE
         .bloquelogobas {
             width: 60%;
             aspect-ratio: 1/1;
-
         }
+
         .lienresaux img {
             width: 30px;
             height: 30px;
         }
+
         .Sipersonne {
             width: 160px;
             height: 120px;
         }
     }
-
 }
 
