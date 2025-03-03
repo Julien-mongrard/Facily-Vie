@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     console.log("📢 [DEBUG] Script cookie-popup.js chargé !");
-    if (window.location.pathname.includes("recrutement.html") || window.location.pathname.includes("contact.html")) {
+    if (window.location.pathname.includes("/Recrutement/") || window.location.pathname.includes("/contact/")) {
         updateRecaptchaVisibility();
     }
         const modifyCookiesButton = document.getElementById("modifyCookies");
