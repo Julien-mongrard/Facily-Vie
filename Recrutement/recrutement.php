@@ -7,7 +7,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $recaptchaResponse = $_POST['g-recaptcha-response'] ?? '';
 
     // Vérifier la réponse reCAPTCHA via l'API Google
-    $secretKey = '6Ldund4qAAAAAMBOZYL1vhHCXwTdxZhHt8aqBDV5'; // Remplace par ta clé secrète
+    $secretKey = ""; // Remplacez par votre clé secrète';
     $verifyURL = 'https://www.google.com/recaptcha/api/siteverify';
     $data = [
         'secret' => $secretKey,
@@ -47,7 +47,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $message = htmlspecialchars($_POST['message'] ?? '');
 
     // Préparer les variables de l'email
-    $to = "mongrardjulien@gmail.com"; // Remplacez par ton e-mail
+    $to = ""; // Remplacez par ton e-mail
     $subject = "Recrutement - $choix";
     $headers = "From: $email\r\n";
     $headers .= "Reply-To: $email\r\n";
@@ -108,3 +108,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo json_encode($response);
     exit;
 }
+?>

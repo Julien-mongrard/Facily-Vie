@@ -17,8 +17,21 @@ function envoyerFormulaire(event) {
         method: "POST",
         body: formData,
     })
-    .then(response => response.json())
+    .then(response => response.text()) // Lire la réponse en texte brut
+    .then(text => {
+        console.log("Réponse brute du serveur :", text); // Affiche la réponse reçue
+
+        // Vérifier si la réponse est vide
+        if (!text) {
+            throw new Error("Réponse vide du serveur !");
+        }
+
+        // Essayer de convertir en JSON
+        return JSON.parse(text);
+    })
     .then(data => {
+        console.log("Données JSON analysées :", data);
+
         if (data.recaptcha_score !== undefined) {
             console.log("Score reCAPTCHA: ", data.recaptcha_score);
         }
@@ -26,12 +39,13 @@ function envoyerFormulaire(event) {
         if (data.success) {
             statusMessage.textContent = "✅ Message envoyé avec succès !";
             form.reset(); // Réinitialiser les champs du formulaire
-            grecaptcha.reset(); 
+            grecaptcha.reset();
         } else {
             statusMessage.textContent = "❌ " + data.message;
         }
     })
     .catch(error => {
+        console.error("Erreur détectée :", error);
         statusMessage.textContent = "❌ Une erreur s'est produite : " + error.message;
     })
     .finally(() => {
